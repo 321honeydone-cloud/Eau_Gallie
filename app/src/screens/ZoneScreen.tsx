@@ -105,7 +105,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   });
 
   return (
-    <div className={'screen wide zone-screen' + (focus ? ' focus' : '')}>
+    <div className={'screen wide fill zone-screen' + (focus ? ' focus' : '')}>
       {focus && (
         <div className="floatbar">
           <button type="button" className="ege-btn" onClick={onBack}>&larr; Airfield</button>

@@ -31,7 +31,7 @@ export default function MapScreen({ job, date, onZone, onReport }: Props) {
   const complete = parts.filter(p => (p.work === 'demo' ? p.demoStep === 4 : p.installStep === 4)).length;
 
   return (
-    <div className="screen wide">
+    <div className="screen wide fill">
       <div className="stats">
         <div className="stat"><div className="k">Parts</div><div className="v">{parts.length}</div></div>
         <div className="stat ok"><div className="k">Complete</div><div className="v">{complete}</div></div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, today, removeRow } from './db';
 import { seedIfEmpty } from './seed';
@@ -20,6 +20,13 @@ export default function App() {
   const [ready, setReady] = useState(false);
   const [route, setRoute] = useState<Route>({ name: 'map' });
   const [syncOpen, setSyncOpen] = useState(false);
+  // the header's height changes as pills wrap, so the fill screens measure it
+  useLayoutEffect(() => {
+    const el = document.querySelector('.app-header') as HTMLElement | null; if (!el) return;
+    const set = () => document.documentElement.style.setProperty('--header-h', `${el.offsetHeight}px`);
+    set(); const ro = new ResizeObserver(set); ro.observe(el); window.addEventListener('resize', set);
+    return () => { ro.disconnect(); window.removeEventListener('resize', set); };
+  }, []);
   useEffect(() => { let stop = () => {}; seedIfEmpty().then(() => { setReady(true); stop = startSync(); }); return () => stop(); }, []);
 
   const jobId = useJobId();
