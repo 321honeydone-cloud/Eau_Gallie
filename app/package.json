@@ -9,11 +9,13 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "gen": "node scripts/gen-placeholder.mjs",
-    "walk": "node scripts/walk.mjs"
+    "walk": "node scripts/walk.mjs",
+    "walk:admin": "node scripts/walk-admin.mjs"
   },
   "dependencies": {
     "dexie": "^4.4.6",
     "dexie-react-hooks": "^4.4.0",
+    "pdfjs-dist": "^4.10.38",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

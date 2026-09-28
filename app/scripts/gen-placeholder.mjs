@@ -205,7 +205,7 @@ function airfieldGeometry(s) {
 
 // ---------- detail sheets ----------
 const DRAW = { x1: 80, y1: 80, x2: 1520, y2: 830 };
-const sheetsOut = [{ id: 'sh_e101', jobId: 'job_placeholder', name: 'E-101', title: 'Airfield Lighting Overall Plan', src: '/placeholder/e101.svg', width: W, height: H }];
+const sheetsOut = [{ id: 'sh_e101', jobId: 'job_placeholder', name: 'E-101', title: 'Airfield Lighting Overall Plan', src: '/placeholder/e101.svg', width: W, height: H, order: 1, isOverview: true }];
 const zonesOut = [];
 for (const z of ZONES) {
   const zw = z.rect.x2 - z.rect.x1, zh = z.rect.y2 - z.rect.y1;
@@ -220,7 +220,7 @@ for (const z of ZONES) {
   const file = z.sheet.toLowerCase().replace('-', '');
   writeFileSync(`${OUT_SVG}/${file}.svg`, svg);
   const sheetId = `sh_${file}`;
-  sheetsOut.push({ id: sheetId, jobId: 'job_placeholder', name: z.sheet, title: z.title, src: `/placeholder/${file}.svg`, width: W, height: H });
+  sheetsOut.push({ id: sheetId, jobId: 'job_placeholder', name: z.sheet, title: z.title, src: `/placeholder/${file}.svg`, width: W, height: H, order: sheetsOut.length + 1 });
   zonesOut.push({
     id: z.id, jobId: 'job_placeholder', phaseId: z.phase, name: `${z.sheet} ${z.title.replace(' Lighting Plan', '').replace(' Plan', '')}`,
     overviewSheetId: 'sh_e101',

@@ -7,9 +7,10 @@ interface Props {
   date: string;
   onChangeForeman: () => void;
   onHome: () => void;
+  onSetup: () => void;
 }
 
-export default function Header({ job, foreman, date, onChangeForeman, onHome }: Props) {
+export default function Header({ job, foreman, date, onChangeForeman, onHome, onSetup }: Props) {
   const [online, setOnline] = useState(navigator.onLine);
   useEffect(() => {
     const on = () => setOnline(true), off = () => setOnline(false);
@@ -27,6 +28,7 @@ export default function Header({ job, foreman, date, onChangeForeman, onHome }: 
         <span className={'ege-pill' + (online ? '' : ' off')}>{online ? 'Online' : 'Offline, saving here'}</span>
         <span className="ege-pill light">{nice}</span>
         <button type="button" className="ege-pill tap" onClick={onChangeForeman}>{foreman || 'Pick foreman'}</button>
+        <button type="button" className="ege-pill tap light" onClick={onSetup} aria-label="Setup">Setup</button>
       </div>
     </header>
   );

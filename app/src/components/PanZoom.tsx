@@ -9,13 +9,21 @@ interface Props {
   children?: ReactNode;   // overlays positioned in percent inside the stage
   hint?: string;
   resetKey?: string;
+  onTapStage?: (pt: { x: number; y: number }) => void;          // clean tap on the sheet, percent coords
+  onDrawRect?: (r: { x1: number; y1: number; x2: number; y2: number }) => void;  // drag draws a box, percent coords
 }
 
 interface View { s: number; tx: number; ty: number }
 
-export default function PanZoom({ width, height, src, children, hint, resetKey }: Props) {
+export default function PanZoom({ width, height, src, children, hint, resetKey, onTapStage, onDrawRect }: Props) {
+  const [drawBox, setDrawBoxState] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
+  // Window listeners are attached on pointer down and would see stale state, so the live values live in refs.
+  const drawRef = useRef<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
+  const setDrawBox = (b: { x1: number; y1: number; x2: number; y2: number } | null) => { drawRef.current = b; setDrawBoxState(b); };
+  const viewRef = useRef<View>({ s: 1, tx: 0, ty: 0 });
   const box = useRef<HTMLDivElement>(null);
-  const [view, setView] = useState<View>({ s: 1, tx: 0, ty: 0 });
+  const [view, setViewState] = useState<View>({ s: 1, tx: 0, ty: 0 });
+  const setView = (v: View | ((p: View) => View)) => { setViewState(prev => { const n = typeof v === 'function' ? v(prev) : v; viewRef.current = n; return n; }); };
   const [stageW, setStageW] = useState(1000);
   const [dragging, setDragging] = useState(false);
   const pointers = useRef(new Map<number, { x: number; y: number }>());
@@ -56,6 +64,7 @@ export default function PanZoom({ width, height, src, children, hint, resetKey }
     const r = box.current!.getBoundingClientRect();
     return { x: e.clientX - r.left, y: e.clientY - r.top };
   };
+  const toPct = (p: { x: number; y: number }, v: View = viewRef.current) => ({ x: ((p.x - v.tx) / (stageW * v.s)) * 100, y: ((p.y - v.ty) / (stageW * (height / width) * v.s)) * 100 });
 
   const onDown = (e: RPointerEvent) => {
     const p = local(e);
@@ -72,7 +81,7 @@ export default function PanZoom({ width, height, src, children, hint, resetKey }
     const pts = [...pointers.current.values()];
     const mid = pts.length > 1 ? { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 } : p;
     const dist = pts.length > 1 ? Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) : 0;
-    start.current = { view, dist, mid, moved: 0, t: Date.now() };
+    start.current = { view: viewRef.current, dist, mid, moved: 0, t: Date.now() };
   };
   const onMove = (e: RPointerEvent) => {
     if (!pointers.current.has(e.pointerId) || !start.current) return;
@@ -90,7 +99,9 @@ export default function PanZoom({ width, height, src, children, hint, resetKey }
     } else {
       const dx = pts[0].x - st.mid.x, dy = pts[0].y - st.mid.y;
       st.moved = Math.max(st.moved, Math.hypot(dx, dy));
-      if (st.moved > 8) { setDragging(true); setView(clamp({ s: st.view.s, tx: st.view.tx + dx, ty: st.view.ty + dy })); }
+      if (onDrawRect) {
+        if (st.moved > 4) { const a = toPct(st.mid, st.view), b = toPct(pts[0], st.view); setDrawBox({ x1: Math.min(a.x, b.x), y1: Math.min(a.y, b.y), x2: Math.max(a.x, b.x), y2: Math.max(a.y, b.y) }); }
+      } else if (st.moved > 8) { setDragging(true); setView(clamp({ s: st.view.s, tx: st.view.tx + dx, ty: st.view.ty + dy })); }
     }
   };
   const onUp = (e: RPointerEvent) => {
@@ -99,16 +110,20 @@ export default function PanZoom({ width, height, src, children, hint, resetKey }
     if (pointers.current.size === 0) {
       setDragging(false);
       const onTarget = !!(e.target as Element | null)?.closest?.('.pin, .zone-poly, .zone-tap');
+      if (onDrawRect && drawRef.current && st && st.moved > 4) { const b = drawRef.current; setDrawBox(null); start.current = null; onDrawRect(b); return; }
+      if (st && st.moved <= 8 && Date.now() - st.t < 400 && !onTarget && onTapStage && (e.target as Element | null)?.closest?.('.zoomctl') === null) {
+        onTapStage(toPct(local(e))); suppressClick.current = true; start.current = null; return;
+      }
       if (st && st.moved <= 8 && Date.now() - st.t < 400 && !onTarget) {
         const now = Date.now();
-        if (now - lastTap.current < 320) { const p = local(e); zoomAt(view.s < 2 ? 2.2 : 0.45, p.x, p.y); lastTap.current = 0; suppressClick.current = true; }
+        if (now - lastTap.current < 320) { const p = local(e); zoomAt(viewRef.current.s < 2 ? 2.2 : 0.45, p.x, p.y); lastTap.current = 0; suppressClick.current = true; }
         else lastTap.current = now;
       } else if (st && st.moved > 8) suppressClick.current = true;
       start.current = null;
     } else {
       // one finger left after a pinch, restart the drag from here
       const p = [...pointers.current.values()][0];
-      start.current = { view, dist: 0, mid: p, moved: 100, t: Date.now() };
+      start.current = { view: viewRef.current, dist: 0, mid: p, moved: 100, t: Date.now() };
     }
   };
   const onClickCapture = (e: React.MouseEvent) => {
@@ -122,8 +137,9 @@ export default function PanZoom({ width, height, src, children, hint, resetKey }
       <div className="stage" style={{ width: stageW, transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.s})`, ['--inv' as string]: String(1 / view.s) }}>
         <img src={src} width={width} height={height} alt="" draggable={false} />
         {children}
+        {drawBox && <div className="drawbox" style={{ left: `${drawBox.x1}%`, top: `${drawBox.y1}%`, width: `${drawBox.x2 - drawBox.x1}%`, height: `${drawBox.y2 - drawBox.y1}%` }} />}
       </div>
-      <div className="zoomctl">
+      <div className="zoomctl" onPointerDown={e => e.stopPropagation()}>
         <button type="button" aria-label="Zoom in" onClick={() => { const el = box.current!; zoomAt(1.4, el.clientWidth / 2, el.clientHeight / 2); }}>+</button>
         <button type="button" aria-label="Zoom out" onClick={() => { const el = box.current!; zoomAt(0.7, el.clientWidth / 2, el.clientHeight / 2); }}>&minus;</button>
         <button type="button" aria-label="Fit" onClick={fit} style={{ fontSize: 13, fontFamily: 'Oswald' }}>FIT</button>

@@ -36,9 +36,12 @@ export interface Sheet {
   jobId: string;
   name: string;      // E-108
   title: string;     // Taxiway A West Lighting Plan
-  src: string;       // url or data url of the rendered page
+  src?: string;      // url for bundled placeholder sheets
+  blob?: Blob;       // rendered page for uploaded plan sets
   width: number;
   height: number;
+  order: number;
+  isOverview?: boolean;
 }
 
 export interface Pt { x: number; y: number } // percent of the sheet, 0 to 100

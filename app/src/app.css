@@ -156,3 +156,26 @@ body.ege { padding-block: 0 0; overscroll-behavior: none; }
 .sighint { position: absolute; left: 14px; top: 12px; color: var(--ege-ink3); pointer-events: none; font-size: 14px; }
 .sigclear { position: absolute; right: 8px; top: 8px; }
 .ege-field input[type=text], .ege-field input[type=number] { min-height: 52px; font-size: 17px; }
+
+/* Admin setup */
+.drawbox { position: absolute; border: 3px dashed var(--ege-red); background: rgba(236,28,45,.12); pointer-events: none; }
+.admin-list { display: flex; flex-direction: column; gap: 10px; }
+.arow { display: grid; grid-template-columns: 96px 1fr auto; gap: 12px; align-items: center; border: 1px solid var(--ege-line); background: #fff; padding: 10px; border-radius: 2px; }
+.arow img { width: 96px; height: 60px; object-fit: cover; border: 1px solid var(--ege-line); background: #eee; }
+.arow .fields { display: grid; grid-template-columns: 140px 1fr; gap: 8px; }
+.arow input[type=text] { min-height: 48px; font-size: 16px; border: 1px solid var(--ege-line); border-radius: 3px; padding: 6px 10px; background: var(--ege-panel2); width: 100%; }
+.arow.on { box-shadow: inset 5px 0 0 var(--ege-red); }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.form-grid .ege-field input, .form-grid .ege-field select { min-height: 52px; font-size: 17px; }
+.paytable { width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; }
+.paytable th { text-align: left; font-family: var(--ege-display); font-weight: 500; letter-spacing: .5px; text-transform: uppercase; font-size: 12px; color: var(--ege-ink3); padding: 8px 6px; border-bottom: 2px solid var(--ege-line); }
+.paytable td { padding: 4px 6px; border-bottom: 1px solid var(--ege-line); }
+.paytable input, .paytable select { width: 100%; min-height: 40px; border: 1px solid var(--ege-line); border-radius: 3px; padding: 4px 8px; font-size: 14px; background: var(--ege-panel2); }
+.paytable input.num { font-family: var(--ege-mono); text-align: right; }
+.paytable td.narrow { width: 90px; } .paytable td.mid { width: 130px; }
+.pinform { display: flex; flex-direction: column; gap: 12px; }
+.pinform .ege-field input, .pinform .ege-field select { min-height: 52px; font-size: 17px; }
+.zone-rect { fill: rgba(105,166,213,.18); stroke: var(--ege-navy); stroke-width: 3; }
+.zone-rect.on { fill: rgba(236,28,45,.18); stroke: var(--ege-red); }
+.pin.ghost i { background: #fff; border-style: dashed; color: var(--ege-navy2); }
+.mode-tip { font-size: 15px; padding: 10px 14px; background: var(--ege-info-soft); border: 1px solid var(--ege-info-line); border-left: 4px solid var(--ege-red); }

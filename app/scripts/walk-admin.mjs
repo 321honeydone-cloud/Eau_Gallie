@@ -1,0 +1,91 @@
+// Sets up a new job from a PDF the way the office would, then checks the foreman side sees it.
+import { chromium } from 'playwright';
+const OUT = process.argv[2] || '/tmp/shots';
+const PDF = process.env.TEST_PDF;
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const ctx = await browser.newContext({ viewport: { width: 1180, height: 820 }, hasTouch: true });
+const page = await ctx.newPage();
+const errors = [];
+page.on('pageerror', e => errors.push(String(e)));
+page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+await page.goto((process.env.BASE_URL || 'http://localhost:4173') + '/');
+await page.waitForSelector('.choice');
+await page.getByRole('button', { name: /Carlos/ }).click();
+await page.waitForSelector('.zone-poly');
+await page.getByRole('button', { name: 'Setup' }).click();
+await page.waitForSelector('.stephead');
+await page.screenshot({ path: `${OUT}/20-admin-jobs.png` });
+// new job
+await page.getByRole('button', { name: /New job/ }).click();
+await page.getByPlaceholder('Taxiway A Rehab').fill('Test Field Taxiway C');
+await page.getByPlaceholder('Pensacola International').fill('Test Field');
+await page.getByRole('button', { name: 'Create job' }).click();
+await page.waitForTimeout(400);
+// sheets
+await page.locator('input[type=file]').setInputFiles(PDF);
+await page.waitForFunction(() => document.querySelectorAll('.arow').length >= 2, null, { timeout: 60000 });
+await page.waitForTimeout(500);
+const rows = page.locator('.arow');
+await rows.nth(0).getByLabel('Sheet number').fill('E-201');
+await rows.nth(0).getByLabel('Sheet title').fill('Overall plan');
+await rows.nth(0).getByRole('button', { name: 'Make overview' }).click();
+await rows.nth(1).getByLabel('Sheet number').fill('E-202');
+await rows.nth(1).getByLabel('Sheet title').fill('Taxiway C plan');
+await page.waitForTimeout(300);
+await page.screenshot({ path: `${OUT}/21-admin-sheets.png` });
+await page.getByRole('button', { name: /^Next/ }).click();
+// zones
+await page.getByPlaceholder('Phase 1, Taxiway A').fill('Phase 1');
+await page.getByRole('button', { name: 'Add phase' }).click();
+await page.getByRole('button', { name: /Draw a zone/ }).click();
+const v = await page.locator('.viewer').boundingBox();
+await page.mouse.move(v.x + v.width * 0.25, v.y + v.height * 0.35); await page.mouse.down();
+await page.mouse.move(v.x + v.width * 0.5, v.y + v.height * 0.5, { steps: 8 });
+await page.mouse.move(v.x + v.width * 0.75, v.y + v.height * 0.65, { steps: 8 }); await page.mouse.up();
+await page.waitForSelector('.pinform input[type=text]');
+await page.locator('.pinform input[type=text]').fill('E-202 Taxiway C');
+await page.locator('.pinform select').selectOption({ label: 'E-202 · Taxiway C plan' });
+await page.waitForTimeout(300);
+await page.screenshot({ path: `${OUT}/22-admin-zones.png` });
+await page.getByRole('button', { name: 'Done', exact: true }).click();
+await page.getByRole('button', { name: /^Next/ }).click();
+// pay items via paste
+await page.getByRole('button', { name: 'Paste from spreadsheet' }).click();
+await page.locator('textarea').fill('Item\tSpec\tDescription\tQty\tUnit\tUnit Price\n30\tL-125-5.1\tTaxiway Edge Light L-861T\t12\tEA\t1450\n34\tL-867\tBase Can with Transformer\t12\tEA\t900\n22\tSP-104\tTemporary Power\t1\tLS\t45000');
+await page.getByRole('button', { name: 'Add these' }).click();
+await page.waitForTimeout(400);
+await page.screenshot({ path: `${OUT}/23-admin-pay.png` });
+await page.getByRole('button', { name: /^Next/ }).click();
+// pins
+await page.getByRole('button', { name: /E-202 Taxiway C/ }).click();
+await page.getByRole('button', { name: /Place pins/ }).click();
+await page.locator('.pinform input[type=text]').fill('TWC-01');
+await page.getByRole('button', { name: '+ Pay item' }).click();
+await page.locator('.pinform select').first().selectOption({ label: '34 L-867 Base Can with Transformer (EA)' });
+await page.locator('.pinform select').nth(1).selectOption('2');
+await page.getByRole('button', { name: '+ Pay item' }).click();
+await page.locator('.pinform select').nth(2).selectOption({ label: '30 L-125-5.1 Taxiway Edge Light L-861T (EA)' });
+const sv = await page.locator('.viewer').boundingBox();
+for (const fx of [0.3, 0.4, 0.5, 0.6]) { await page.mouse.click(sv.x + sv.width * fx, sv.y + sv.height * 0.3); await page.waitForTimeout(200); }
+await page.waitForTimeout(300);
+await page.screenshot({ path: `${OUT}/24-admin-pins.png` });
+const pinsPlaced = await page.locator('.pin').count();
+await page.getByRole('button', { name: /^Next/ }).click();
+// publish
+await page.waitForSelector('.stat');
+const counts = await page.locator('.stat .v').allTextContents();
+await page.screenshot({ path: `${OUT}/25-admin-publish.png` });
+await page.getByRole('button', { name: /Use this job/ }).click();
+await page.waitForSelector('.zone-poly');
+await page.waitForTimeout(500);
+await page.screenshot({ path: `${OUT}/26-new-job-map.png` });
+const airport = await page.locator('.ege-brand small').textContent();
+await page.locator('.zone-poly').first().click();
+await page.waitForSelector('.pin');
+await page.getByLabel('TWC-02').click();
+await page.locator('.stepbtn').nth(2).click();
+await page.waitForTimeout(300);
+await page.screenshot({ path: `${OUT}/27-new-job-zone.png` });
+const label = await page.locator('.prow .lab').nth(1).textContent();
+console.log(JSON.stringify({ pinsPlaced, counts, airport, secondRow: label, errors }, null, 1));
+await browser.close();

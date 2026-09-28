@@ -1,4 +1,5 @@
 import PanZoom from '../components/PanZoom';
+import { useSheetSrc } from '../hooks/useSheetSrc';
 import { usePhases, useZones, useSheets, useParts, useOpenFlags, useTodayEventCount } from '../hooks/useJob';
 import { zoneProgress } from '../lib/status';
 import type { Job } from '../types';
@@ -12,7 +13,8 @@ export default function MapScreen({ job, date, onZone, onReport }: Props) {
   const parts = useParts(job.id);
   const flags = useOpenFlags(job.id);
   const taps = useTodayEventCount(job.id, date);
-  const overview = sheets.find(s => zones[0] && s.id === zones[0].overviewSheetId);
+  const overview = sheets.find(s => s.isOverview) ?? sheets.find(s => zones[0] && s.id === zones[0].overviewSheetId) ?? sheets[0];
+  const overviewSrc = useSheetSrc(overview);
 
   const complete = parts.filter(p => (p.work === 'demo' ? p.demoStep === 4 : p.installStep === 4)).length;
 
@@ -29,8 +31,9 @@ export default function MapScreen({ job, date, onZone, onReport }: Props) {
         <span><b>Tap a zone</b> to open its sheet.</span>
         {phases.map((p, i) => <span key={p.id}><span className="sw" style={{ background: i === 0 ? 'rgba(105,166,213,.6)' : 'rgba(236,28,45,.35)', borderRadius: 3 }} />{p.name}</span>)}
       </div>
-      {overview && (
-        <PanZoom width={overview.width} height={overview.height} src={overview.src} hint="Pinch to zoom, drag to pan, double tap to zoom in">
+      {!zones.length && <div className="ege-banner">No zones on this job yet. Open Setup from the top bar to load the plans and draw zones.</div>}
+      {overview && overviewSrc && (
+        <PanZoom width={overview.width} height={overview.height} src={overviewSrc} hint="Pinch to zoom, drag to pan, double tap to zoom in">
           <svg viewBox={`0 0 ${overview.width} ${overview.height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
             {zones.map(z => {
               const pts = z.shape.map(p => `${(p.x / 100) * overview.width},${(p.y / 100) * overview.height}`).join(' ');

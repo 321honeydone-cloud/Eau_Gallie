@@ -30,7 +30,9 @@
    "title": "Airfield Lighting Overall Plan",
    "src": "/placeholder/e101.svg",
    "width": 1600,
-   "height": 1000
+   "height": 1000,
+   "order": 1,
+   "isOverview": true
   },
   {
    "id": "sh_e108",
@@ -39,7 +41,8 @@
    "title": "Taxiway A West Lighting Plan",
    "src": "/placeholder/e108.svg",
    "width": 1600,
-   "height": 1000
+   "height": 1000,
+   "order": 2
   },
   {
    "id": "sh_e109",
@@ -48,7 +51,8 @@
    "title": "Taxiway A East Lighting Plan",
    "src": "/placeholder/e109.svg",
    "width": 1600,
-   "height": 1000
+   "height": 1000,
+   "order": 3
   },
   {
    "id": "sh_e110",
@@ -57,7 +61,8 @@
    "title": "Runway 8-26 Lighting Plan",
    "src": "/placeholder/e110.svg",
    "width": 1600,
-   "height": 1000
+   "height": 1000,
+   "order": 4
   },
   {
    "id": "sh_e111",
@@ -66,7 +71,8 @@
    "title": "Apron and Vault Plan",
    "src": "/placeholder/e111.svg",
    "width": 1600,
-   "height": 1000
+   "height": 1000,
+   "order": 5
   }
  ],
  "zones": [

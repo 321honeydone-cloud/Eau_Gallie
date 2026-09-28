@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import PanZoom from '../components/PanZoom';
+import { useSheetSrc } from '../hooks/useSheetSrc';
 import PartCard, { ladderLabel } from './PartCard';
 import { useOpenFlags, useSheets, useZoneParts } from '../hooks/useJob';
 import { activeLadder, currentStep, setStep, stepName, zoneProgress } from '../lib/status';
@@ -15,6 +16,7 @@ const CAT_LABEL: Record<string, string> = { fixture: 'Lights', sign: 'Signs', ca
 export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   const sheets = useSheets(zone.jobId);
   const sheet = sheets.find(s => s.id === zone.detailSheetId);
+  const sheetSrc = useSheetSrc(sheet);
   const parts = useZoneParts(zone.id);
   const flags = useOpenFlags(zone.jobId);
   const [mode, setMode] = useState<Mode>(() => (window.innerWidth < 900 ? 'pins' : 'both'));
@@ -97,7 +99,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
 
       <div className={'zone-layout' + (mode === 'list' ? ' list-only' : mode === 'pins' ? ' pins-only' : '')}>
         {mode !== 'list' && sheet && (
-          <PanZoom width={sheet.width} height={sheet.height} src={sheet.src} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
+          <PanZoom width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
             {pins}
           </PanZoom>
         )}

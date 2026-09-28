@@ -9,7 +9,8 @@ npm install
 npm run dev        # local dev server
 npm run build      # production build into dist/
 npm run preview    # serve the build
-npm run walk       # headless iPad walkthrough, screenshots to /tmp/shots (needs preview on 4173, set TEST_PHOTO to a jpg path)
+npm run walk       # headless iPad walkthrough of the foreman side (preview running, BASE_URL and TEST_PHOTO env)
+npm run walk:admin # headless walkthrough of job setup from a PDF (BASE_URL and TEST_PDF env)
 npm run gen        # regenerate the placeholder airfield sheets and part list
 ```
 
@@ -20,6 +21,8 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 - `src/lib/status.ts` the five step ladder, step meanings per part type, the one write path for status
 - `src/seed.ts` loads the placeholder airfield on first run
 - `src/screens/` Start, MapScreen (airfield), ZoneScreen (sheet, pins, list, bulk), PartCard, ReportScreen (the six Autodesk sections)
+- `src/screens/admin/` job setup: jobs, plan sheets (PDF rendered on device), zones, pay items, pins, publish
+- `src/lib/pdf.ts` pdf.js page rendering, `src/lib/jobio.ts` job export and import as one file
 - `src/lib/report.ts` and `src/lib/reportText.ts` turn the day's taps, flags, crew and photos into the six sections
 - `src/components/Signature.tsx` finger signature, `src/components/Photos.tsx` camera button and thumbnails
 - `src/ege/fonts.css` and `public/fonts/` self hosted Oswald, Roboto, IBM Plex Mono
@@ -33,7 +36,7 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 
 1. Placeholder airfield, zones, pins, five step taps, flags, list, bulk. Done.
 2. Daily report in the six Autodesk sections, photos, review and submit. Done.
-3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items.
+3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items. Done.
 4. Offline sync through a backend, two tablets.
 5. Billing rollup and billed lock.
 6. Copy for Autodesk. Done early, it's on the report screen.
