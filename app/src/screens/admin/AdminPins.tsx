@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, uid } from '../../db';
+import { db, uid, removeRow } from '../../db';
 import { toast } from '../../ege/ege';
 import PanZoom from '../../components/PanZoom';
 import { useSheetSrc } from '../../hooks/useSheetSrc';
@@ -87,7 +87,7 @@ export default function AdminPins({ jobId }: Props) {
     setTpl(t => ({ ...t, label: nextLabel(t.label) }));
   };
   const update = (patch: Partial<Part>) => sel && db.parts.update(sel, patch);
-  const remove = async () => { if (!sel) return; await db.parts.delete(sel); setSel(null); };
+  const remove = async () => { if (!sel) return; await removeRow('parts', sel, jobId); setSel(null); };
   const useAsTemplate = (p: Part) => { setTpl({ label: nextLabel(p.label), category: p.category, work: p.work, installPay: p.installPay, demoPay: p.demoPay, totalQty: p.totalQty }); setPlacing(true); setSel(null); };
 
   if (!zone) return (

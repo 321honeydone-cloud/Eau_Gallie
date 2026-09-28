@@ -16,6 +16,8 @@ export type BillingType = 'unit' | 'lumpsum' | 'allowance';
 
 export interface Job {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   name: string;
   customer: string;
   airport: string;
@@ -26,6 +28,8 @@ export interface Job {
 
 export interface Phase {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   name: string;
   order: number;
@@ -33,6 +37,8 @@ export interface Phase {
 
 export interface Sheet {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   name: string;      // E-108
   title: string;     // Taxiway A West Lighting Plan
@@ -48,6 +54,8 @@ export interface Pt { x: number; y: number } // percent of the sheet, 0 to 100
 
 export interface Zone {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   phaseId: string;
   name: string;
@@ -58,6 +66,8 @@ export interface Zone {
 
 export interface PayItem {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   itemNo: string;          // owner's item number
   subItemNo?: string;      // our subcontract number when the GC uses one
@@ -79,6 +89,8 @@ export interface PayLink {
 
 export interface Part {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   zoneId: string;
   label: string;           // fixture id off the plan
@@ -98,6 +110,8 @@ export interface Part {
 
 export interface StatusEvent {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   partId: string;
   ladder: Ladder;
@@ -124,6 +138,8 @@ export const FLAG_IMPACTS = [
 
 export interface Flag {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   partId?: string;
   zoneId?: string;
@@ -138,12 +154,16 @@ export interface Flag {
 
 export interface CrewMember {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   name: string;
   role: 'foreman' | 'internal' | 'sub' | 'temp';
 }
 
 export interface Equipment {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   name: string;
   unitNo?: string;
@@ -151,6 +171,8 @@ export interface Equipment {
 
 export interface Photo {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   reportDate: string;
   partId?: string;
@@ -169,7 +191,9 @@ export interface CrewBucket {
 }
 
 export interface DailyReport {
-  id: string;            // jobId + date
+  id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it            // jobId + date
   jobId: string;
   date: string;
   foremen: string[];
@@ -213,6 +237,8 @@ export interface RollupLine {
 
 export interface BillingRollup {
   id: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
   jobId: string;
   number: number;           // pay app number, 1, 2, 3
   dateFrom: string;
@@ -222,6 +248,15 @@ export interface BillingRollup {
   lines: RollupLine[];
   total: number;
   lumpBilled: Record<string, number>;   // payItemId to percent billed through this rollup
+}
+
+export interface Tombstone {
+  id: string;         // tbl:rowId
+  tbl: string;
+  rowId: string;
+  jobId: string;
+  updatedAt?: number;
+  _dirty?: number;      // 1 until this tablet has pushed it
 }
 
 export interface Setting {

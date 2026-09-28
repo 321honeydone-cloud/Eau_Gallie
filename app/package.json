@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "gen": "node scripts/gen-placeholder.mjs",
     "walk": "node scripts/walk.mjs",
-    "walk:admin": "node scripts/walk-admin.mjs"
+    "walk:admin": "node scripts/walk-admin.mjs",
+    "walk:sync": "node scripts/walk-sync.mjs",
+    "fake-supabase": "node scripts/fake-supabase.mjs"
   },
   "dependencies": {
     "dexie": "^4.4.6",

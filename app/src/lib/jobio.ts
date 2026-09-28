@@ -52,5 +52,6 @@ export async function deleteJob(jobId: string): Promise<void> {
   await db.transaction('rw', [db.jobs, db.phases, db.sheets, db.zones, db.payItems, db.parts, db.equipment, db.events, db.flags, db.photos, db.reports], async () => {
     for (const t of [db.phases, db.sheets, db.zones, db.payItems, db.parts, db.equipment, db.events, db.flags, db.photos, db.reports]) await t.where('jobId').equals(jobId).delete();
     await db.jobs.delete(jobId);
+    await db.tombstones.put({ id: `jobs:${jobId}`, tbl: 'jobs', rowId: jobId, jobId });
   });
 }

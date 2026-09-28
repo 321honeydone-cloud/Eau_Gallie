@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, uid } from '../db';
+import { db, uid, removeRow } from '../db';
 import { toast } from '../ege/ege';
 import type { Photo } from '../types';
 
@@ -52,7 +52,7 @@ export function PhotoStrip({ photos, canDelete }: StripProps) {
           <div className="ege-sheet-box">
             <img src={urls[big.id]} alt="" style={{ width: '100%', height: 'auto' }} />
             <div className="ege-row" style={{ justifyContent: 'flex-end' }}>
-              {canDelete && <button type="button" className="ege-btn" onClick={async () => { await db.photos.delete(big.id); setBig(null); toast('Photo deleted.'); }}>Delete</button>}
+              {canDelete && <button type="button" className="ege-btn" onClick={async () => { await removeRow('photos', big.id, big.jobId); setBig(null); toast('Photo deleted.'); }}>Delete</button>}
               <button type="button" className="ege-btn primary" onClick={() => setBig(null)}>Close</button>
             </div>
           </div>

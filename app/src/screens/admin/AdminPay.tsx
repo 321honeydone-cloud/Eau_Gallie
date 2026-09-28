@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, uid } from '../../db';
+import { db, uid, removeRow } from '../../db';
 import { toast } from '../../ege/ege';
 import type { BillingType, PayItem } from '../../types';
 
@@ -41,7 +41,7 @@ export default function AdminPay({ jobId }: Props) {
   const remove = async (id: string) => {
     const used = await db.parts.where('jobId').equals(jobId).filter(p => p.installPay.some(l => l.payItemId === id) || p.demoPay.some(l => l.payItemId === id)).count();
     if (used) { toast(`${used} pins bill this item. Change them first.`); return; }
-    await db.payItems.delete(id);
+    await removeRow('payItems', id, jobId);
   };
   const doPaste = async () => {
     const rows = parseRows(paste);

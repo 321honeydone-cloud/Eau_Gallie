@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, today } from './db';
+import { db, today, removeRow } from './db';
 import { seedIfEmpty } from './seed';
 import { useForeman, useJob, useJobId, useZones } from './hooks/useJob';
 import Header from './components/Header';
@@ -11,13 +11,16 @@ import ReportScreen from './screens/ReportScreen';
 import AdminScreen from './screens/admin/AdminScreen';
 import BillingScreen from './screens/BillingScreen';
 import { toast } from './ege/ege';
+import { startSync } from './lib/sync';
+import { SyncSheet } from './components/SyncPanel';
 
 type Route = { name: 'start' } | { name: 'map' } | { name: 'zone'; zoneId: string } | { name: 'report' } | { name: 'admin' } | { name: 'billing' };
 
 export default function App() {
   const [ready, setReady] = useState(false);
   const [route, setRoute] = useState<Route>({ name: 'map' });
-  useEffect(() => { seedIfEmpty().then(() => setReady(true)); }, []);
+  const [syncOpen, setSyncOpen] = useState(false);
+  useEffect(() => { let stop = () => {}; seedIfEmpty().then(() => { setReady(true); stop = startSync(); }); return () => stop(); }, []);
 
   const jobId = useJobId();
   const job = useJob(jobId);
@@ -39,7 +42,7 @@ export default function App() {
     await db.transaction('rw', db.events, db.parts, async () => {
       const patch = lastEvent.ladder === 'demo' ? { demoStep: lastEvent.fromStep } : { installStep: lastEvent.fromStep };
       await db.parts.update(lastEvent.partId, patch);
-      await db.events.delete(lastEvent.id);
+      await removeRow('events', lastEvent.id, lastEvent.jobId);
     });
     setUndoShown(null);
     toast('Undone.');
@@ -53,7 +56,8 @@ export default function App() {
 
   return (
     <>
-      <Header job={job} foreman={foreman} date={date} onChangeForeman={() => setRoute({ name: 'start' })} onHome={() => setRoute({ name: 'map' })} onSetup={() => setRoute({ name: 'admin' })} onBilling={() => setRoute({ name: 'billing' })} />
+      <Header job={job} foreman={foreman} date={date} onChangeForeman={() => setRoute({ name: 'start' })} onHome={() => setRoute({ name: 'map' })} onSetup={() => setRoute({ name: 'admin' })} onBilling={() => setRoute({ name: 'billing' })} onSync={() => setSyncOpen(true)} />
+      {syncOpen && <SyncSheet onClose={() => setSyncOpen(false)} />}
       {show.name === 'start' && <Start foreman={foreman} onDone={() => setRoute({ name: 'map' })} />}
       {show.name === 'map' && !job && <div className="screen"><div className="ege-panel"><h2 className="ege-h2">No job on this tablet</h2><p className="ege-intro">Open Setup to create one or import a job file.</p><button type="button" className="ege-btn primary" onClick={() => setRoute({ name: 'admin' })}>Setup</button></div></div>}
       {show.name === 'map' && job && <MapScreen job={job} date={date} onZone={id => setRoute({ name: 'zone', zoneId: id })} onReport={() => setRoute({ name: 'report' })} />}

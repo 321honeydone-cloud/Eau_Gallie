@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Job } from '../types';
+import { SyncPill } from './SyncPanel';
 
 interface Props {
   job?: Job;
@@ -9,9 +10,10 @@ interface Props {
   onHome: () => void;
   onSetup: () => void;
   onBilling: () => void;
+  onSync: () => void;
 }
 
-export default function Header({ job, foreman, date, onChangeForeman, onHome, onSetup, onBilling }: Props) {
+export default function Header({ job, foreman, date, onChangeForeman, onHome, onSetup, onBilling, onSync }: Props) {
   const [online, setOnline] = useState(navigator.onLine);
   useEffect(() => {
     const on = () => setOnline(true), off = () => setOnline(false);
@@ -27,6 +29,7 @@ export default function Header({ job, foreman, date, onChangeForeman, onHome, on
       </div>
       <div className="pills">
         <span className={'ege-pill' + (online ? '' : ' off')}>{online ? 'Online' : 'Offline, saving here'}</span>
+        <SyncPill onOpen={onSync} />
         <span className="ege-pill light">{nice}</span>
         <button type="button" className="ege-pill tap" onClick={onChangeForeman}>{foreman || 'Pick foreman'}</button>
         <button type="button" className="ege-pill tap light" onClick={onBilling} aria-label="Billing">Billing</button>

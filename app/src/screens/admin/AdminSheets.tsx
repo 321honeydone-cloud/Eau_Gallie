@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '../../db';
+import { db, removeRow } from '../../db';
 import { toast } from '../../ege/ege';
 import { imageToSheet, pdfToSheets } from '../../lib/pdf';
 import type { Sheet } from '../../types';
@@ -42,7 +42,7 @@ export default function AdminSheets({ jobId }: Props) {
     if (armed !== id) { setArmed(id); setTimeout(() => setArmed(a => (a === id ? null : a)), 3000); return; }
     const used = await db.zones.where('jobId').equals(jobId).filter(z => z.detailSheetId === id || z.overviewSheetId === id).count();
     if (used) { toast('A zone uses this sheet. Change the zone first.'); setArmed(null); return; }
-    await db.sheets.delete(id); setArmed(null);
+    await removeRow('sheets', id, jobId); setArmed(null);
   };
 
   return (

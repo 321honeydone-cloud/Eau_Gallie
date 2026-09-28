@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, uid } from '../../db';
+import { db, uid, removeRow } from '../../db';
 import { toast } from '../../ege/ege';
 import PanZoom from '../../components/PanZoom';
 import { useSheetSrc } from '../../hooks/useSheetSrc';
@@ -40,7 +40,7 @@ export default function AdminZones({ jobId }: Props) {
     if (!sel) return;
     const n = await db.parts.where('zoneId').equals(sel).count();
     if (n) { toast(`This zone has ${n} pins. Delete those first.`); return; }
-    await db.zones.delete(sel); setSel(null);
+    await removeRow('zones', sel, jobId); setSel(null);
   };
 
   if (!overview) return <div className="ege-banner">Pick an overview sheet on the Plan sheets step first.</div>;
