@@ -9,9 +9,10 @@ import MapScreen from './screens/MapScreen';
 import ZoneScreen from './screens/ZoneScreen';
 import ReportScreen from './screens/ReportScreen';
 import AdminScreen from './screens/admin/AdminScreen';
+import BillingScreen from './screens/BillingScreen';
 import { toast } from './ege/ege';
 
-type Route = { name: 'start' } | { name: 'map' } | { name: 'zone'; zoneId: string } | { name: 'report' } | { name: 'admin' };
+type Route = { name: 'start' } | { name: 'map' } | { name: 'zone'; zoneId: string } | { name: 'report' } | { name: 'admin' } | { name: 'billing' };
 
 export default function App() {
   const [ready, setReady] = useState(false);
@@ -46,17 +47,18 @@ export default function App() {
 
   if (!ready || foreman === undefined) return <div className="stub">Loading…</div>;
 
-  const needForeman = !foreman && route.name !== 'admin';
+  const needForeman = !foreman && route.name !== 'admin' && route.name !== 'billing';
   const show: Route = needForeman ? { name: 'start' } : route;
   const zone = show.name === 'zone' ? zones.find(z => z.id === show.zoneId) : undefined;
 
   return (
     <>
-      <Header job={job} foreman={foreman} date={date} onChangeForeman={() => setRoute({ name: 'start' })} onHome={() => setRoute({ name: 'map' })} onSetup={() => setRoute({ name: 'admin' })} />
+      <Header job={job} foreman={foreman} date={date} onChangeForeman={() => setRoute({ name: 'start' })} onHome={() => setRoute({ name: 'map' })} onSetup={() => setRoute({ name: 'admin' })} onBilling={() => setRoute({ name: 'billing' })} />
       {show.name === 'start' && <Start foreman={foreman} onDone={() => setRoute({ name: 'map' })} />}
       {show.name === 'map' && !job && <div className="screen"><div className="ege-panel"><h2 className="ege-h2">No job on this tablet</h2><p className="ege-intro">Open Setup to create one or import a job file.</p><button type="button" className="ege-btn primary" onClick={() => setRoute({ name: 'admin' })}>Setup</button></div></div>}
       {show.name === 'map' && job && <MapScreen job={job} date={date} onZone={id => setRoute({ name: 'zone', zoneId: id })} onReport={() => setRoute({ name: 'report' })} />}
       {show.name === 'zone' && zone && <ZoneScreen zone={zone} foreman={foreman} date={date} onBack={() => setRoute({ name: 'map' })} />}
+      {show.name === 'billing' && job && <BillingScreen job={job} foreman={foreman} onBack={() => setRoute({ name: 'map' })} />}
       {show.name === 'admin' && <AdminScreen onBack={() => setRoute({ name: 'map' })} />}
       {show.name === 'report' && job && <ReportScreen job={job} date={date} foreman={foreman} onBack={() => setRoute({ name: 'map' })} />}
       {undoShown && lastEvent && show.name !== 'report' && (

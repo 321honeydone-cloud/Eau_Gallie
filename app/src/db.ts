@@ -1,7 +1,7 @@
 import Dexie, { type EntityTable } from 'dexie';
 import type {
   Job, Phase, Sheet, Zone, PayItem, Part, StatusEvent, Flag,
-  CrewMember, Equipment, Photo, DailyReport, Setting,
+  CrewMember, Equipment, Photo, DailyReport, Setting, BillingRollup,
 } from './types';
 
 export class FieldDB extends Dexie {
@@ -18,6 +18,7 @@ export class FieldDB extends Dexie {
   photos!: EntityTable<Photo, 'id'>;
   reports!: EntityTable<DailyReport, 'id'>;
   settings!: EntityTable<Setting, 'key'>;
+  rollups!: EntityTable<BillingRollup, 'id'>;
 
   constructor() {
     super('eau-gallie-field');
@@ -35,6 +36,9 @@ export class FieldDB extends Dexie {
       photos: 'id, jobId, reportDate, partId, zoneId',
       reports: 'id, jobId, date',
       settings: 'key',
+    });
+    this.version(2).stores({
+      rollups: 'id, jobId, number',
     });
   }
 }

@@ -22,6 +22,7 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 - `src/seed.ts` loads the placeholder airfield on first run
 - `src/screens/` Start, MapScreen (airfield), ZoneScreen (sheet, pins, list, bulk), PartCard, ReportScreen (the six Autodesk sections)
 - `src/screens/admin/` job setup: jobs, plan sheets (PDF rendered on device), zones, pay items, pins, publish
+- `src/lib/billing.ts` charges off the event log, rollup preview, lock, CSV. `src/screens/BillingScreen.tsx` the office view
 - `src/lib/pdf.ts` pdf.js page rendering, `src/lib/jobio.ts` job export and import as one file
 - `src/lib/report.ts` and `src/lib/reportText.ts` turn the day's taps, flags, crew and photos into the six sections
 - `src/components/Signature.tsx` finger signature, `src/components/Photos.tsx` camera button and thumbnails
@@ -38,6 +39,6 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 2. Daily report in the six Autodesk sections, photos, review and submit. Done.
 3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items. Done.
 4. Offline sync through a backend, two tablets.
-5. Billing rollup and billed lock.
+5. Billing rollup and billed lock. Done.
 6. Copy for Autodesk. Done early, it's on the report screen.
 7. Autodesk API push.

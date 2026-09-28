@@ -195,6 +195,35 @@ export interface DailyReport {
   autodeskFormId?: string;
 }
 
+export interface RollupLine {
+  payItemId: string;
+  itemNo: string;
+  subItemNo?: string;
+  specRef: string;
+  description: string;
+  unit: string;
+  billingType: BillingType;
+  unitPrice: number;
+  bidQty: number;
+  qty: number;              // this rollup: units, LF, or percent points for lump sum
+  amount: number;
+  toDateQty: number;        // including this rollup
+  detail: string[];         // part labels or notes that make up qty
+}
+
+export interface BillingRollup {
+  id: string;
+  jobId: string;
+  number: number;           // pay app number, 1, 2, 3
+  dateFrom: string;
+  dateTo: string;
+  createdAt: number;
+  createdBy: string;
+  lines: RollupLine[];
+  total: number;
+  lumpBilled: Record<string, number>;   // payItemId to percent billed through this rollup
+}
+
 export interface Setting {
   key: string;
   value: string;

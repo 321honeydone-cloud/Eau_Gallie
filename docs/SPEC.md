@@ -183,7 +183,7 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 2. Daily report screen, photos, review and submit. DONE. Eight screens, one step at a time with Back and Next, big buttons. The six Autodesk sections build themselves from the taps, finger signature locks the report, Copy for Autodesk is already on it (that was build step 6, it came for free with the text builder).
 3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items. DONE. Setup button in the top bar, six steps. Plan set PDF renders on the device, nothing uploads anywhere. Pay items paste straight from Excel. Pins place with one tap each and the label number bumps itself. A job exports to a file and imports on another iPad until sync exists.
 4. Offline sync through Supabase, two tablets.
-5. Billing rollup and billed lock.
+5. Billing rollup and billed lock. DONE. Billing button in the top bar. Pick a window, see every pay item with this period qty, unit price, amount, and to date against bid. Lock it as a pay app and every tap in it is stamped so it never bills twice. Rollbacks after a lock show as credit lines. CSV download per pay app.
 6. Copy for Autodesk.
 7. Autodesk API push.
 8. Takeoff spreadsheet import (later).

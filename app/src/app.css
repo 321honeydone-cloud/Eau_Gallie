@@ -179,3 +179,12 @@ body.ege { padding-block: 0 0; overscroll-behavior: none; }
 .zone-rect.on { fill: rgba(236,28,45,.18); stroke: var(--ege-red); }
 .pin.ghost i { background: #fff; border-style: dashed; color: var(--ege-navy2); }
 .mode-tip { font-size: 15px; padding: 10px 14px; background: var(--ege-info-soft); border: 1px solid var(--ege-info-line); border-left: 4px solid var(--ege-red); }
+
+/* Billing */
+.billtable td, .billtable th { padding: 8px 6px; vertical-align: top; }
+.billtable .r { text-align: right; }
+.billtable .mono { font-family: var(--ege-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.billtable .detail { font-size: 12px; color: var(--ege-ink3); max-width: 320px; }
+.billtable tr.credit td { color: var(--ege-bad); }
+.billtable tfoot td { border-top: 2px solid var(--ege-navy); font-size: 16px; }
+.bigchips input[type=date] { min-height: 60px; font-size: 16px; border: 2px solid var(--ege-line); border-radius: 3px; padding: 6px 12px; font-family: var(--ege-mono); }
