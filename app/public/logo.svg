@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" width="360" height="120">
-  <rect x="4" y="4" width="352" height="112" rx="6" fill="#222C6A" stroke="#131A46" stroke-width="4"/>
-  <path d="M60 14 L44 58 L58 58 L46 104 L80 50 L64 50 L78 14 Z" fill="#fff"/>
-  <text x="100" y="58" font-family="Oswald, Arial Narrow, Arial" font-weight="700" font-size="40" fill="#fff" letter-spacing="1">EAU GALLIE</text>
-  <text x="102" y="92" font-family="Oswald, Arial Narrow, Arial" font-weight="500" font-size="22" fill="#fff" letter-spacing="7">ELECTRIC</text>
-  <text x="300" y="108" font-family="Arial" font-size="9" fill="#EC1C2D">TEMP MARK</text>
-</svg>

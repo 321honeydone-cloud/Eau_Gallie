@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['ege-ui.js', 'placeholder/*.svg', 'icons/*.png', 'icons/*.svg', 'logo.svg'],
+      includeAssets: ['ege-ui.js', 'placeholder/*.svg', 'icons/*.png', 'icons/*.svg', 'logo.png'],
       manifest: {
         name: 'Eau Gallie Electric Field',
         short_name: 'EGE Field',

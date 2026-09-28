@@ -24,7 +24,7 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 - `src/ege/` the Eau Gallie UI kit stylesheet. The kit's script is served from `public/ege-ui.js`
 - `scripts/gen-placeholder.mjs` draws the placeholder sheets and writes the matching parts
 - `public/placeholder/` the generated sheets
-- `public/logo.svg` temporary wordmark, swap for the real logo file
+- `public/logo.png` the Eau Gallie Electric logo, also used for the home screen icons
 
 ## Build steps (from the spec)
 

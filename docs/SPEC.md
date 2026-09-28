@@ -30,7 +30,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Signer | Whoever submits also signs. No separate superintendent review step. |
 | Phases | A phase is a group of zones. Each zone carries a phase. Map colors by phase, report can group by phase. The Autodesk schedule already breaks work down as Phase, then plan sheet (E108, E109), then activity. So a zone is a plan sheet. |
 | Device | iPad. Installable web app on Safari, added to the home screen. |
-| Look | The Eau Gallie UI kit Manny supplied. Light theme, so the daylight toggle is gone. Real logo file still needed, a temporary wordmark is in its place. |
+| Look | The Eau Gallie UI kit Manny supplied. Light theme, so the daylight toggle is gone. Real logo is in the header and on the home screen icon. |
 
 ## The status ladder, spelled out
 
@@ -192,7 +192,6 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 
 ## Open items
 
-- Real logo file. The kit's header wants an image. A temporary wordmark is in public/logo.svg until the PNG or SVG shows up.
 - Bid schedule sample is the owner's original for Pensacola and only 4 pages. The electrical L items (L-108 cable, L-110 duct, L-115 manholes, L-125 lights and signs) are probably on pages we don't have. Format is known, that's enough to build the import.
 
 
