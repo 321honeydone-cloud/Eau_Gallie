@@ -61,8 +61,9 @@ Foremen in the picker: Darrell Simpson, Carlos Leisse. More get added from the a
 3. Zone view. Plan sheet fills the screen, pins on every point part, colored by step. Toggle to the list for linear runs and for anyone who'd rather tap rows than pins.
 4. Tap a pin or a row. A card slides up. Five big step buttons, the current one lit. Footage field if linear. Camera button. Flag button. Note field. Tap the step, card closes, pin recolors. Two taps per part, that's the goal.
 5. Bulk mode. Long press a pin, drag over others, set them all to one step. For the day when the crew sets twenty cans in a row.
-6. Report tab. Crew (tap names), hours, equipment (tap from a job list), weather, delays, safety, visitors, notes. The zone sections build themselves from the day's events. Photos show up under the part or zone they were taken in.
-7. End of day. Review screen shows everything tapped today. Submit. Report locks for that foreman. Second foreman's submit merges into the same report.
+6. Report tab. Crew in three buckets with shift times, equipment (tap from a job list), weather, safety, visitors. Planned scope is prefilled from yesterday. Yard and Other for work with no pin. Executive comment. Everything else builds itself from the day's events and flags. Photos show up under the part or zone they were taken in.
+7. End of day. Review screen shows the report laid out in the six Autodesk sections. Submit. Second foreman's submit merges into the same report.
+8. Superintendent opens the submitted report, edits anything, signs. Copy for Autodesk or, later, push.
 
 Touch targets 56px minimum. Big fonts. Daylight theme is the default on the tablet, high contrast light so it reads at noon. Dark gold house theme is one tap away and is the default for the office and admin screens.
 
@@ -86,9 +87,35 @@ Same flow works for any airfield. Nothing about Eau Gallie is hardcoded.
 
 ## Autodesk Forms
 
-Phase 1 ships a copy path. Report view has a Copy for Autodesk button that puts the whole report on the clipboard as plain text laid out to match the form fields, plus a photo bundle download. Foreman pastes into the form.
+The real form is "Daily Report v2" in Autodesk Build. Sample export is in docs/reference/autodesk-daily-report-v2-sample.pdf. Six numbered sections plus a signature block. Here's what each one is and where the app gets it from.
 
-Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms API. App creates a form from the daily report template in the ACC project, fills the fields, submits. Photo attachment through that API needs to be verified before we promise it. If forms can't take photos through the API, photos go to the ACC Photos or Files API and the form gets links. Needs an APS app registered under the company Autodesk account and one time authorization by an ACC admin.
+| Form field | What goes in it | Where the app gets it |
+|---|---|---|
+| 1.1 Planned Scope of Work for Today | Work type, area, planned qty, crew assigned | Prefilled from yesterday's 1.5 Action Plan. Foreman edits. |
+| 1.2 Work Executed | Work type, area, installed qty, percent complete. Photos attach here. | Built from today's status events, grouped by zone. "Taxiway B2: 6 cans Set, 4 fixtures Complete, 320 LF conduit Set." Photos ride along. |
+| 1.3 Outstanding / Carryover Work | Pending work, reason, impact level | Parts that moved today but didn't reach Complete, plus every open flag. |
+| 1.4 Delays and Issues | Delay type, responsible party, schedule impact | Straight from flags. Each flag carries a responsible party and a schedule impact (see below). |
+| 1.5 Action Plan and Projection | Recovery needed, action type, expected timeline | Carryover list plus whatever the foreman adds. Becomes tomorrow's 1.1. |
+| 1.6 Crew and Production Summary | Internal, subcontractor, temporary personnel. Shift times, lunch. General Status checklist. Executive Comment. | Crew picker with three buckets and shift times. General Status builds itself from the day's events and flags. Executive Comment is the one paragraph the foreman writes. |
+| Signature | Superintendent reviews the foreman's report, revises if needed, signs. | Review step in the app. Foreman submits, superintendent opens, edits, signs, then it goes to Autodesk. |
+
+Flag fields, lifted from 1.4 so they map straight across:
+
+- Responsible party: Internal, GC, Owner, Sub, Vendor, Equipment condition, Work area availability, Weather.
+- Schedule impact: No Impact, Minor (under 1 day), Moderate (1 to 3 days), Major (3 plus days).
+
+Crew fields, lifted from 1.6:
+
+- Three buckets: Internal, Subcontractor, Temporary. Names per bucket. Shift start, shift end, lunch minutes per bucket.
+- Report prep time for the foreman writing it.
+
+Things the sample report tracks that aren't parts on a drawing: vehicle inspections, prefab work in the yard (JCP assemblies, 2 can and 3 can configs), coordination with other contractors (asphalt, utility services, core drilling sub). The app needs a Yard and Other section per day for work that has no pin. Free text with an optional quantity.
+
+The sample also confirms the install sequence the crew actually runs: Core Drilling, Can Leveling, Concrete at the Base, Transformer and Light. That lines up with Rough in, Set, Set, Wired then Complete. Good.
+
+Phase 1 ships a copy path. Review screen has a Copy for Autodesk button that puts each section on the clipboard one at a time in the order above, so the superintendent pastes 1.1 through 1.6 into the form without retyping. Photos download as a bundle for the 1.2 attachments.
+
+Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms API. App creates a Daily Report v2 form in the ACC project, fills the six sections, submits. Photo attachment through that API needs to be verified before we promise it. If forms can't take photos through the API, photos go to the ACC Photos or Files API and the form gets links. Needs an APS app registered under the company Autodesk account and one time authorization by an ACC admin.
 
 ## Data model
 
@@ -96,10 +123,11 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 - PayItem: job, item no, description, unit (EA or LF), unit price, bid qty.
 - Sheet: job, name, page number, image, width, height.
 - Zone: job, name, overview sheet, shape (points in percent coords), detail sheet.
-- Part: job, zone, pay item, label, kind (point or linear), pin x and y in percent coords (optional for linear), total qty, current step, flag, flag reason.
+- Part: job, zone, pay item, label, kind (point or linear), pin x and y in percent coords (optional for linear), total qty, current step.
+- Flag: part (or zone, or none for yard work), reason, responsible party, schedule impact, opened by, opened at, closed at, note.
 - StatusEvent: part, report date, foreman, from step, to step, qty done (linear), note, created at, billed in (rollup id or null).
 - Photo: job, report date, part or zone, foreman, file, caption, created at.
-- DailyReport: job, date, foremen, crew, hours, equipment, weather, delays, safety, visitors, notes, submitted by, autodesk form id.
+- DailyReport: job, date, foremen, crew (three buckets with shift and lunch), equipment, weather, safety, visitors, planned scope, action plan, yard and other work, executive comment, submitted by, reviewed by, signed at, autodesk form id.
 - BillingRollup: job, date from, date to, created at, lines (pay item, qty, unit price, total).
 
 ## Tech
@@ -124,7 +152,9 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 
 ## Open items
 
-- Autodesk form fields. Need a screenshot or export of the actual daily report form so the copy path lines up with it field for field.
+- Superintendent. Who signs? Name goes in the picker with a superintendent role so the sign step knows who's allowed.
+- Phases. The sample talks about Phase 4 and Phase 5. If phases are how the job is split, zones should carry a phase so the report can group by it.
+- Narrative. The sample report is written out in full sentences. App can produce plain structured text or draft prose from the taps. Decide which.
 - Bid schedule format. A sample of a real one, even an old job, so the import matches what the office already has.
 - Equipment list. What's normally on an airfield job for this crew (trencher, directional bore, core drill, bucket truck, and so on).
 
