@@ -8,7 +8,7 @@ import type { Sheet } from '../../types';
 interface Props { jobId: string }
 
 function Thumb({ sheet }: { sheet: Sheet }) {
-  const [url, setUrl] = useState(sheet.src ?? '');
+  const [url, setUrl] = useState(sheet.src ? (sheet.src.startsWith('/') ? import.meta.env.BASE_URL + sheet.src.slice(1) : sheet.src) : '');
   useEffect(() => { if (sheet.blob) { const u = URL.createObjectURL(sheet.blob); setUrl(u); return () => URL.revokeObjectURL(u); } }, [sheet.blob]);
   return <img src={url} alt="" />;
 }

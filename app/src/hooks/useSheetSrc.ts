@@ -7,7 +7,9 @@ export function useSheetSrc(sheet?: Sheet): string {
   useEffect(() => {
     if (!sheet) { setUrl(''); return; }
     if (sheet.blob) { const u = URL.createObjectURL(sheet.blob); setUrl(u); return () => URL.revokeObjectURL(u); }
-    setUrl(sheet.src ?? '');
+    // bundled placeholder sheets are stored as /placeholder/x.svg, resolve against wherever the app is served
+    const src = sheet.src ?? '';
+    setUrl(src.startsWith('/') ? import.meta.env.BASE_URL + src.slice(1) : src);
   }, [sheet?.id, sheet?.blob, sheet?.src]); // eslint-disable-line react-hooks/exhaustive-deps
   return url;
 }

@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/ibm-plex-mono-400.woff2) format('woff2');
+  src: url(./fonts/ibm-plex-mono-400.woff2) format('woff2');
 }
 /* IBM Plex Mono 500 */
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/fonts/ibm-plex-mono-500.woff2) format('woff2');
+  src: url(./fonts/ibm-plex-mono-500.woff2) format('woff2');
 }
 /* Oswald 500 */
 @font-face {
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/fonts/oswald-500.woff2) format('woff2');
+  src: url(./fonts/oswald-500.woff2) format('woff2');
 }
 /* Oswald 600 */
 @font-face {
@@ -29,7 +29,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/fonts/oswald-600.woff2) format('woff2');
+  src: url(./fonts/oswald-600.woff2) format('woff2');
 }
 /* Oswald 700 */
 @font-face {
@@ -37,7 +37,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/oswald-700.woff2) format('woff2');
+  src: url(./fonts/oswald-700.woff2) format('woff2');
 }
 /* Roboto 400 */
 @font-face {
@@ -46,7 +46,7 @@
   font-weight: 400;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/fonts/roboto-400.woff2) format('woff2');
+  src: url(./fonts/roboto-400.woff2) format('woff2');
 }
 /* Roboto 500 */
 @font-face {
@@ -55,7 +55,7 @@
   font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/fonts/roboto-500.woff2) format('woff2');
+  src: url(./fonts/roboto-500.woff2) format('woff2');
 }
 /* Roboto 700 */
 @font-face {
@@ -64,5 +64,5 @@
   font-weight: 700;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/fonts/roboto-700.woff2) format('woff2');
+  src: url(./fonts/roboto-700.woff2) format('woff2');
 }

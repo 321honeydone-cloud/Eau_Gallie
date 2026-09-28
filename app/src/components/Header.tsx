@@ -24,7 +24,7 @@ export default function Header({ job, foreman, date, onChangeForeman, onHome, on
   return (
     <header className="ege-header app-header">
       <div className="ege-brand wordmark" onClick={onHome} role="button" tabIndex={0}>
-        <img src="/logo.png" alt="Eau Gallie Electric" />
+        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Eau Gallie Electric" />
         <h1>Field Report<small>{job?.airport ?? 'No job loaded'}</small></h1>
       </div>
       <div className="pills">
