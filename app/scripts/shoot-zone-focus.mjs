@@ -1,0 +1,17 @@
+import { chromium } from 'playwright';
+const OUT = process.argv[2] || '/tmp/shots'; const BASE = process.env.BASE_URL || 'http://localhost:4173';
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const page = await (await browser.newContext({ viewport: { width: 1180, height: 820 }, hasTouch: true })).newPage();
+const errors = []; page.on('pageerror', e => errors.push(String(e)));
+await page.goto(BASE + '/'); await page.waitForSelector('.choice');
+await page.getByRole('button', { name: /Darrell/ }).click();
+await page.waitForSelector('.zone-poly'); await page.locator('.zone-poly').first().click();
+await page.waitForSelector('.listtab'); await page.waitForTimeout(1200);
+await page.getByRole('button', { name: 'Hide list' }).click(); await page.waitForTimeout(500);
+await page.screenshot({ path: `${OUT}/45-list-hidden.png` });
+await page.getByRole('button', { name: 'Hide bars' }).click(); await page.waitForTimeout(500);
+await page.screenshot({ path: `${OUT}/46-bars-hidden.png` });
+await page.getByRole('button', { name: 'Show bars' }).click(); await page.getByRole('button', { name: 'Show list' }).click(); await page.waitForTimeout(500);
+await page.screenshot({ path: `${OUT}/47-list-back.png` });
+console.log(JSON.stringify({ errors }));
+await browser.close();

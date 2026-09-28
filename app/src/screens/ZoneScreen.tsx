@@ -25,7 +25,11 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   const popId = lastEvent && Date.now() - lastEvent.createdAt < 1500 ? lastEvent.partId : null;
   const parts = useZoneParts(zone.id);
   const flags = useOpenFlags(zone.jobId);
+  const listPref = useLiveQuery(() => db.settings.get('zoneList').then(s => s?.value), []);
   const [mode, setMode] = useState<Mode>(() => (window.innerWidth < 900 ? 'pins' : 'both'));
+  const [focus, setFocus] = useState(false);
+  useEffect(() => { if (listPref === 'closed') setMode('pins'); else if (listPref === 'open' && window.innerWidth >= 900) setMode('both'); }, [listPref]);
+  const toggleList = () => { const next = mode === 'pins' ? (window.innerWidth < 900 ? 'list' : 'both') : 'pins'; setMode(next); void setSetting('zoneList', next === 'pins' ? 'closed' : 'open'); };
   const [openId, setOpenIdRaw] = useState<string | null>(null);
   const openedAt = useRef(0);
   const setOpenId = (id: string | null) => { if (id) openedAt.current = Date.now(); setOpenIdRaw(id); };
@@ -74,7 +78,15 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   });
 
   return (
-    <div className="screen wide">
+    <div className={'screen wide zone-screen' + (focus ? ' focus' : '')}>
+      {focus && (
+        <div className="floatbar">
+          <button type="button" className="ege-btn" onClick={onBack}>&larr; Airfield</button>
+          <span className="ege-tag">{zone.name} · {pct}%</span>
+          <span className="spacer" />
+          <button type="button" className="ege-btn" onClick={() => setFocus(false)}>Show bars</button>
+        </div>
+      )}
       <div className="toolbar">
         <button type="button" className="ege-btn" onClick={onBack}>&larr; Airfield</button>
         <h2 className="ege-h2" style={{ fontSize: 22, paddingBottom: 4 }}>{zone.name}</h2>
@@ -87,6 +99,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
         </div>
         <button type="button" className={'ege-btn' + (bulk ? ' accent' : '')} onClick={() => { setBulk(b => !b); setSel(new Set()); }}>{bulk ? 'Cancel select' : 'Select many'}</button>
         <button type="button" className="ege-btn" onClick={() => setSetting('sheetLook', dark ? 'day' : 'night')}>{dark ? 'Daylight' : 'Night'}</button>
+        <button type="button" className="ege-btn" onClick={() => setFocus(true)} title="Hide the bars, sheet only">Hide bars</button>
       </div>
 
       {bulk && (
@@ -106,9 +119,15 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
 
       <div className={'zone-layout' + (mode === 'list' ? ' list-only' : mode === 'pins' ? ' pins-only' : '')}>
         {mode !== 'list' && sheet && (
-          <PanZoom dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
-            {pins}
-          </PanZoom>
+          <div className="sheetwrap">
+            <PanZoom dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
+              {pins}
+            </PanZoom>
+            <button type="button" className={'listtab' + (mode === 'pins' ? ' closed' : '')} onClick={toggleList} aria-label={mode === 'pins' ? 'Show list' : 'Hide list'}>
+              <span className="chev">{mode === 'pins' ? '‹' : '›'}</span>
+              <span className="lbl">{mode === 'pins' ? `List · ${parts.filter(p => currentStep(p) < 4).length} open` : 'Hide'}</span>
+            </button>
+          </div>
         )}
         {mode !== 'pins' && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, minHeight: 0 }}>

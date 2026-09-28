@@ -198,10 +198,14 @@ function VectorLayer({ sheet, view, stageW, aspect, box }: { sheet: Sheet; view:
       try {
         const page = await getSheetPage(sheet);
         task.current?.cancel();
-        const c = canvas.current; if (!c) return;
-        const rt = renderRegion(page, c, region, sw * dpr);
+        // draw offscreen, then swap, so the sheet never shows a half painted canvas
+        const off = document.createElement('canvas');
+        const rt = renderRegion(page, off, region, sw * dpr);
         task.current = rt;
         await rt.promise;
+        const c = canvas.current; if (!c) return;
+        c.width = off.width; c.height = off.height;
+        c.getContext('2d')!.drawImage(off, 0, 0);
         setPlace(region);
       } catch (e) { if ((e as Error)?.name !== 'RenderingCancelledException') console.warn('vector layer', e); }
     }, 160);

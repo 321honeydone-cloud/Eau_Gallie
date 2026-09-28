@@ -241,3 +241,17 @@ body.ege { padding-block: 0 0; overscroll-behavior: none; }
 }
 .viewer .stage canvas.vector { position: absolute; pointer-events: none; }
 .viewer.dark .stage canvas.vector { filter: invert(1) hue-rotate(180deg) brightness(.92) contrast(1.05); }
+
+/* Zone screen: the list slides away behind a grab tab, and Hide bars clears the top of the screen */
+.sheetwrap { position: relative; display: flex; min-height: 0; }
+.sheetwrap .viewer { flex: 1; }
+.listtab { position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 4; display: flex; flex-direction: column; align-items: center; gap: 4px; min-height: 96px; width: 44px; padding: 10px 0; border: 1px solid var(--ege-line); border-right: none; border-radius: 6px 0 0 6px; background: rgba(255,255,255,.92); color: var(--ege-navy); box-shadow: -2px 0 8px rgba(19,26,70,.15); transition: background .15s ease; }
+.viewer.dark ~ .listtab, .listtab.closed { background: rgba(21,27,56,.92); color: #fff; border-color: #2A3260; }
+.listtab .chev { font-size: 26px; line-height: 1; font-weight: 700; }
+.listtab .lbl { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--ege-display); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.zone-layout { transition: grid-template-columns .28s cubic-bezier(.2,.7,.2,1); }
+.zone-screen.focus .toolbar, .zone-screen.focus .legend, .zone-screen.focus .ege-tip { display: none; }
+.zone-screen.focus { padding-block: 0; }
+.zone-screen.focus .viewer { min-height: calc(100dvh - 92px); }
+.floatbar { display: flex; gap: 8px; align-items: center; padding: 6px 0; }
+.floatbar .ege-btn { min-height: 44px; }
