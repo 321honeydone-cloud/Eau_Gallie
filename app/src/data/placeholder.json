@@ -1,0 +1,2718 @@
+{
+ "job": {
+  "id": "job_placeholder",
+  "name": "Placeholder Field Lighting Rehab",
+  "customer": "Placeholder GC",
+  "airport": "Placeholder Field",
+  "contractNo": "PLACEHOLDER-001",
+  "billingList": "owner",
+  "placeholder": true
+ },
+ "phases": [
+  {
+   "id": "p1",
+   "jobId": "job_placeholder",
+   "name": "Phase 1, Taxiway A",
+   "order": 1
+  },
+  {
+   "id": "p2",
+   "jobId": "job_placeholder",
+   "name": "Phase 2, Runway and Apron",
+   "order": 2
+  }
+ ],
+ "sheets": [
+  {
+   "id": "sh_e101",
+   "jobId": "job_placeholder",
+   "name": "E-101",
+   "title": "Airfield Lighting Overall Plan",
+   "src": "/placeholder/e101.svg",
+   "width": 1600,
+   "height": 1000
+  },
+  {
+   "id": "sh_e108",
+   "jobId": "job_placeholder",
+   "name": "E-108",
+   "title": "Taxiway A West Lighting Plan",
+   "src": "/placeholder/e108.svg",
+   "width": 1600,
+   "height": 1000
+  },
+  {
+   "id": "sh_e109",
+   "jobId": "job_placeholder",
+   "name": "E-109",
+   "title": "Taxiway A East Lighting Plan",
+   "src": "/placeholder/e109.svg",
+   "width": 1600,
+   "height": 1000
+  },
+  {
+   "id": "sh_e110",
+   "jobId": "job_placeholder",
+   "name": "E-110",
+   "title": "Runway 8-26 Lighting Plan",
+   "src": "/placeholder/e110.svg",
+   "width": 1600,
+   "height": 1000
+  },
+  {
+   "id": "sh_e111",
+   "jobId": "job_placeholder",
+   "name": "E-111",
+   "title": "Apron and Vault Plan",
+   "src": "/placeholder/e111.svg",
+   "width": 1600,
+   "height": 1000
+  }
+ ],
+ "zones": [
+  {
+   "id": "z_e108",
+   "jobId": "job_placeholder",
+   "phaseId": "p1",
+   "name": "E-108 Taxiway A West",
+   "overviewSheetId": "sh_e101",
+   "shape": [
+    {
+     "x": 11.25,
+     "y": 30
+    },
+    {
+     "x": 49.38,
+     "y": 30
+    },
+    {
+     "x": 49.38,
+     "y": 42
+    },
+    {
+     "x": 11.25,
+     "y": 42
+    }
+   ],
+   "detailSheetId": "sh_e108"
+  },
+  {
+   "id": "z_e109",
+   "jobId": "job_placeholder",
+   "phaseId": "p1",
+   "name": "E-109 Taxiway A East",
+   "overviewSheetId": "sh_e101",
+   "shape": [
+    {
+     "x": 50.63,
+     "y": 30
+    },
+    {
+     "x": 88.75,
+     "y": 30
+    },
+    {
+     "x": 88.75,
+     "y": 42
+    },
+    {
+     "x": 50.63,
+     "y": 42
+    }
+   ],
+   "detailSheetId": "sh_e109"
+  },
+  {
+   "id": "z_e110",
+   "jobId": "job_placeholder",
+   "phaseId": "p2",
+   "name": "E-110 Runway 8-26",
+   "overviewSheetId": "sh_e101",
+   "shape": [
+    {
+     "x": 6.25,
+     "y": 50
+    },
+    {
+     "x": 93.75,
+     "y": 50
+    },
+    {
+     "x": 93.75,
+     "y": 62
+    },
+    {
+     "x": 6.25,
+     "y": 62
+    }
+   ],
+   "detailSheetId": "sh_e110"
+  },
+  {
+   "id": "z_e111",
+   "jobId": "job_placeholder",
+   "phaseId": "p2",
+   "name": "E-111 Apron and Vault",
+   "overviewSheetId": "sh_e101",
+   "shape": [
+    {
+     "x": 33.75,
+     "y": 10
+    },
+    {
+     "x": 76.25,
+     "y": 10
+    },
+    {
+     "x": 76.25,
+     "y": 31
+    },
+    {
+     "x": 33.75,
+     "y": 31
+    }
+   ],
+   "detailSheetId": "sh_e111"
+  }
+ ],
+ "payItems": [
+  {
+   "id": "pi_demo",
+   "itemNo": "23",
+   "specRef": "SP-105",
+   "description": "Electrical Demolition",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 350,
+   "bidQty": 16,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_twl",
+   "itemNo": "30",
+   "specRef": "L-125-5.1",
+   "description": "Taxiway Edge Light, L-861T, LED",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 1450,
+   "bidQty": 40,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_rwl",
+   "itemNo": "31",
+   "specRef": "L-125-5.2",
+   "description": "Runway Edge Light, L-862, LED",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 1900,
+   "bidQty": 28,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_thr",
+   "itemNo": "32",
+   "specRef": "L-125-5.3",
+   "description": "Threshold Light, L-862E, LED",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 2100,
+   "bidQty": 8,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_sign",
+   "itemNo": "33",
+   "specRef": "L-125-5.4",
+   "description": "Guidance Sign, L-858, Size 2",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 6800,
+   "bidQty": 6,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_can",
+   "itemNo": "34",
+   "specRef": "L-867",
+   "description": "Base Can with Isolation Transformer",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 900,
+   "bidQty": 76,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_cond",
+   "itemNo": "35",
+   "specRef": "L-110-5.1",
+   "description": "2 in. Conduit, Direct Earth",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 14,
+   "bidQty": 4200,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_duct",
+   "itemNo": "36",
+   "specRef": "L-110-5.2",
+   "description": "Duct Bank, 4 Way, Concrete Encased",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 85,
+   "bidQty": 300,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_cable",
+   "itemNo": "37",
+   "specRef": "L-108-5.1",
+   "description": "1/C #8 5kV L-824 Cable",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 4.5,
+   "bidQty": 9000,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_hh",
+   "itemNo": "38",
+   "specRef": "L-115-5.1",
+   "description": "Handhole",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 2400,
+   "bidQty": 5,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_mh",
+   "itemNo": "39",
+   "specRef": "L-115-5.2",
+   "description": "Electrical Manhole",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 9500,
+   "bidQty": 2,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_ccr",
+   "itemNo": "40",
+   "specRef": "L-109-5.1",
+   "description": "Constant Current Regulator, 10kW",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 18000,
+   "bidQty": 1,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_pole",
+   "itemNo": "41",
+   "specRef": "L-125-5.5",
+   "description": "Apron Floodlight Pole with Fixtures",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 12500,
+   "bidQty": 4,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_temp",
+   "itemNo": "22",
+   "specRef": "SP-104",
+   "description": "Temporary Power and Temporary Airfield Lighting",
+   "unit": "LS",
+   "billingType": "lumpsum",
+   "unitPrice": 45000,
+   "bidQty": 1,
+   "percentComplete": 0,
+   "jobId": "job_placeholder"
+  },
+  {
+   "id": "pi_fc",
+   "itemNo": "25",
+   "specRef": "SP-111-3",
+   "description": "FAA Flight Check of Runway 8-26 Lighting",
+   "unit": "AL",
+   "billingType": "allowance",
+   "unitPrice": 15000,
+   "bidQty": 1,
+   "jobId": "job_placeholder"
+  }
+ ],
+ "parts": [
+  {
+   "id": "pt_001",
+   "jobId": "job_placeholder",
+   "work": "re",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [
+    {
+     "payItemId": "pi_demo",
+     "billAtStep": 4
+    }
+   ],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N01 (RE)",
+   "category": "fixture",
+   "x": 15.39,
+   "y": 38.98
+  },
+  {
+   "id": "pt_002",
+   "jobId": "job_placeholder",
+   "work": "re",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [
+    {
+     "payItemId": "pi_demo",
+     "billAtStep": 4
+    }
+   ],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S01 (RE)",
+   "category": "fixture",
+   "x": 15.39,
+   "y": 52.02
+  },
+  {
+   "id": "pt_003",
+   "jobId": "job_placeholder",
+   "work": "re",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [
+    {
+     "payItemId": "pi_demo",
+     "billAtStep": 4
+    }
+   ],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N02 (RE)",
+   "category": "fixture",
+   "x": 23.53,
+   "y": 38.98
+  },
+  {
+   "id": "pt_004",
+   "jobId": "job_placeholder",
+   "work": "re",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [
+    {
+     "payItemId": "pi_demo",
+     "billAtStep": 4
+    }
+   ],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S02 (RE)",
+   "category": "fixture",
+   "x": 23.53,
+   "y": 52.02
+  },
+  {
+   "id": "pt_005",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N03",
+   "category": "fixture",
+   "x": 31.68,
+   "y": 38.98
+  },
+  {
+   "id": "pt_006",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S03",
+   "category": "fixture",
+   "x": 31.68,
+   "y": 52.02
+  },
+  {
+   "id": "pt_007",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N04",
+   "category": "fixture",
+   "x": 39.82,
+   "y": 38.98
+  },
+  {
+   "id": "pt_008",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S04",
+   "category": "fixture",
+   "x": 39.82,
+   "y": 52.02
+  },
+  {
+   "id": "pt_009",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N05",
+   "category": "fixture",
+   "x": 47.96,
+   "y": 38.98
+  },
+  {
+   "id": "pt_010",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S05",
+   "category": "fixture",
+   "x": 47.96,
+   "y": 52.02
+  },
+  {
+   "id": "pt_011",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N06",
+   "category": "fixture",
+   "x": 56.11,
+   "y": 38.98
+  },
+  {
+   "id": "pt_012",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S06",
+   "category": "fixture",
+   "x": 56.11,
+   "y": 52.02
+  },
+  {
+   "id": "pt_013",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N07",
+   "category": "fixture",
+   "x": 64.25,
+   "y": 38.98
+  },
+  {
+   "id": "pt_014",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S07",
+   "category": "fixture",
+   "x": 64.25,
+   "y": 52.02
+  },
+  {
+   "id": "pt_015",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N08",
+   "category": "fixture",
+   "x": 72.4,
+   "y": 38.98
+  },
+  {
+   "id": "pt_016",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S08",
+   "category": "fixture",
+   "x": 72.4,
+   "y": 52.02
+  },
+  {
+   "id": "pt_017",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N09",
+   "category": "fixture",
+   "x": 80.54,
+   "y": 38.98
+  },
+  {
+   "id": "pt_018",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S09",
+   "category": "fixture",
+   "x": 80.54,
+   "y": 52.02
+  },
+  {
+   "id": "pt_019",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-N10",
+   "category": "fixture",
+   "x": 88.69,
+   "y": 38.98
+  },
+  {
+   "id": "pt_020",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "TWA-S10",
+   "category": "fixture",
+   "x": 88.69,
+   "y": 52.02
+  },
+  {
+   "id": "pt_021",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N01",
+   "category": "fixture",
+   "x": 12.67,
+   "y": 38.98
+  },
+  {
+   "id": "pt_022",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S01",
+   "category": "fixture",
+   "x": 12.67,
+   "y": 52.02
+  },
+  {
+   "id": "pt_023",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N02",
+   "category": "fixture",
+   "x": 20.82,
+   "y": 38.98
+  },
+  {
+   "id": "pt_024",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S02",
+   "category": "fixture",
+   "x": 20.82,
+   "y": 52.02
+  },
+  {
+   "id": "pt_025",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N03",
+   "category": "fixture",
+   "x": 28.96,
+   "y": 38.98
+  },
+  {
+   "id": "pt_026",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S03",
+   "category": "fixture",
+   "x": 28.96,
+   "y": 52.02
+  },
+  {
+   "id": "pt_027",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N04",
+   "category": "fixture",
+   "x": 37.1,
+   "y": 38.98
+  },
+  {
+   "id": "pt_028",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S04",
+   "category": "fixture",
+   "x": 37.1,
+   "y": 52.02
+  },
+  {
+   "id": "pt_029",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N05",
+   "category": "fixture",
+   "x": 45.25,
+   "y": 38.98
+  },
+  {
+   "id": "pt_030",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S05",
+   "category": "fixture",
+   "x": 45.25,
+   "y": 52.02
+  },
+  {
+   "id": "pt_031",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N06",
+   "category": "fixture",
+   "x": 53.39,
+   "y": 38.98
+  },
+  {
+   "id": "pt_032",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S06",
+   "category": "fixture",
+   "x": 53.39,
+   "y": 52.02
+  },
+  {
+   "id": "pt_033",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N07",
+   "category": "fixture",
+   "x": 61.54,
+   "y": 38.98
+  },
+  {
+   "id": "pt_034",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S07",
+   "category": "fixture",
+   "x": 61.54,
+   "y": 52.02
+  },
+  {
+   "id": "pt_035",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N08",
+   "category": "fixture",
+   "x": 69.68,
+   "y": 38.98
+  },
+  {
+   "id": "pt_036",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S08",
+   "category": "fixture",
+   "x": 69.68,
+   "y": 52.02
+  },
+  {
+   "id": "pt_037",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N09",
+   "category": "fixture",
+   "x": 77.83,
+   "y": 38.98
+  },
+  {
+   "id": "pt_038",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S09",
+   "category": "fixture",
+   "x": 77.83,
+   "y": 52.02
+  },
+  {
+   "id": "pt_039",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-N10",
+   "category": "fixture",
+   "x": 85.97,
+   "y": 38.98
+  },
+  {
+   "id": "pt_040",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_twl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "TWA-S10",
+   "category": "fixture",
+   "x": 85.97,
+   "y": 52.02
+  },
+  {
+   "id": "pt_041",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_sign",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "SIGN B1-1",
+   "category": "sign",
+   "x": 25.16,
+   "y": 34.21
+  },
+  {
+   "id": "pt_042",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_sign",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "SIGN B1-2",
+   "category": "sign",
+   "x": 32.76,
+   "y": 56.79
+  },
+  {
+   "id": "pt_043",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_sign",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "SIGN B2-1",
+   "category": "sign",
+   "x": 3.44,
+   "y": 34.21
+  },
+  {
+   "id": "pt_044",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_sign",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "SIGN B2-2",
+   "category": "sign",
+   "x": 11.04,
+   "y": 56.79
+  },
+  {
+   "id": "pt_045",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_sign",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "SIGN B3-1",
+   "category": "sign",
+   "x": 67.24,
+   "y": 34.21
+  },
+  {
+   "id": "pt_046",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_sign",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "SIGN B3-2",
+   "category": "sign",
+   "x": 74.84,
+   "y": 56.79
+  },
+  {
+   "id": "pt_047",
+   "jobId": "job_placeholder",
+   "work": "demo",
+   "kind": "point",
+   "installPay": [],
+   "demoPay": [
+    {
+     "payItemId": "pi_demo",
+     "billAtStep": 4
+    }
+   ],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "EX SIGN 1",
+   "category": "sign",
+   "x": 20.82,
+   "y": 28.56
+  },
+  {
+   "id": "pt_048",
+   "jobId": "job_placeholder",
+   "work": "demo",
+   "kind": "point",
+   "installPay": [],
+   "demoPay": [
+    {
+     "payItemId": "pi_demo",
+     "billAtStep": 4
+    }
+   ],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "EX SIGN 2",
+   "category": "sign",
+   "x": 41.18,
+   "y": 28.56
+  },
+  {
+   "id": "pt_049",
+   "jobId": "job_placeholder",
+   "work": "demo",
+   "kind": "point",
+   "installPay": [],
+   "demoPay": [
+    {
+     "payItemId": "pi_demo",
+     "billAtStep": 4
+    }
+   ],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "EX SIGN 3",
+   "category": "sign",
+   "x": 61.54,
+   "y": 28.56
+  },
+  {
+   "id": "pt_050",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_hh",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "HH-1",
+   "category": "handhole",
+   "x": 28.96,
+   "y": 58.97
+  },
+  {
+   "id": "pt_051",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_hh",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "HH-2",
+   "category": "handhole",
+   "x": 71.04,
+   "y": 58.97
+  },
+  {
+   "id": "pt_052",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "linear",
+   "installPay": [
+    {
+     "payItemId": "pi_cond",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "Conduit run TWA West, south edge",
+   "category": "conduit",
+   "totalQty": 590,
+   "x": 51.36,
+   "y": 62.87
+  },
+  {
+   "id": "pt_053",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "linear",
+   "installPay": [
+    {
+     "payItemId": "pi_cond",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "Conduit run TWA East, south edge",
+   "category": "conduit",
+   "totalQty": 590,
+   "x": 48.64,
+   "y": 62.87
+  },
+  {
+   "id": "pt_054",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "linear",
+   "installPay": [
+    {
+     "payItemId": "pi_cable",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e108",
+   "label": "Cable, TWA West loop",
+   "category": "cable",
+   "totalQty": 1300
+  },
+  {
+   "id": "pt_055",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "linear",
+   "installPay": [
+    {
+     "payItemId": "pi_cable",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e109",
+   "label": "Cable, TWA East loop",
+   "category": "cable",
+   "totalQty": 1300
+  },
+  {
+   "id": "pt_056",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N01",
+   "category": "fixture",
+   "x": 14.51,
+   "y": 40.86
+  },
+  {
+   "id": "pt_057",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S01",
+   "category": "fixture",
+   "x": 14.51,
+   "y": 50.14
+  },
+  {
+   "id": "pt_058",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N02",
+   "category": "fixture",
+   "x": 20.43,
+   "y": 40.86
+  },
+  {
+   "id": "pt_059",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S02",
+   "category": "fixture",
+   "x": 20.43,
+   "y": 50.14
+  },
+  {
+   "id": "pt_060",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N03",
+   "category": "fixture",
+   "x": 26.34,
+   "y": 40.86
+  },
+  {
+   "id": "pt_061",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S03",
+   "category": "fixture",
+   "x": 26.34,
+   "y": 50.14
+  },
+  {
+   "id": "pt_062",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N04",
+   "category": "fixture",
+   "x": 32.26,
+   "y": 40.86
+  },
+  {
+   "id": "pt_063",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S04",
+   "category": "fixture",
+   "x": 32.26,
+   "y": 50.14
+  },
+  {
+   "id": "pt_064",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N05",
+   "category": "fixture",
+   "x": 38.17,
+   "y": 40.86
+  },
+  {
+   "id": "pt_065",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S05",
+   "category": "fixture",
+   "x": 38.17,
+   "y": 50.14
+  },
+  {
+   "id": "pt_066",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N06",
+   "category": "fixture",
+   "x": 44.09,
+   "y": 40.86
+  },
+  {
+   "id": "pt_067",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S06",
+   "category": "fixture",
+   "x": 44.09,
+   "y": 50.14
+  },
+  {
+   "id": "pt_068",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N07",
+   "category": "fixture",
+   "x": 50,
+   "y": 40.86
+  },
+  {
+   "id": "pt_069",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S07",
+   "category": "fixture",
+   "x": 50,
+   "y": 50.14
+  },
+  {
+   "id": "pt_070",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N08",
+   "category": "fixture",
+   "x": 55.91,
+   "y": 40.86
+  },
+  {
+   "id": "pt_071",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S08",
+   "category": "fixture",
+   "x": 55.91,
+   "y": 50.14
+  },
+  {
+   "id": "pt_072",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N09",
+   "category": "fixture",
+   "x": 61.83,
+   "y": 40.86
+  },
+  {
+   "id": "pt_073",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S09",
+   "category": "fixture",
+   "x": 61.83,
+   "y": 50.14
+  },
+  {
+   "id": "pt_074",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N10",
+   "category": "fixture",
+   "x": 67.74,
+   "y": 40.86
+  },
+  {
+   "id": "pt_075",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S10",
+   "category": "fixture",
+   "x": 67.74,
+   "y": 50.14
+  },
+  {
+   "id": "pt_076",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N11",
+   "category": "fixture",
+   "x": 73.66,
+   "y": 40.86
+  },
+  {
+   "id": "pt_077",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S11",
+   "category": "fixture",
+   "x": 73.66,
+   "y": 50.14
+  },
+  {
+   "id": "pt_078",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N12",
+   "category": "fixture",
+   "x": 79.57,
+   "y": 40.86
+  },
+  {
+   "id": "pt_079",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S12",
+   "category": "fixture",
+   "x": 79.57,
+   "y": 50.14
+  },
+  {
+   "id": "pt_080",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-N13",
+   "category": "fixture",
+   "x": 85.49,
+   "y": 40.86
+  },
+  {
+   "id": "pt_081",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_rwl",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "RW-S13",
+   "category": "fixture",
+   "x": 85.49,
+   "y": 50.14
+  },
+  {
+   "id": "pt_082",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-8-1",
+   "category": "fixture",
+   "x": 10.37,
+   "y": 42.95
+  },
+  {
+   "id": "pt_083",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-8-2",
+   "category": "fixture",
+   "x": 10.37,
+   "y": 44.65
+  },
+  {
+   "id": "pt_084",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-8-3",
+   "category": "fixture",
+   "x": 10.37,
+   "y": 46.35
+  },
+  {
+   "id": "pt_085",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-8-4",
+   "category": "fixture",
+   "x": 10.37,
+   "y": 48.05
+  },
+  {
+   "id": "pt_086",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-26-1",
+   "category": "fixture",
+   "x": 89.63,
+   "y": 42.95
+  },
+  {
+   "id": "pt_087",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-26-2",
+   "category": "fixture",
+   "x": 89.63,
+   "y": 44.65
+  },
+  {
+   "id": "pt_088",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-26-3",
+   "category": "fixture",
+   "x": 89.63,
+   "y": 46.35
+  },
+  {
+   "id": "pt_089",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_can",
+     "billAtStep": 2
+    },
+    {
+     "payItemId": "pi_thr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "THR-26-4",
+   "category": "fixture",
+   "x": 89.63,
+   "y": 48.05
+  },
+  {
+   "id": "pt_090",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_hh",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "HH-3",
+   "category": "handhole",
+   "x": 50,
+   "y": 52.12
+  },
+  {
+   "id": "pt_091",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "linear",
+   "installPay": [
+    {
+     "payItemId": "pi_cond",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "Conduit run RW 8-26, south edge",
+   "category": "conduit",
+   "totalQty": 1360,
+   "x": 32.26,
+   "y": 54.49
+  },
+  {
+   "id": "pt_092",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "linear",
+   "installPay": [
+    {
+     "payItemId": "pi_cable",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e110",
+   "label": "Cable, RW 8-26 loop",
+   "category": "cable",
+   "totalQty": 2900
+  },
+  {
+   "id": "pt_093",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_pole",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "FL-1",
+   "category": "pole",
+   "x": 15.91,
+   "y": 34.78
+  },
+  {
+   "id": "pt_094",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_pole",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "FL-2",
+   "category": "pole",
+   "x": 64.61,
+   "y": 34.78
+  },
+  {
+   "id": "pt_095",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_pole",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "FL-3",
+   "category": "pole",
+   "x": 15.91,
+   "y": 60.11
+  },
+  {
+   "id": "pt_096",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_pole",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "FL-4",
+   "category": "pole",
+   "x": 64.61,
+   "y": 60.11
+  },
+  {
+   "id": "pt_097",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_ccr",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "CCR-1",
+   "category": "regulator",
+   "x": 84.09,
+   "y": 46.47
+  },
+  {
+   "id": "pt_098",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_mh",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "MH-1",
+   "category": "manhole",
+   "x": 74.35,
+   "y": 52.32
+  },
+  {
+   "id": "pt_099",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "point",
+   "installPay": [
+    {
+     "payItemId": "pi_mh",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "MH-2",
+   "category": "manhole",
+   "x": 40.26,
+   "y": 52.32
+  },
+  {
+   "id": "pt_100",
+   "jobId": "job_placeholder",
+   "work": "install",
+   "kind": "linear",
+   "installPay": [
+    {
+     "payItemId": "pi_duct",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "zoneId": "z_e111",
+   "label": "Duct bank, vault to apron",
+   "category": "duct",
+   "totalQty": 300,
+   "x": 57.31,
+   "y": 52.32
+  }
+ ],
+ "crew": [
+  {
+   "id": "cm_darrell",
+   "name": "Darrell Simpson",
+   "role": "foreman"
+  },
+  {
+   "id": "cm_carlos",
+   "name": "Carlos Leisse",
+   "role": "foreman"
+  }
+ ],
+ "equipment": [
+  {
+   "id": "eq_1",
+   "jobId": "job_placeholder",
+   "name": "Trencher"
+  },
+  {
+   "id": "eq_2",
+   "jobId": "job_placeholder",
+   "name": "Mini excavator"
+  },
+  {
+   "id": "eq_3",
+   "jobId": "job_placeholder",
+   "name": "Skid steer"
+  },
+  {
+   "id": "eq_4",
+   "jobId": "job_placeholder",
+   "name": "Directional bore rig"
+  },
+  {
+   "id": "eq_5",
+   "jobId": "job_placeholder",
+   "name": "Core drill"
+  },
+  {
+   "id": "eq_6",
+   "jobId": "job_placeholder",
+   "name": "Saw cut rig"
+  },
+  {
+   "id": "eq_7",
+   "jobId": "job_placeholder",
+   "name": "Concrete mixer"
+  },
+  {
+   "id": "eq_8",
+   "jobId": "job_placeholder",
+   "name": "Bucket truck"
+  },
+  {
+   "id": "eq_9",
+   "jobId": "job_placeholder",
+   "name": "Service truck"
+  },
+  {
+   "id": "eq_10",
+   "jobId": "job_placeholder",
+   "name": "Van"
+  },
+  {
+   "id": "eq_11",
+   "jobId": "job_placeholder",
+   "name": "Light tower"
+  }
+ ]
+}

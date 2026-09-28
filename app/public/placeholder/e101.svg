@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000"><rect x="0" y="0" width="1600" height="1000" fill="#fff"/><rect x="24" y="24" width="1552" height="952" fill="none" stroke="#131A46" stroke-width="3"/><rect x="120" y="525" width="1360" height="70" fill="#8f949b" stroke="#131A46" stroke-width="2"/>
+<line x1="160" y1="560" x2="1440" y2="560" stroke="#fff" stroke-width="3" stroke-dasharray="40 25"/>
+<text x="165" y="568" font-size="22" font-weight="700" fill="#fff" font-family="Helvetica, Arial" transform="rotate(90 165 568)">8</text>
+<text x="1435" y="568" font-size="22" font-weight="700" fill="#fff" font-family="Helvetica, Arial" text-anchor="middle" transform="rotate(-90 1435 568)">26</text>
+<rect x="200" y="342" width="1200" height="36" fill="#b9bec6" stroke="#131A46" stroke-width="1.5"/>
+<line x1="200" y1="360" x2="1400" y2="360" stroke="#F5C400" stroke-width="2"/>
+<rect x="315" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="1.5"/>
+<line x1="330" y1="360" x2="330" y2="525" stroke="#F5C400" stroke-width="2"/>
+<text x="350" y="460" font-size="14" fill="#131A46" font-family="Helvetica, Arial">B1</text>
+<rect x="785" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="1.5"/>
+<line x1="800" y1="360" x2="800" y2="525" stroke="#F5C400" stroke-width="2"/>
+<text x="820" y="460" font-size="14" fill="#131A46" font-family="Helvetica, Arial">B2</text>
+<rect x="1255" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="1.5"/>
+<line x1="1270" y1="360" x2="1270" y2="525" stroke="#F5C400" stroke-width="2"/>
+<text x="1290" y="460" font-size="14" fill="#131A46" font-family="Helvetica, Arial">B3</text>
+<text x="210" y="302" font-size="16" font-weight="700" fill="#131A46" font-family="Helvetica, Arial">TAXIWAY A</text>
+<rect x="560" y="120" width="480" height="180" fill="#cfd3da" stroke="#131A46" stroke-width="1.5"/>
+<text x="800" y="210" font-size="16" font-weight="700" fill="#4A4F66" text-anchor="middle" font-family="Helvetica, Arial">APRON</text>
+<rect x="1120" y="180" width="80" height="60" fill="#fff" stroke="#131A46" stroke-width="2"/>
+<text x="1160" y="256" font-size="11" fill="#131A46" text-anchor="middle" font-family="Helvetica, Arial">ELEC VAULT</text>
+<line x1="200" y1="402" x2="1400" y2="402" stroke="#131A46" stroke-width="1" stroke-dasharray="8 5"/>
+<line x1="120" y1="625" x2="1480" y2="625" stroke="#131A46" stroke-width="1" stroke-dasharray="8 5"/>
+<line x1="1120" y1="240" x2="800" y2="240" stroke="#131A46" stroke-width="3" stroke-dasharray="12 6"/><rect x="180" y="300" width="610" height="120" fill="none" stroke="#EC1C2D" stroke-width="2" stroke-dasharray="10 6"/><text x="186" y="294" font-size="13" font-weight="700" fill="#EC1C2D" font-family="Helvetica, Arial">SEE E-108</text>
+<rect x="810" y="300" width="610" height="120" fill="none" stroke="#EC1C2D" stroke-width="2" stroke-dasharray="10 6"/><text x="816" y="294" font-size="13" font-weight="700" fill="#EC1C2D" font-family="Helvetica, Arial">SEE E-109</text>
+<rect x="100" y="500" width="1400" height="120" fill="none" stroke="#EC1C2D" stroke-width="2" stroke-dasharray="10 6"/><text x="106" y="494" font-size="13" font-weight="700" fill="#EC1C2D" font-family="Helvetica, Arial">SEE E-110</text>
+<rect x="540" y="100" width="680" height="210" fill="none" stroke="#EC1C2D" stroke-width="2" stroke-dasharray="10 6"/><text x="546" y="94" font-size="13" font-weight="700" fill="#EC1C2D" font-family="Helvetica, Arial">SEE E-111</text>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="1100" y="860" width="460" height="110" fill="#fff" stroke="#131A46" stroke-width="2"/>
+    <line x1="1100" y1="895" x2="1560" y2="895" stroke="#131A46" stroke-width="1"/>
+    <line x1="1380" y1="860" x2="1380" y2="970" stroke="#131A46" stroke-width="1"/>
+    <text x="1112" y="884" font-size="16" font-weight="700" fill="#131A46">PLACEHOLDER FIELD</text>
+    <text x="1112" y="922" font-size="14" fill="#131A46">Airfield Lighting Overall Plan</text>
+    <text x="1112" y="948" font-size="11" fill="#EC1C2D">NOT A REAL AIRPORT. SWAP FOR THE REAL PLAN SET.</text>
+    <text x="1392" y="884" font-size="11" fill="#6B7088">SHEET</text>
+    <text x="1392" y="940" font-size="34" font-weight="700" fill="#131A46">E-101</text>
+    <g transform="translate(60,900)"><circle r="22" fill="none" stroke="#131A46" stroke-width="2"/><path d="M0,-18 L8,10 L0,4 L-8,10 Z" fill="#131A46"/><text y="-28" font-size="12" text-anchor="middle" fill="#131A46">N</text></g>
+  </g></svg>

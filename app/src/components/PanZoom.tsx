@@ -1,0 +1,134 @@
+import { useEffect, useRef, useState, type ReactNode, type PointerEvent as RPointerEvent } from 'react';
+
+// Pinch, drag, double tap, plus buttons. Taps on children still work: a drag
+// longer than 8px cancels the click that would follow it.
+interface Props {
+  width: number;   // natural size of the image
+  height: number;
+  src: string;
+  children?: ReactNode;   // overlays positioned in percent inside the stage
+  hint?: string;
+  resetKey?: string;
+}
+
+interface View { s: number; tx: number; ty: number }
+
+export default function PanZoom({ width, height, src, children, hint, resetKey }: Props) {
+  const box = useRef<HTMLDivElement>(null);
+  const [view, setView] = useState<View>({ s: 1, tx: 0, ty: 0 });
+  const [stageW, setStageW] = useState(1000);
+  const [dragging, setDragging] = useState(false);
+  const pointers = useRef(new Map<number, { x: number; y: number }>());
+  const start = useRef<{ view: View; dist: number; mid: { x: number; y: number }; moved: number; t: number } | null>(null);
+  const lastTap = useRef(0);
+  const suppressClick = useRef(false);
+
+  const fit = () => {
+    const el = box.current; if (!el) return;
+    const bw = el.clientWidth, bh = el.clientHeight;
+    const sw = bw; const sh = (height / width) * bw;
+    setStageW(sw);
+    const s = Math.min(1, bh / sh);
+    setView({ s, tx: (bw - sw * s) / 2, ty: (bh - sh * s) / 2 });
+  };
+  useEffect(() => { fit(); const ro = new ResizeObserver(fit); if (box.current) ro.observe(box.current); return () => ro.disconnect(); }, [width, height, resetKey]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const clamp = (v: View): View => {
+    const el = box.current; if (!el) return v;
+    const s = Math.min(Math.max(v.s, 0.5), 8);
+    const sw = stageW * s, sh = stageW * (height / width) * s;
+    const bw = el.clientWidth, bh = el.clientHeight;
+    let tx = v.tx, ty = v.ty;
+    if (sw <= bw) tx = (bw - sw) / 2; else tx = Math.min(0, Math.max(bw - sw, tx));
+    if (sh <= bh) ty = (bh - sh) / 2; else ty = Math.min(0, Math.max(bh - sh, ty));
+    return { s, tx, ty };
+  };
+
+  const zoomAt = (factor: number, cx: number, cy: number) => {
+    setView(v => {
+      const s = Math.min(Math.max(v.s * factor, 0.5), 8);
+      const k = s / v.s;
+      return clamp({ s, tx: cx - (cx - v.tx) * k, ty: cy - (cy - v.ty) * k });
+    });
+  };
+
+  const local = (e: { clientX: number; clientY: number }) => {
+    const r = box.current!.getBoundingClientRect();
+    return { x: e.clientX - r.left, y: e.clientY - r.top };
+  };
+
+  const onDown = (e: RPointerEvent) => {
+    const p = local(e);
+    pointers.current.set(e.pointerId, p);
+    // No pointer capture: it would re-target the click that follows, and
+    // then taps on pins and zones stop working. Window listeners instead.
+    if (pointers.current.size === 1) {
+      const move = (ev: PointerEvent) => onMove(ev as unknown as RPointerEvent);
+      const up = (ev: PointerEvent) => { onUp(ev as unknown as RPointerEvent); if (pointers.current.size === 0) { window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); window.removeEventListener('pointercancel', up); } };
+      window.addEventListener('pointermove', move);
+      window.addEventListener('pointerup', up);
+      window.addEventListener('pointercancel', up);
+    }
+    const pts = [...pointers.current.values()];
+    const mid = pts.length > 1 ? { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 } : p;
+    const dist = pts.length > 1 ? Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) : 0;
+    start.current = { view, dist, mid, moved: 0, t: Date.now() };
+  };
+  const onMove = (e: RPointerEvent) => {
+    if (!pointers.current.has(e.pointerId) || !start.current) return;
+    pointers.current.set(e.pointerId, local(e));
+    const pts = [...pointers.current.values()];
+    const st = start.current;
+    if (pts.length > 1) {
+      const mid = { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 };
+      const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+      const k = st.dist > 0 ? dist / st.dist : 1;
+      const s = Math.min(Math.max(st.view.s * k, 0.5), 8);
+      const kk = s / st.view.s;
+      st.moved = 100;
+      setView(clamp({ s, tx: mid.x - (st.mid.x - st.view.tx) * kk, ty: mid.y - (st.mid.y - st.view.ty) * kk }));
+    } else {
+      const dx = pts[0].x - st.mid.x, dy = pts[0].y - st.mid.y;
+      st.moved = Math.max(st.moved, Math.hypot(dx, dy));
+      if (st.moved > 8) { setDragging(true); setView(clamp({ s: st.view.s, tx: st.view.tx + dx, ty: st.view.ty + dy })); }
+    }
+  };
+  const onUp = (e: RPointerEvent) => {
+    pointers.current.delete(e.pointerId);
+    const st = start.current;
+    if (pointers.current.size === 0) {
+      setDragging(false);
+      const onTarget = !!(e.target as Element | null)?.closest?.('.pin, .zone-poly, .zone-tap');
+      if (st && st.moved <= 8 && Date.now() - st.t < 400 && !onTarget) {
+        const now = Date.now();
+        if (now - lastTap.current < 320) { const p = local(e); zoomAt(view.s < 2 ? 2.2 : 0.45, p.x, p.y); lastTap.current = 0; suppressClick.current = true; }
+        else lastTap.current = now;
+      } else if (st && st.moved > 8) suppressClick.current = true;
+      start.current = null;
+    } else {
+      // one finger left after a pinch, restart the drag from here
+      const p = [...pointers.current.values()][0];
+      start.current = { view, dist: 0, mid: p, moved: 100, t: Date.now() };
+    }
+  };
+  const onClickCapture = (e: React.MouseEvent) => {
+    if (suppressClick.current) { e.stopPropagation(); e.preventDefault(); suppressClick.current = false; }
+  };
+  const onWheel = (e: React.WheelEvent) => { const p = local(e); zoomAt(e.deltaY < 0 ? 1.15 : 0.87, p.x, p.y); };
+
+  return (
+    <div ref={box} className={'viewer' + (dragging ? ' dragging' : '')}
+      onPointerDown={onDown} onClickCapture={onClickCapture} onWheel={onWheel}>
+      <div className="stage" style={{ width: stageW, transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.s})`, ['--inv' as string]: String(1 / view.s) }}>
+        <img src={src} width={width} height={height} alt="" draggable={false} />
+        {children}
+      </div>
+      <div className="zoomctl">
+        <button type="button" aria-label="Zoom in" onClick={() => { const el = box.current!; zoomAt(1.4, el.clientWidth / 2, el.clientHeight / 2); }}>+</button>
+        <button type="button" aria-label="Zoom out" onClick={() => { const el = box.current!; zoomAt(0.7, el.clientWidth / 2, el.clientHeight / 2); }}>&minus;</button>
+        <button type="button" aria-label="Fit" onClick={fit} style={{ fontSize: 13, fontFamily: 'Oswald' }}>FIT</button>
+      </div>
+      {hint && <div className="hint">{hint}</div>}
+    </div>
+  );
+}

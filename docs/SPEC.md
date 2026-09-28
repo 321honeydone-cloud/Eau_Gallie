@@ -6,7 +6,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 
 - B: Eau Gallie Electric. Foreman on a tablet on the airfield, office billing off what he taps. Eau Gallie is job one, every airfield after it reuses the same app.
 - O: End of day the foreman has tapped every part he touched, the report is in Autodesk Forms, and the office can pull a unit price rollup for the pay app without asking anybody anything.
-- S: Manny's industrial UI system, bolt glyph badge. Blunt internal copy. No em or en dashes, no semicolons.
+- S: The Eau Gallie UI kit (ege-ui.css and ege-ui.js, navy and red on white, Oswald and Roboto). Blunt internal copy. No em or en dashes, no semicolons.
 - S: Offline all day. Two foremen at once. Works with gloves. No login. Placeholder airfield until the real plans land. Never double bills a part.
 
 ## What we decided
@@ -30,6 +30,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Signer | Whoever submits also signs. No separate superintendent review step. |
 | Phases | A phase is a group of zones. Each zone carries a phase. Map colors by phase, report can group by phase. The Autodesk schedule already breaks work down as Phase, then plan sheet (E108, E109), then activity. So a zone is a plan sheet. |
 | Device | iPad. Installable web app on Safari, added to the home screen. |
+| Look | The Eau Gallie UI kit Manny supplied. Light theme, so the daylight toggle is gone. Real logo file still needed, a temporary wordmark is in its place. |
 
 ## The status ladder, spelled out
 
@@ -86,7 +87,7 @@ Default equipment list for a new airfield job, editable per job: trencher, mini 
 7. End of day. Review screen shows the report laid out in the six Autodesk sections. Submit. Second foreman's submit merges into the same report.
 8. Sign with a finger on the review screen. Copy for Autodesk or, later, push.
 
-Touch targets 56px minimum. Big fonts. Daylight theme is the default on the tablet, high contrast light so it reads at noon. Dark gold house theme is one tap away and is the default for the office and admin screens.
+Touch targets 56px minimum. Big fonts. Light theme from the EGE kit reads at noon.
 
 ## Buttons over typing
 
@@ -174,11 +175,11 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 - Dexie (IndexedDB) on the device. Supabase (Postgres, Storage) for sync and photos. Free tier until it matters.
 - pdf.js renders plan pages to images in the browser. No server side PDF work.
 - Pan and zoom on sheets with pointer events, pins positioned in percent so they survive any screen size.
-- Manny's industrial UI system per the honeydone-ui skill, bolt glyph in the badge.
+- The Eau Gallie UI kit, vendored into the app.
 
 ## Build order
 
-1. Placeholder airfield, zones, pins, status taps, list view, local only. The thing you can hold and poke.
+1. Placeholder airfield, zones, pins, status taps, list view, local only. The thing you can hold and poke. DONE, see app/ and docs/screenshots/.
 2. Daily report screen, photos, review and submit, printable view.
 3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items.
 4. Offline sync through Supabase, two tablets.
@@ -191,6 +192,7 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 
 ## Open items
 
+- Real logo file. The kit's header wants an image. A temporary wordmark is in public/logo.svg until the PNG or SVG shows up.
 - Bid schedule sample is the owner's original for Pensacola and only 4 pages. The electrical L items (L-108 cable, L-110 duct, L-115 manholes, L-125 lights and signs) are probably on pages we don't have. Format is known, that's enough to build the import.
 
 

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000"><defs><clipPath id="c"><rect x="80" y="80" width="1440" height="750"/></clipPath></defs><rect x="0" y="0" width="1600" height="1000" fill="#fff"/><rect x="24" y="24" width="1552" height="952" fill="none" stroke="#131A46" stroke-width="3"/><g clip-path="url(#c)"><g transform="translate(-914.4470588235295,55.611764705882365) scale(1.948235294117647)"><rect x="120" y="525" width="1360" height="70" fill="#8f949b" stroke="#131A46" stroke-width="1.0265700483091786"/>
+<line x1="160" y1="560" x2="1440" y2="560" stroke="#fff" stroke-width="1.539855072463768" stroke-dasharray="20.531400966183575 12.832125603864734"/>
+<text x="165" y="568" font-size="15.761660816386744" font-weight="700" fill="#fff" font-family="Helvetica, Arial" transform="rotate(90 165 568)">8</text>
+<text x="1435" y="568" font-size="15.761660816386744" font-weight="700" fill="#fff" font-family="Helvetica, Arial" text-anchor="middle" transform="rotate(-90 1435 568)">26</text>
+<rect x="200" y="342" width="1200" height="36" fill="#b9bec6" stroke="#131A46" stroke-width="0.769927536231884"/>
+<line x1="200" y1="360" x2="1400" y2="360" stroke="#F5C400" stroke-width="1.0265700483091786"/>
+<rect x="315" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="0.769927536231884"/>
+<line x1="330" y1="360" x2="330" y2="525" stroke="#F5C400" stroke-width="1.0265700483091786"/>
+<text x="350" y="460" font-size="10.03014779224611" fill="#131A46" font-family="Helvetica, Arial">B1</text>
+<rect x="785" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="0.769927536231884"/>
+<line x1="800" y1="360" x2="800" y2="525" stroke="#F5C400" stroke-width="1.0265700483091786"/>
+<text x="820" y="460" font-size="10.03014779224611" fill="#131A46" font-family="Helvetica, Arial">B2</text>
+<rect x="1255" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="0.769927536231884"/>
+<line x1="1270" y1="360" x2="1270" y2="525" stroke="#F5C400" stroke-width="1.0265700483091786"/>
+<text x="1290" y="460" font-size="10.03014779224611" fill="#131A46" font-family="Helvetica, Arial">B3</text>
+<text x="210" y="302" font-size="11.463026048281268" font-weight="700" fill="#131A46" font-family="Helvetica, Arial">TAXIWAY A</text>
+<rect x="560" y="120" width="480" height="180" fill="#cfd3da" stroke="#131A46" stroke-width="0.769927536231884"/>
+<text x="800" y="210" font-size="11.463026048281268" font-weight="700" fill="#4A4F66" text-anchor="middle" font-family="Helvetica, Arial">APRON</text>
+<rect x="1120" y="180" width="80" height="60" fill="#fff" stroke="#131A46" stroke-width="1.0265700483091786"/>
+<text x="1160" y="256" font-size="7.880830408193372" fill="#131A46" text-anchor="middle" font-family="Helvetica, Arial">ELEC VAULT</text>
+<line x1="200" y1="402" x2="1400" y2="402" stroke="#131A46" stroke-width="0.5132850241545893" stroke-dasharray="4.106280193236715 2.566425120772947"/>
+<line x1="120" y1="625" x2="1480" y2="625" stroke="#131A46" stroke-width="0.5132850241545893" stroke-dasharray="4.106280193236715 2.566425120772947"/>
+<line x1="1120" y1="240" x2="800" y2="240" stroke="#131A46" stroke-width="1.539855072463768" stroke-dasharray="6.159420289855072 3.079710144927536"/></g><circle cx="254.49411764705883" cy="347.84705882352944" r="16" fill="#fff" stroke="#131A46" stroke-width="3.2"/><line x1="238.49411764705883" y1="347.84705882352944" x2="270.49411764705883" y2="347.84705882352944" stroke="#131A46" stroke-width="2.4000000000000004"/><line x1="254.49411764705883" y1="331.84705882352944" x2="254.49411764705883" y2="363.84705882352944" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="270.49411764705883" y="335.0470588235294" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">FL-1</text>
+<circle cx="1033.7882352941176" cy="347.84705882352944" r="16" fill="#fff" stroke="#131A46" stroke-width="3.2"/><line x1="1017.7882352941176" y1="347.84705882352944" x2="1049.7882352941176" y2="347.84705882352944" stroke="#131A46" stroke-width="2.4000000000000004"/><line x1="1033.7882352941176" y1="331.84705882352944" x2="1033.7882352941176" y2="363.84705882352944" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1049.7882352941176" y="335.0470588235294" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">FL-2</text>
+<circle cx="254.49411764705883" cy="601.1176470588235" r="16" fill="#fff" stroke="#131A46" stroke-width="3.2"/><line x1="238.49411764705883" y1="601.1176470588235" x2="270.49411764705883" y2="601.1176470588235" stroke="#131A46" stroke-width="2.4000000000000004"/><line x1="254.49411764705883" y1="585.1176470588235" x2="254.49411764705883" y2="617.1176470588235" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="270.49411764705883" y="588.3176470588236" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">FL-3</text>
+<circle cx="1033.7882352941176" cy="601.1176470588235" r="16" fill="#fff" stroke="#131A46" stroke-width="3.2"/><line x1="1017.7882352941176" y1="601.1176470588235" x2="1049.7882352941176" y2="601.1176470588235" stroke="#131A46" stroke-width="2.4000000000000004"/><line x1="1033.7882352941176" y1="585.1176470588235" x2="1033.7882352941176" y2="617.1176470588235" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1049.7882352941176" y="588.3176470588236" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">FL-4</text>
+<rect x="1319.9058823529413" y="448.74117647058824" width="51.2" height="32" fill="#fff" stroke="#131A46" stroke-width="3.2"/><text x="1345.5058823529412" y="471.1411764705882" font-size="16" text-anchor="middle" font-family="Helvetica, Arial" fill="#131A46">CCR</text><text x="1361.5058823529412" y="451.94117647058823" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">CCR-1</text>
+<rect x="1170.4470588235292" y="503.9882352941177" width="38.400000000000006" height="38.400000000000006" fill="#fff" stroke="#131A46" stroke-width="3.2"/><text x="1189.6470588235293" y="529.5882352941177" font-size="16" text-anchor="middle" font-family="Helvetica, Arial" fill="#131A46">MH</text><text x="1205.6470588235293" y="510.3882352941177" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">MH-1</text>
+<rect x="624.9411764705881" y="503.9882352941177" width="38.400000000000006" height="38.400000000000006" fill="#fff" stroke="#131A46" stroke-width="3.2"/><text x="644.1411764705881" y="529.5882352941177" font-size="16" text-anchor="middle" font-family="Helvetica, Arial" fill="#131A46">MH</text><text x="660.1411764705881" y="510.3882352941177" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">MH-2</text>
+<text x="916.8941176470587" y="500.7882352941177" font-size="17.6" text-anchor="middle" font-family="Helvetica, Arial" fill="#131A46">4W DUCT BANK, 300 LF</text></g>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="1100" y="860" width="460" height="110" fill="#fff" stroke="#131A46" stroke-width="2"/>
+    <line x1="1100" y1="895" x2="1560" y2="895" stroke="#131A46" stroke-width="1"/>
+    <line x1="1380" y1="860" x2="1380" y2="970" stroke="#131A46" stroke-width="1"/>
+    <text x="1112" y="884" font-size="16" font-weight="700" fill="#131A46">PLACEHOLDER FIELD</text>
+    <text x="1112" y="922" font-size="14" fill="#131A46">Apron and Vault Plan</text>
+    <text x="1112" y="948" font-size="11" fill="#EC1C2D">NOT A REAL AIRPORT. SWAP FOR THE REAL PLAN SET.</text>
+    <text x="1392" y="884" font-size="11" fill="#6B7088">SHEET</text>
+    <text x="1392" y="940" font-size="34" font-weight="700" fill="#131A46">E-111</text>
+    <g transform="translate(60,900)"><circle r="22" fill="none" stroke="#131A46" stroke-width="2"/><path d="M0,-18 L8,10 L0,4 L-8,10 Z" fill="#131A46"/><text y="-28" font-size="12" text-anchor="middle" fill="#131A46">N</text></g>
+  </g></svg>

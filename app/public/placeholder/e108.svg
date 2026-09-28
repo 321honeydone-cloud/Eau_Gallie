@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000"><defs><clipPath id="c"><rect x="80" y="80" width="1440" height="750"/></clipPath></defs><rect x="0" y="0" width="1600" height="1000" fill="#fff"/><rect x="24" y="24" width="1552" height="952" fill="none" stroke="#131A46" stroke-width="3"/><g clip-path="url(#c)"><g transform="translate(-253.32459016393454,-326.8491803278689) scale(2.171803278688525)"><rect x="120" y="525" width="1360" height="70" fill="#8f949b" stroke="#131A46" stroke-width="0.9208937198067632"/>
+<line x1="160" y1="560" x2="1440" y2="560" stroke="#fff" stroke-width="1.3813405797101448" stroke-dasharray="18.417874396135264 11.51117149758454"/>
+<text x="165" y="568" font-size="14.928371652435395" font-weight="700" fill="#fff" font-family="Helvetica, Arial" transform="rotate(90 165 568)">8</text>
+<text x="1435" y="568" font-size="14.928371652435395" font-weight="700" fill="#fff" font-family="Helvetica, Arial" text-anchor="middle" transform="rotate(-90 1435 568)">26</text>
+<rect x="200" y="342" width="1200" height="36" fill="#b9bec6" stroke="#131A46" stroke-width="0.6906702898550724"/>
+<line x1="200" y1="360" x2="1400" y2="360" stroke="#F5C400" stroke-width="0.9208937198067632"/>
+<rect x="315" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="0.6906702898550724"/>
+<line x1="330" y1="360" x2="330" y2="525" stroke="#F5C400" stroke-width="0.9208937198067632"/>
+<text x="350" y="460" font-size="9.499872869731615" fill="#131A46" font-family="Helvetica, Arial">B1</text>
+<rect x="785" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="0.6906702898550724"/>
+<line x1="800" y1="360" x2="800" y2="525" stroke="#F5C400" stroke-width="0.9208937198067632"/>
+<text x="820" y="460" font-size="9.499872869731615" fill="#131A46" font-family="Helvetica, Arial">B2</text>
+<rect x="1255" y="376" width="30" height="151" fill="#b9bec6" stroke="#131A46" stroke-width="0.6906702898550724"/>
+<line x1="1270" y1="360" x2="1270" y2="525" stroke="#F5C400" stroke-width="0.9208937198067632"/>
+<text x="1290" y="460" font-size="9.499872869731615" fill="#131A46" font-family="Helvetica, Arial">B3</text>
+<text x="210" y="302" font-size="10.85699756540756" font-weight="700" fill="#131A46" font-family="Helvetica, Arial">TAXIWAY A</text>
+<rect x="560" y="120" width="480" height="180" fill="#cfd3da" stroke="#131A46" stroke-width="0.6906702898550724"/>
+<text x="800" y="210" font-size="10.85699756540756" font-weight="700" fill="#4A4F66" text-anchor="middle" font-family="Helvetica, Arial">APRON</text>
+<rect x="1120" y="180" width="80" height="60" fill="#fff" stroke="#131A46" stroke-width="0.9208937198067632"/>
+<text x="1160" y="256" font-size="7.464185826217697" fill="#131A46" text-anchor="middle" font-family="Helvetica, Arial">ELEC VAULT</text>
+<line x1="200" y1="402" x2="1400" y2="402" stroke="#131A46" stroke-width="0.4604468599033816" stroke-dasharray="3.6835748792270526 2.302234299516908"/>
+<line x1="120" y1="625" x2="1480" y2="625" stroke="#131A46" stroke-width="0.4604468599033816" stroke-dasharray="3.6835748792270526 2.302234299516908"/>
+<line x1="1120" y1="240" x2="800" y2="240" stroke="#131A46" stroke-width="1.3813405797101448" stroke-dasharray="5.525362318840579 2.7626811594202896"/></g><circle cx="246.19016393442615" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="262.19016393442615" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N01 (RE)</text>
+<circle cx="246.19016393442615" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="262.19016393442615" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S01 (RE)</text>
+<circle cx="376.49836065573766" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="392.49836065573766" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N02 (RE)</text>
+<circle cx="376.49836065573766" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="392.49836065573766" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S02 (RE)</text>
+<circle cx="506.8065573770491" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="522.8065573770491" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N03</text>
+<circle cx="506.8065573770491" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="522.8065573770491" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S03</text>
+<circle cx="637.1147540983607" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="653.1147540983607" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N04</text>
+<circle cx="637.1147540983607" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="653.1147540983607" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S04</text>
+<circle cx="767.4229508196721" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="783.4229508196721" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N05</text>
+<circle cx="767.4229508196721" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="783.4229508196721" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S05</text>
+<circle cx="897.7311475409836" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="913.7311475409836" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N06</text>
+<circle cx="897.7311475409836" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="913.7311475409836" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S06</text>
+<circle cx="1028.0393442622951" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1044.0393442622951" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N07</text>
+<circle cx="1028.0393442622951" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1044.0393442622951" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S07</text>
+<circle cx="1158.3475409836067" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1174.3475409836067" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N08</text>
+<circle cx="1158.3475409836067" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1174.3475409836067" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S08</text>
+<circle cx="1288.655737704918" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1304.655737704918" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N09</text>
+<circle cx="1288.655737704918" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1304.655737704918" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S09</text>
+<circle cx="1418.9639344262296" cy="389.84590163934433" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1434.9639344262296" y="377.0459016393443" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-N10</text>
+<circle cx="1418.9639344262296" cy="520.1540983606558" r="11.200000000000001" fill="#69A6D5" stroke="#131A46" stroke-width="2.4000000000000004"/><text x="1434.9639344262296" y="507.35409836065577" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">TWA-S10</text>
+<rect x="383.35999999999996" y="332.46622950819676" width="38.400000000000006" height="19.200000000000003" fill="#F5C400" stroke="#131A46" stroke-width="2.4000000000000004" /><text x="418.55999999999995" y="329.2662295081968" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">SIGN B1-1</text>
+<rect x="504.98098360655734" y="558.3337704918033" width="38.400000000000006" height="19.200000000000003" fill="#F5C400" stroke="#131A46" stroke-width="2.4000000000000004" /><text x="540.1809836065573" y="555.1337704918034" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">SIGN B1-2</text>
+<rect x="450.5704918032787" y="576.8518032786886" width="25.6" height="25.6" fill="#fff" stroke="#131A46" stroke-width="2.4000000000000004"/><line x1="450.5704918032787" y1="576.8518032786886" x2="476.1704918032787" y2="602.4518032786885" stroke="#131A46" stroke-width="1.6"/><text x="479.3704918032787" y="576.8518032786886" font-size="14.4" font-family="Helvetica, Arial" fill="#4A4F66">HH-1</text>
+<text x="821.7180327868853" y="628.7442622950821" font-size="17.6" text-anchor="middle" font-family="Helvetica, Arial" fill="#131A46">2" C, 590 LF</text></g>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="1100" y="860" width="460" height="110" fill="#fff" stroke="#131A46" stroke-width="2"/>
+    <line x1="1100" y1="895" x2="1560" y2="895" stroke="#131A46" stroke-width="1"/>
+    <line x1="1380" y1="860" x2="1380" y2="970" stroke="#131A46" stroke-width="1"/>
+    <text x="1112" y="884" font-size="16" font-weight="700" fill="#131A46">PLACEHOLDER FIELD</text>
+    <text x="1112" y="922" font-size="14" fill="#131A46">Taxiway A West Lighting Plan</text>
+    <text x="1112" y="948" font-size="11" fill="#EC1C2D">NOT A REAL AIRPORT. SWAP FOR THE REAL PLAN SET.</text>
+    <text x="1392" y="884" font-size="11" fill="#6B7088">SHEET</text>
+    <text x="1392" y="940" font-size="34" font-weight="700" fill="#131A46">E-108</text>
+    <g transform="translate(60,900)"><circle r="22" fill="none" stroke="#131A46" stroke-width="2"/><path d="M0,-18 L8,10 L0,4 L-8,10 Z" fill="#131A46"/><text y="-28" font-size="12" text-anchor="middle" fill="#131A46">N</text></g>
+  </g></svg>

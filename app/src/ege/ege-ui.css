@@ -1,0 +1,167 @@
+/* =====================================================================
+   EGE UI kit  v1.0   (the GenTalk / FieldTalk look)
+   Eau Gallie Electric field apps
+
+   HOW TO USE
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+   <link rel="stylesheet" href="ege-ui.css">
+   <script src="ege-ui.js" defer></script>
+   Put <body class="ege"> on the page. Everything is prefixed "ege-" so it
+   won't fight with anything else on the page.
+   ===================================================================== */
+
+:root{
+  color-scheme:light;
+  --ege-bg:#FFFFFF; --ege-panel:#FFFFFF; --ege-panel2:#F7F8FA;
+  --ege-ink:#131A46; --ege-ink2:#4A4F66; --ege-ink3:#6B7088; --ege-line:#E2E5EC;
+  --ege-navy:#222C6A; --ege-navy2:#131A46; --ege-sky:#69A6D5; --ege-red:#EC1C2D; --ege-red2:#C9182A;
+  --ege-ok:#2E7D4F; --ege-ok-soft:#E6F4EA; --ege-warn:#8A6100; --ege-warn-soft:#FBF0CC; --ege-bad:#C9182A; --ege-bad-soft:#FDECEE;
+  --ege-info-soft:#EAF3FB; --ege-info-line:#CFE2F2; --ege-disabled:#D9DCE3; --ege-disabled-ink:#8A8FA3;
+  --ege-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ege-body:"Roboto",Helvetica,Arial,Verdana,sans-serif;
+  --ege-display:"Oswald","Arial Narrow",Helvetica,Arial,sans-serif;
+}
+
+/* ---------- base ---------- */
+.ege,.ege *{box-sizing:border-box}
+.ege [hidden]{display:none!important}
+html:has(body.ege){background:var(--ege-bg)}
+body.ege{margin:0;background:var(--ege-bg);color:var(--ege-ink);font-family:var(--ege-body);font-size:16px;line-height:1.45;-webkit-text-size-adjust:100%;padding-inline:16px;padding-block:0 96px}
+.ege :where(button,input,select,textarea){font:inherit;color:inherit}
+.ege :where(button){cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ege :focus-visible{outline:3px solid var(--ege-red);outline-offset:2px}
+.ege-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ege-mono{font-family:var(--ege-mono);font-variant-numeric:tabular-nums}
+.ege-sr{position:absolute!important;left:-9999px!important}
+
+/* ---------- header ---------- */
+.ege-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ege-panel);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-inline:-16px;padding-inline:16px;border-top:5px solid var(--ege-red);border-bottom:1px solid var(--ege-line)}
+.ege-brand{display:flex;align-items:center;gap:14px;min-width:0}
+.ege-brand img{height:54px;width:auto;display:block;padding-block:8px;box-sizing:content-box}
+.ege-brand h1{font-family:var(--ege-display);font-weight:600;font-size:22px;letter-spacing:.3px;margin:0;color:var(--ege-navy2);white-space:nowrap;line-height:1.05}
+.ege-brand h1 small{display:block;font-weight:500;font-size:11px;letter-spacing:2px;color:var(--ege-red);margin-top:2px;text-transform:uppercase}
+@media (max-width:560px){.ege-brand h1{font-size:16px}.ege-brand img{height:42px}}
+
+/* ---------- pills (status chips in the header) ---------- */
+.ege-pill{font-size:12px;padding:6px 10px;border-radius:2px;background:var(--ege-navy);border:1px solid var(--ege-navy);color:#fff;white-space:nowrap;font-family:var(--ege-display);text-transform:uppercase;letter-spacing:.6px}
+.ege-pill.off{background:var(--ege-red);border-color:var(--ege-red)}
+.ege-pill.light{background:var(--ege-panel2);color:var(--ege-navy);border-color:var(--ege-line)}
+
+/* ---------- layout ---------- */
+.ege-main{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:20px;margin-top:18px;max-width:1280px;margin-inline:auto;align-items:start}
+.ege-main.single{grid-template-columns:minmax(0,1fr);max-width:880px}
+@media (max-width:760px){.ege-main{grid-template-columns:1fr}}
+.ege-panel{background:var(--ege-panel);border:1px solid var(--ege-line);border-radius:2px;padding:18px;display:flex;flex-direction:column;gap:14px}
+@media (min-width:761px){.ege-panel.sticky{position:sticky;top:88px}}
+.ege-h2{font-family:var(--ege-display);font-weight:600;font-size:26px;letter-spacing:.2px;margin:0;color:var(--ege-navy2);padding-bottom:8px;position:relative;text-wrap:balance}
+.ege-h2::after{content:"";position:absolute;left:0;bottom:0;width:56px;height:3px;background:var(--ege-sky)}
+.ege-legend{font-family:var(--ege-display);font-size:17px;font-weight:500;color:var(--ege-navy2);padding:0 0 6px;margin:0 0 10px;display:block;width:100%;border-bottom:1px solid var(--ege-line)}
+.ege-legend::before{content:"";display:inline-block;width:4px;height:14px;background:var(--ege-red);margin-right:8px;vertical-align:-2px;transform:skewX(-14deg)}
+.ege-intro{font-size:13px;color:var(--ege-ink2);margin:0;max-width:70ch}
+.ege-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.ege-grid .wide{grid-column:1/-1}
+.ege-banner{font-size:13px;padding:8px 10px;background:var(--ege-warn-soft);color:var(--ege-warn);border-radius:2px}
+
+/* ---------- big talk button ---------- */
+.ege-ptt{display:flex;flex-direction:column;align-items:center;gap:10px;padding-block:4px;-webkit-user-select:none;user-select:none}
+.ege-mic{width:148px;height:148px;border-radius:50%;border:5px solid #fff;outline:3px solid var(--ege-sky);background:var(--ege-navy);color:#fff;font-family:var(--ege-display);font-size:19px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;transition:transform .12s ease;touch-action:manipulation;-webkit-touch-callout:none}
+.ege-mic:active{transform:scale(.96)}
+.ege-mic.listening{background:var(--ege-red);outline-color:var(--ege-red);animation:ege-pulse 1.2s ease-in-out infinite}
+.ege-mic[disabled]{background:var(--ege-ink3);cursor:not-allowed}
+@keyframes ege-pulse{0%,100%{box-shadow:0 0 0 0 rgba(236,28,45,.5)}50%{box-shadow:0 0 0 18px rgba(236,28,45,0)}}
+.ege-status{font-size:13px;color:var(--ege-ink);min-height:18px;text-align:center}
+.ege-hint{font-size:13px;color:var(--ege-ink2);text-align:center;max-width:40ch}
+.ege-modeline{font-size:12px;color:var(--ege-ink2);text-align:center}
+.ege-link{background:none;border:none;color:var(--ege-navy);text-decoration:underline;font-size:12px;padding:0 2px}
+.ege-tip{padding:10px 12px;border:1px solid var(--ege-sky);border-left:4px solid var(--ege-red);background:#F3F8FD;font-size:14px;line-height:1.45}
+
+/* ---------- fields ---------- */
+.ege-field{display:flex;flex-direction:column;gap:4px;position:relative}
+.ege-field label{font-size:12px;color:var(--ege-ink);letter-spacing:.3px;font-weight:500}
+.ege-field input,.ege-field select,.ege-field textarea,.ege-transcript{border:1px solid var(--ege-line);border-radius:3px;background:var(--ege-panel2);padding:9px 10px;min-height:42px;font-size:16px;width:100%;transition:background .3s}
+.ege-field textarea{min-height:64px;resize:vertical;line-height:1.45}
+.ege-field input.num,.ege-field .num{font-family:var(--ege-mono);font-variant-numeric:tabular-nums}
+.ege-transcript{min-height:200px;resize:vertical;line-height:1.5;border-radius:8px;padding:12px}
+.ege-transcript.dictating{border-color:var(--ege-red);box-shadow:0 0 0 3px rgba(236,28,45,.15)}
+.ege-field.filled input,.ege-field.filled select,.ege-field.filled textarea{border-color:var(--ege-sky);border-left-width:3px;background:var(--ege-panel)}
+.ege-field.flash input,.ege-field.flash textarea{background:#EAF3FB}
+.ege-unit{display:flex;align-items:center;gap:6px}
+.ege-unit span{font-size:12px;color:var(--ege-ink3);font-family:var(--ege-mono);min-width:26px}
+/* required: EGE.validate adds .missing to the wrapper */
+.ege-req{display:none;position:absolute;top:0;right:0;color:var(--ege-bad);font-weight:700;font-size:12px}
+.missing>.ege-req{display:block}
+.ege-field.missing input,.ege-field.missing select,.ege-field.missing textarea{border-color:var(--ege-bad);background:#fff}
+
+/* ---------- buttons ---------- */
+.ege-btn{border:1px solid var(--ege-line);background:var(--ege-panel2);border-radius:2px;padding:10px 16px;font-weight:500;font-size:15px;min-height:44px;font-family:var(--ege-display);letter-spacing:.8px;text-transform:uppercase;color:var(--ege-navy);display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.ege-btn.primary{background:var(--ege-navy);color:#fff;border-color:var(--ege-navy)}
+.ege-btn.accent{background:var(--ege-red);color:#fff;border-color:transparent}
+.ege-btn.small{padding:6px 10px;min-height:36px;font-size:13px}
+.ege-btn.gray,.ege-btn[aria-disabled="true"]{background:var(--ege-disabled);color:var(--ege-disabled-ink);border-color:var(--ege-disabled)}
+.ege-btn.arm{background:var(--ege-red);color:#fff;border-color:var(--ege-red)}
+.ege-btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* ---------- flags + tags ---------- */
+.ege-flags{display:flex;gap:8px;flex-wrap:wrap;min-height:30px}
+.ege-flag{font-size:13px;padding:5px 10px;border-radius:6px;font-weight:500}
+.ege-flag.bad{background:var(--ege-bad-soft);color:var(--ege-bad)}
+.ege-flag.warn{background:var(--ege-warn-soft);color:var(--ege-warn)}
+.ege-flag.ok{background:var(--ege-ok-soft);color:var(--ege-ok)}
+.ege-flag.info{background:var(--ege-info-soft);color:var(--ege-navy2);border:1px solid var(--ege-info-line)}
+.ege-tags{display:flex;gap:6px;flex-wrap:wrap}
+.ege-tag{font-size:12px;padding:3px 8px;border-radius:2px;background:var(--ege-info-soft);color:var(--ege-navy2);border:1px solid var(--ege-info-line)}
+.ege-tag.warn{background:var(--ege-warn-soft);color:var(--ege-warn);border-color:#EED9A0}
+.ege-legendkey{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--ege-ink3)}
+.ege-dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:var(--ege-sky)}
+.ege-dot.empty{background:var(--ege-line);border:1px solid var(--ege-ink3)}
+
+/* ---------- section cards (numbered report sections) ---------- */
+.ege-pane{max-height:calc(100dvh - 200px);overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scroll-behavior:smooth}
+@media (max-width:760px){.ege-pane{max-height:72dvh}}
+.ege-card{border:1px solid var(--ege-line);border-radius:2px;padding:12px 14px;margin-bottom:12px;background:var(--ege-panel);position:relative;transition:border-color .2s}
+.ege-card>.ege-req{top:-10px;right:12px;font-size:13px;background:var(--ege-panel);padding:0 6px}
+.ege-card.live{border-color:var(--ege-red);box-shadow:inset 4px 0 0 var(--ege-red)}
+.ege-card.missing{border-color:var(--ege-bad)}
+.ege-card.missing textarea{border-color:var(--ege-bad);background:#fff}
+.ege-card-head{display:flex;align-items:baseline;gap:10px;margin-bottom:2px;cursor:pointer}
+.ege-card-num{font-family:var(--ege-mono);font-weight:500;font-size:15px;color:var(--ege-red)}
+.ege-card h3{font-family:var(--ege-display);font-weight:500;font-size:18px;color:var(--ege-navy2);margin:0;flex:1;text-wrap:balance}
+.ege-card-eg{font-size:12px;color:var(--ege-ink3);font-style:italic;margin:0 0 8px}
+.ege-live{display:none;font-family:var(--ege-display);font-size:11px;letter-spacing:1px;color:#fff;background:var(--ege-red);padding:2px 7px;border-radius:2px}
+.ege-card.live.talking .ege-live{display:inline-block;animation:ege-blink 1.4s ease-in-out infinite}
+@keyframes ege-blink{50%{opacity:.45}}
+.ege-card-foot{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}
+
+/* cue buttons (jump to a section) */
+.ege-cues{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ege-cue{border:1px solid var(--ege-line);background:var(--ege-panel2);border-radius:2px;padding:7px 6px;min-height:44px;text-align:left;display:flex;flex-direction:column;line-height:1.1}
+.ege-cue b{font-family:var(--ege-mono);font-size:13px;color:var(--ege-navy)}
+.ege-cue span{font-size:12px;color:var(--ege-ink2)}
+.ege-cue.on{border-color:var(--ege-red);background:#fff;box-shadow:inset 3px 0 0 var(--ege-red)}
+.ege-cue.done b::after{content:" \2713";color:var(--ege-ok)}
+
+/* photo thumbnails */
+.ege-thumbs{display:flex;gap:6px;overflow-x:auto}
+.ege-thumbs:empty{display:none}
+.ege-thumbs button{flex:0 0 auto;border:1px solid var(--ege-line);padding:0;background:none;border-radius:2px}
+.ege-thumbs img{width:68px;height:68px;object-fit:cover;display:block}
+
+/* collapsible setup box */
+details.ege-adv{font-size:14px;color:var(--ege-ink2)}
+details.ege-adv summary{cursor:pointer;color:var(--ege-navy);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px;font-family:var(--ege-display)}
+details.ege-adv .ege-field{margin-top:8px}
+
+/* ---------- bottom action bar ---------- */
+.ege-bar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--ege-panel);border-top:1px solid var(--ege-line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.ege-bar-note{margin-right:auto;font-size:13px;color:var(--ege-ink3);align-self:center}
+
+/* ---------- toast ---------- */
+.ege-toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ege-navy2);color:#fff;font-weight:500;border-left:4px solid var(--ege-red);padding:10px 16px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:9;max-width:90vw}
+.ege-toast.show{opacity:1}
+
+/* ---------- bottom sheet (popup) ---------- */
+.ege-sheet{position:fixed;inset:0;z-index:8;background:rgba(19,26,70,.55);display:flex;align-items:flex-end;justify-content:center;padding:16px}
+.ege-sheet-box{background:var(--ege-panel);width:min(760px,100%);max-height:88dvh;overflow:auto;border-top:5px solid var(--ege-red);padding:16px;border-radius:2px;display:flex;flex-direction:column;gap:12px}
+.ege-sheet-box .ege-h2{font-size:22px}
+
+@media (prefers-reduced-motion:reduce){.ege-mic.listening,.ege-card.live.talking .ege-live{animation:none}.ege-pane{scroll-behavior:auto}}
