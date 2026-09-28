@@ -50,11 +50,27 @@ const PanZoom = forwardRef<PanZoomHandle, Props>(function PanZoom({ width, heigh
     const s = Math.min(1, bh / sh);
     setView({ s, tx: (bw - sw * s) / 2, ty: (bh - sh * s) / 2 });
   };
-  useEffect(() => { fit(); const ro = new ResizeObserver(fit); if (box.current) ro.observe(box.current); return () => ro.disconnect(); }, [width, height, resetKey]); // eslint-disable-line react-hooks/exhaustive-deps
+  // First layout fits the sheet. Later box changes (the list drawer opening, a rotation) keep the
+  // sheet's on screen size and position, so the drawing doesn't jump under a finger.
+  const lastBw = useRef(0);
+  useEffect(() => {
+    fit(); lastBw.current = box.current?.clientWidth ?? 0;
+    const ro = new ResizeObserver(() => {
+      const el = box.current; if (!el) return;
+      const bw = el.clientWidth;
+      if (!lastBw.current || Math.abs(bw - lastBw.current) < 2) { lastBw.current = bw; return; }
+      const k = lastBw.current / bw;           // stage width tracks the box, so scale compensates
+      lastBw.current = bw;
+      setStageW(bw);
+      setView(v => ({ s: Math.min(8, Math.max(0.25, v.s * k)), tx: v.tx, ty: v.ty }));
+    });
+    if (box.current) ro.observe(box.current);
+    return () => ro.disconnect();
+  }, [width, height, resetKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const clamp = (v: View): View => {
     const el = box.current; if (!el) return v;
-    const s = Math.min(Math.max(v.s, 0.5), 8);
+    const s = Math.min(Math.max(v.s, 0.25), 8);
     const sw = stageW * s, sh = stageW * (height / width) * s;
     const bw = el.clientWidth, bh = el.clientHeight;
     let tx = v.tx, ty = v.ty;

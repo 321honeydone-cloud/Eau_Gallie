@@ -1,49 +1,76 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useLiveQuery } from 'dexie-react-hooks';
 import PanZoom from '../components/PanZoom';
-import { useSheetSrc } from '../hooks/useSheetSrc';
 import PartCard, { ladderLabel } from './PartCard';
 import { useOpenFlags, useSheets, useZoneParts, useSheetDark } from '../hooks/useJob';
-import { useLiveQuery } from 'dexie-react-hooks';
+import { useSheetSrc } from '../hooks/useSheetSrc';
 import { db, setSetting } from '../db';
 import { activeLadder, currentStep, setStep, stepName, zoneProgress } from '../lib/status';
 import { toast } from '../ege/ege';
 import { STEPS, type Step, type Zone } from '../types';
 
 interface Props { zone: Zone; foreman: string; date: string; onBack: () => void }
-type Mode = 'both' | 'pins' | 'list';
 
 const CAT_ORDER = ['fixture', 'sign', 'can', 'pole', 'regulator', 'equipment', 'handhole', 'manhole', 'conduit', 'duct', 'cable'];
 const CAT_LABEL: Record<string, string> = { fixture: 'Lights', sign: 'Signs', can: 'Base cans', pole: 'Poles', regulator: 'Regulators', equipment: 'Equipment', handhole: 'Handholes', manhole: 'Manholes', conduit: 'Conduit', duct: 'Duct bank', cable: 'Cable' };
+const MIN_W = 240;
 
 export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   const sheets = useSheets(zone.jobId);
   const sheet = sheets.find(s => s.id === zone.detailSheetId);
   const sheetSrc = useSheetSrc(sheet);
   const dark = useSheetDark();
-  // the part that changed most recently gets a pop, so the tap has a visible answer on the sheet
-  const lastEvent = useLiveQuery(() => db.events.orderBy('createdAt').reverse().first(), []);
-  const popId = lastEvent && Date.now() - lastEvent.createdAt < 1500 ? lastEvent.partId : null;
   const parts = useZoneParts(zone.id);
   const flags = useOpenFlags(zone.jobId);
-  const listPref = useLiveQuery(() => db.settings.get('zoneList').then(s => s?.value), []);
-  const [mode, setMode] = useState<Mode>(() => (window.innerWidth < 900 ? 'pins' : 'both'));
-  const [focus, setFocus] = useState(false);
-  useEffect(() => { if (listPref === 'closed') setMode('pins'); else if (listPref === 'open' && window.innerWidth >= 900) setMode('both'); }, [listPref]);
-  const toggleList = () => { const next = mode === 'pins' ? (window.innerWidth < 900 ? 'list' : 'both') : 'pins'; setMode(next); void setSetting('zoneList', next === 'pins' ? 'closed' : 'open'); };
   const [openId, setOpenIdRaw] = useState<string | null>(null);
   const openedAt = useRef(0);
   const setOpenId = (id: string | null) => { if (id) openedAt.current = Date.now(); setOpenIdRaw(id); };
   const [bulk, setBulk] = useState(false);
   const [sel, setSel] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState<'all' | 'open' | 'flagged'>('all');
+  const [focus, setFocus] = useState(false);
+
+  // the list drawer: open or closed, pinned as a column or floating over the sheet, and how wide
+  const prefs = useLiveQuery(async () => ({
+    open: (await db.settings.get('list.open'))?.value, pinned: (await db.settings.get('list.pinned'))?.value, width: (await db.settings.get('list.width'))?.value,
+  }), []);
+  const [listOpen, setListOpen] = useState(window.innerWidth >= 900);
+  const [pinned, setPinned] = useState(true);
+  const [listW, setListW] = useState(340);
+  const [dragW, setDragW] = useState<number | null>(null);
+  useEffect(() => {
+    if (!prefs) return;
+    if (prefs.open) setListOpen(prefs.open === '1');
+    if (prefs.pinned) setPinned(prefs.pinned === '1');
+    if (prefs.width) setListW(Number(prefs.width));
+  }, [prefs?.open, prefs?.pinned, prefs?.width]); // eslint-disable-line react-hooks/exhaustive-deps
+  const toggleList = () => { const n = !listOpen; setListOpen(n); void setSetting('list.open', n ? '1' : '0'); };
+  const togglePin = () => { const n = !pinned; setPinned(n); void setSetting('list.pinned', n ? '1' : '0'); };
+  const maxW = () => Math.max(MIN_W, Math.min(window.innerWidth * 0.6, window.innerWidth - 80));
+  const width = Math.min(maxW(), dragW ?? listW);
+
+  // drag the grip to size the column
+  const gripDown = (e: React.PointerEvent) => {
+    e.preventDefault();
+    const startX = e.clientX, startW = width;
+    const move = (ev: PointerEvent) => setDragW(Math.max(MIN_W, Math.min(maxW(), startW + (startX - ev.clientX))));
+    const up = (ev: PointerEvent) => {
+      const w = Math.max(MIN_W, Math.min(maxW(), startW + (startX - ev.clientX)));
+      setDragW(null); setListW(w); void setSetting('list.width', String(Math.round(w)));
+      window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up);
+    };
+    window.addEventListener('pointermove', move); window.addEventListener('pointerup', up);
+  };
 
   const flagByPart = useMemo(() => new Map(flags.filter(f => f.partId).map(f => [f.partId!, f])), [flags]);
   const sorted = useMemo(() => [...parts].sort((a, b) => CAT_ORDER.indexOf(a.category) - CAT_ORDER.indexOf(b.category) || a.label.localeCompare(b.label, undefined, { numeric: true })), [parts]);
   const shown = sorted.filter(p => filter === 'all' ? true : filter === 'flagged' ? flagByPart.has(p.id) : currentStep(p) < 4);
   const open = parts.find(p => p.id === openId);
   const pct = zoneProgress(parts);
+  const openCount = parts.filter(p => currentStep(p) < 4).length;
+  const lastEvent = useLiveQuery(() => db.events.orderBy('createdAt').reverse().first(), []);
+  const popId = lastEvent && Date.now() - lastEvent.createdAt < 1500 ? lastEvent.partId : null;
 
-  // keep the screen awake while a foreman is working a zone
   useEffect(() => {
     let lock: { release: () => Promise<void> } | null = null;
     const nav = navigator as Navigator & { wakeLock?: { request: (t: 'screen') => Promise<{ release: () => Promise<void> }> } };
@@ -56,7 +83,6 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
     const n = shown.slice(i + 1).find(p => currentStep(p) < 4) ?? shown.find(p => currentStep(p) < 4 && p.id !== id);
     if (n) setOpenId(n.id); else { setOpenId(null); toast('Nothing left open in this zone.'); }
   };
-
   const toggleSel = (id: string) => setSel(s => { const n = new Set(s); if (n.has(id)) n.delete(id); else n.add(id); return n; });
   const bulkSet = async (to: Step) => {
     const targets = parts.filter(p => sel.has(p.id));
@@ -64,8 +90,9 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
     toast(`${targets.length} parts set to ${stepName(to)}`);
     setSel(new Set()); setBulk(false);
   };
-
   const onTap = (id: string) => { if (bulk) toggleSel(id); else setOpenId(id); };
+  // an unpinned drawer gets out of the way when the sheet is touched
+  const sheetTouched = () => { if (listOpen && !pinned) { setListOpen(false); void setSetting('list.open', '0'); } };
 
   const pins = sheet && parts.filter(p => p.x !== undefined).map(p => {
     const s = currentStep(p);
@@ -92,11 +119,6 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
         <h2 className="ege-h2" style={{ fontSize: 22, paddingBottom: 4 }}>{zone.name}</h2>
         <span className="ege-tag">{pct}% complete</span>
         <span className="spacer" />
-        <div className="seg">
-          <button type="button" className={mode === 'both' ? 'on' : ''} onClick={() => setMode('both')}>Both</button>
-          <button type="button" className={mode === 'pins' ? 'on' : ''} onClick={() => setMode('pins')}>Sheet</button>
-          <button type="button" className={mode === 'list' ? 'on' : ''} onClick={() => setMode('list')}>List</button>
-        </div>
         <button type="button" className={'ege-btn' + (bulk ? ' accent' : '')} onClick={() => { setBulk(b => !b); setSel(new Set()); }}>{bulk ? 'Cancel select' : 'Select many'}</button>
         <button type="button" className="ege-btn" onClick={() => setSetting('sheetLook', dark ? 'day' : 'night')}>{dark ? 'Daylight' : 'Night'}</button>
         <button type="button" className="ege-btn" onClick={() => setFocus(true)} title="Hide the bars, sheet only">Hide bars</button>
@@ -117,46 +139,48 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
         <span><span className="sw" style={{ background: '#fff', border: '2px dashed var(--ege-navy2)' }} />Demo</span>
       </div>
 
-      <div className={'zone-layout' + (mode === 'list' ? ' list-only' : mode === 'pins' ? ' pins-only' : '')}>
-        {mode !== 'list' && sheet && (
-          <div className="sheetwrap">
+      <div className={'sheetwrap' + (listOpen ? ' open' : '') + (pinned ? ' pinned' : ' floating') + (dragW !== null ? ' sizing' : '')} style={{ ['--listw' as string]: `${width}px` }}>
+        {sheet && (
+          <div className="sheetarea" onPointerDownCapture={sheetTouched}>
             <PanZoom dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
               {pins}
             </PanZoom>
-            <button type="button" className={'listtab' + (mode === 'pins' ? ' closed' : '')} onClick={toggleList} aria-label={mode === 'pins' ? 'Show list' : 'Hide list'}>
-              <span className="chev">{mode === 'pins' ? '‹' : '›'}</span>
-              <span className="lbl">{mode === 'pins' ? `List · ${parts.filter(p => currentStep(p) < 4).length} open` : 'Hide'}</span>
-            </button>
           </div>
         )}
-        {mode !== 'pins' && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8, minHeight: 0 }}>
+        <button type="button" className="listtab" onClick={toggleList} aria-label={listOpen ? 'Hide list' : 'Show list'}>
+          <span className="chev">{listOpen ? '›' : '‹'}</span>
+          <span className="lbl">{listOpen ? 'Hide' : `List · ${openCount} open`}</span>
+        </button>
+        <aside className="drawer" aria-hidden={!listOpen}>
+          <div className="grip" onPointerDown={gripDown} title="Drag to size" />
+          <div className="drawerhead">
             <div className="seg">
               <button type="button" className={filter === 'all' ? 'on' : ''} onClick={() => setFilter('all')}>All {parts.length}</button>
-              <button type="button" className={filter === 'open' ? 'on' : ''} onClick={() => setFilter('open')}>Not done {parts.filter(p => currentStep(p) < 4).length}</button>
-              <button type="button" className={filter === 'flagged' ? 'on' : ''} onClick={() => setFilter('flagged')}>Flagged {parts.filter(p => flagByPart.has(p.id)).length}</button>
+              <button type="button" className={filter === 'open' ? 'on' : ''} onClick={() => setFilter('open')}>Open {openCount}</button>
+              <button type="button" className={filter === 'flagged' ? 'on' : ''} onClick={() => setFilter('flagged')}>Flag {parts.filter(p => flagByPart.has(p.id)).length}</button>
             </div>
-            <div className="plist">
-              {CAT_ORDER.filter(c => shown.some(p => p.category === c)).map(c => (
-                <div key={c}>
-                  <div className="group">{CAT_LABEL[c]}</div>
-                  {shown.filter(p => p.category === c).map(p => {
-                    const s = currentStep(p);
-                    return (
-                      <button key={p.id} type="button" className={'prow' + (sel.has(p.id) ? ' sel' : '')} onClick={() => onTap(p.id)}>
-                        {bulk && <span className="chk">{sel.has(p.id) ? '✓' : ''}</span>}
-                        <span className={`dot s${s}` + (flagByPart.has(p.id) ? ' flagged' : '')}>{s}</span>
-                        <span className="lab">{p.label}{p.kind === 'linear' && <small>{p.qtyDone ?? 0} of {p.totalQty} LF</small>}{flagByPart.has(p.id) && <small style={{ color: 'var(--ege-bad)' }}>{flagByPart.get(p.id)!.reason}</small>}</span>
-                        <span className="st">{ladderLabel(p)}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              ))}
-              {!shown.length && <div className="stub">Nothing here.</div>}
-            </div>
+            <button type="button" className={'ege-btn small pinbtn' + (pinned ? ' primary' : '')} onClick={togglePin} aria-pressed={pinned} title={pinned ? 'Pinned as a column. Tap to let it float over the sheet.' : 'Floating. Tap to pin it beside the sheet.'}>{pinned ? 'Pinned' : 'Pin'}</button>
           </div>
-        )}
+          <div className="plist">
+            {CAT_ORDER.filter(c => shown.some(p => p.category === c)).map(c => (
+              <div key={c}>
+                <div className="group">{CAT_LABEL[c]}</div>
+                {shown.filter(p => p.category === c).map(p => {
+                  const s = currentStep(p);
+                  return (
+                    <button key={p.id} type="button" className={'prow' + (sel.has(p.id) ? ' sel' : '')} onClick={() => onTap(p.id)}>
+                      {bulk && <span className="chk">{sel.has(p.id) ? '✓' : ''}</span>}
+                      <span className={`dot s${s}` + (flagByPart.has(p.id) ? ' flagged' : '')}>{s}</span>
+                      <span className="lab">{p.label}{p.kind === 'linear' && <small>{p.qtyDone ?? 0} of {p.totalQty} LF</small>}{flagByPart.has(p.id) && <small style={{ color: 'var(--ege-bad)' }}>{flagByPart.get(p.id)!.reason}</small>}</span>
+                      <span className="st">{ladderLabel(p)}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            ))}
+            {!shown.length && <div className="stub">{parts.length ? 'Nothing here.' : 'No pins on this sheet yet. Setup, Pins.'}</div>}
+          </div>
+        </aside>
       </div>
 
       {open && (

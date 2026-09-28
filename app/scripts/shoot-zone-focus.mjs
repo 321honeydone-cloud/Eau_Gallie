@@ -3,15 +3,31 @@ const OUT = process.argv[2] || '/tmp/shots'; const BASE = process.env.BASE_URL |
 const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
 const page = await (await browser.newContext({ viewport: { width: 1180, height: 820 }, hasTouch: true })).newPage();
 const errors = []; page.on('pageerror', e => errors.push(String(e)));
+await page.addInitScript(() => { try { localStorage.setItem('ege.activeJob', 'job_placeholder'); } catch {} });
 await page.goto(BASE + '/'); await page.waitForSelector('.choice');
 await page.getByRole('button', { name: /Darrell/ }).click();
 await page.waitForSelector('.zone-poly'); await page.locator('.zone-poly').first().click();
-await page.waitForSelector('.listtab'); await page.waitForTimeout(1200);
+await page.waitForSelector('.listtab'); await page.waitForTimeout(900);
+const w0 = await page.locator('.drawer').evaluate(el => el.getBoundingClientRect().width);
+await page.screenshot({ path: `${OUT}/45-drawer-open.png` });
+// drag the grip 120px to the left to widen
+const g = await page.locator('.drawer .grip').boundingBox();
+await page.mouse.move(g.x + 8, g.y + g.height / 2); await page.mouse.down();
+await page.mouse.move(g.x - 60, g.y + g.height / 2, { steps: 6 }); await page.mouse.move(g.x - 120, g.y + g.height / 2, { steps: 6 }); await page.mouse.up();
+await page.waitForTimeout(400);
+const w1 = await page.locator('.drawer').evaluate(el => el.getBoundingClientRect().width);
+await page.screenshot({ path: `${OUT}/46-drawer-wider.png` });
+// close, then open, then unpin and tap the sheet
 await page.getByRole('button', { name: 'Hide list' }).click(); await page.waitForTimeout(500);
-await page.screenshot({ path: `${OUT}/45-list-hidden.png` });
-await page.getByRole('button', { name: 'Hide bars' }).click(); await page.waitForTimeout(500);
-await page.screenshot({ path: `${OUT}/46-bars-hidden.png` });
-await page.getByRole('button', { name: 'Show bars' }).click(); await page.getByRole('button', { name: 'Show list' }).click(); await page.waitForTimeout(500);
-await page.screenshot({ path: `${OUT}/47-list-back.png` });
-console.log(JSON.stringify({ errors }));
+const closedX = await page.locator('.drawer').evaluate(el => el.getBoundingClientRect().left);
+await page.screenshot({ path: `${OUT}/47-drawer-closed.png` });
+await page.getByRole('button', { name: 'Show list' }).click(); await page.waitForTimeout(500);
+await page.getByRole('button', { name: 'Pinned' }).click(); await page.waitForTimeout(500);
+await page.screenshot({ path: `${OUT}/48-drawer-floating.png` });
+const v = await page.locator('.viewer').boundingBox();
+await page.mouse.click(v.x + 60, v.y + 60); await page.waitForTimeout(500);
+const afterTap = await page.locator('.sheetwrap').evaluate(el => el.className);
+await page.reload(); await page.waitForSelector('.zone-poly'); await page.locator('.zone-poly').first().click(); await page.waitForSelector('.listtab'); await page.waitForTimeout(600);
+const remembered = await page.locator('.sheetwrap').evaluate(el => ({ cls: el.className, w: getComputedStyle(el).getPropertyValue('--listw') }));
+console.log(JSON.stringify({ w0, w1, closedX, afterTap, remembered, errors }));
 await browser.close();
