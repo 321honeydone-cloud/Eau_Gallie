@@ -1,9 +1,11 @@
 // Builds the Pensacola Runway 8-26 job from the rendered sheets and the bid schedule.
-// Zones are one per lighting layout sheet, boxed on the C-6 overall plan. Pins get placed in Setup.
+// Zones are one per lighting layout sheet, boxed on the C-6 overall plan. Pins come from the legend-driven
+// symbol finder (scripts/detect_symbols.py + finalize_symbols.py -> src/data/pensacola-parts.json).
 import { readFileSync, writeFileSync } from 'node:fs';
 import sizeOf from './image-size.mjs';
 const J = 'job_pensacola_rw826';
 const bid = JSON.parse(readFileSync('src/data/pensacola-bid-items.json', 'utf8'));
+const found = JSON.parse(readFileSync('src/data/pensacola-parts.json', 'utf8'));
 const sheetDefs = [
   ['c6-overall', 'C-6', 'Overall Plan (Drainage sheet used as the airfield map)', true],
   ['e201', 'E201', 'Airfield Lighting Layout Plan, Sheet 1 of 11'], ['e202', 'E202', 'Airfield Lighting Layout Plan, Sheet 2 of 11'],
@@ -38,9 +40,32 @@ const payItems = bid.filter(it => /^(L-|SP-)/.test(it.specRef)).map(it => {
     billingType: unit === 'LS' ? 'lumpsum' : unit === 'AL' ? 'allowance' : 'unit', unitPrice: 0, bidQty: it.qty ?? 0, ...(unit === 'LS' ? { percentComplete: 0 } : {}) };
 });
 const equipment = ['Trencher', 'Mini excavator', 'Skid steer', 'Directional bore rig', 'Core drill', 'Saw cut rig', 'Concrete mixer', 'Bucket truck', 'Service truck', 'Van', 'Light tower'].map((name, i) => ({ id: `eq_pns_${i + 1}`, jobId: J, name }));
+// what each symbol on the sheet is, and which bid line it bills against (item numbers off the bid schedule)
+const SYMBOLS = {
+  'sq_circle:N': ['L-861T taxiway light N', 'fixture', 67], 'sq_circle:A': ['L-861T taxiway light A', 'fixture', 66],
+  'sq_circle:T': ['L-861T taxiway light T', 'fixture', 68], 'sq_circle:RE': ['L-861T taxiway light RE (mill & overlay)', 'fixture', null],
+  'sq_bar:CC': ['L-862 runway edge light C/C', 'fixture', 69], 'sq_bar:CY': ['L-862 runway edge light C/Y', 'fixture', 70],
+  'threshold:A': ['L-862E threshold light G/R', 'fixture', 71],
+  'plus_circle:RE': ['L-850A centerline light RE', 'fixture', 57], 'dbl_circle:RE': ['L-850C runway edge light RE', 'fixture', 58],
+  'dbl_circle:A': ['L-850C runway edge light C/Y A', 'fixture', 61], 'dbl_circle:': ['L-850C runway edge light', 'fixture', null],
+  'sign:1M': ['L-858 sign 1 module', 'sign', 62], 'sign:2M': ['L-858 sign 2 module', 'sign', 63], 'sign:3M': ['L-858 sign 3 module', 'sign', 64],
+};
+const perSheet = {};
+const parts = found.parts.map(f => {
+  const key = `${f.kind}:${f.face ?? f.mod ?? ''}`;
+  const [name, category, itemNo] = SYMBOLS[key] ?? [`${f.kind} ${f.mod ?? ''}`.trim(), 'fixture', null];
+  const n = (perSheet[`${f.sheet}|${name}`] = (perSheet[`${f.sheet}|${name}`] ?? 0) + 1);
+  const pay = itemNo && payItems.find(p => p.itemNo === String(itemNo));
+  return {
+    id: `pt_pns_${f.sheet.toLowerCase()}_${f.kind}_${n}_${Math.round(f.x * 10)}_${Math.round(f.y * 10)}`, jobId: J, zoneId: `z_pns_${f.sheet.toLowerCase()}`,
+    label: `${name} #${n}`, category, kind: 'point', work: (f.mod === 'RE') ? 're' : 'install', x: f.x, y: f.y,
+    installPay: pay ? [{ payItemId: pay.id, billAtStep: 4 }] : [], demoPay: [], installStep: 0, demoStep: 0,
+    ...(pay ? {} : { note: 'No bid line matched this symbol. Office: link a pay item in Setup.' }),
+  };
+});
 const data = {
   job: { id: J, name: 'Pensacola RW 8-26 Rehabilitation', customer: 'City of Pensacola, Bid 25-029', airport: 'Pensacola International', contractNo: '25-029', billingList: 'owner' },
-  phases, sheets, zones, payItems, parts: [], crew: [], equipment,
+  phases, sheets, zones, payItems, parts, crew: [], equipment,
 };
 writeFileSync('src/data/pensacola.json', JSON.stringify(data, null, 1));
-console.log(`pensacola: ${sheets.length} sheets, ${zones.length} zones, ${payItems.length} pay items`);
+console.log(`pensacola: ${sheets.length} sheets, ${zones.length} zones, ${payItems.length} pay items, ${parts.length} parts (${parts.filter(p => !p.installPay.length).length} without a pay line)`);

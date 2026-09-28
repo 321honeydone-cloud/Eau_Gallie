@@ -1017,7 +1017,6116 @@
    "bidQty": 16
   }
  ],
- "parts": [],
+ "parts": [
+  {
+   "id": "pt_pns_e201_sign_1_362_409",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 36.194,
+   "y": 40.921,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sign_2_374_517",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-858 sign 2 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 37.396,
+   "y": 51.653,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_bar_1_387_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 38.667,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_bar_2_501_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 50.125,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_bar_3_616_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 61.597,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_bar_1_387_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862 runway edge light C/Y #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 38.667,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_bar_2_501_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862 runway edge light C/Y #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 50.125,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_bar_3_616_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862 runway edge light C/Y #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 61.597,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_1_272_364",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.167,
+   "y": 36.37,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_2_339_364",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.889,
+   "y": 36.37,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_3_272_397",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.167,
+   "y": 39.676,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_1_334_397",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.389,
+   "y": 39.676,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_4_272_436",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.167,
+   "y": 43.561,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_2_334_436",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light A #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.389,
+   "y": 43.561,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_5_272_455",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.167,
+   "y": 45.493,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_3_337_456",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light A #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.694,
+   "y": 45.589,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_6_272_474",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.167,
+   "y": 47.424,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_7_340_476",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.014,
+   "y": 47.585,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_8_272_494",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.181,
+   "y": 49.356,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_9_343_496",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.333,
+   "y": 49.581,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_10_272_513",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.181,
+   "y": 51.288,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_11_347_516",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.653,
+   "y": 51.578,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_12_272_532",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.181,
+   "y": 53.22,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_13_350_536",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.972,
+   "y": 53.595,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_4_272_552",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light A #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.181,
+   "y": 55.151,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_5_353_556",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light A #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 35.278,
+   "y": 55.57,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_sq_circle_6_358_558",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-861T taxiway light A #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 35.833,
+   "y": 55.785,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_1_272_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 56.074,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_2_272_570",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 56.976,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_3_272_579",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 57.899,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_4_272_588",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 58.8,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_5_272_688",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 68.802,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_6_272_697",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 69.704,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_7_272_706",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 70.627,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e201_threshold_8_272_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-862E threshold light G/R #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.174,
+   "y": 71.528,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sign_1_228_409",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 22.812,
+   "y": 40.899,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sign_1_237_517",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 23.715,
+   "y": 51.653,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sign_1_205_764",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-858 sign 1 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 20.493,
+   "y": 76.379,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_1_70_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 7,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_2_299_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 29.944,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_3_414_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.417,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_4_529_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/C #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.889,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_5_644_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/C #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 64.361,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_1_70_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/Y #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 7,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_2_185_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/Y #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 18.472,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_3_299_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/Y #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 29.944,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_4_414_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/Y #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.417,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_5_529_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/Y #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.889,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_bar_6_644_715",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-862 runway edge light C/C #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 64.361,
+   "y": 71.539,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_1_202_364",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 20.194,
+   "y": 36.381,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_2_128_365",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.819,
+   "y": 36.478,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_3_129_397",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.889,
+   "y": 39.676,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_1_197_397",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 19.708,
+   "y": 39.676,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_4_130_436",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.972,
+   "y": 43.561,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_2_197_436",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light A #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 19.708,
+   "y": 43.561,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_3_200_456",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light A #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 20.014,
+   "y": 45.589,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_5_130_456",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.014,
+   "y": 45.6,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_6_203_476",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 20.333,
+   "y": 47.585,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_7_131_476",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.069,
+   "y": 47.639,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_8_207_496",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 20.653,
+   "y": 49.581,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_9_131_497",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.111,
+   "y": 49.678,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_10_210_516",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 20.972,
+   "y": 51.578,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_11_132_517",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.167,
+   "y": 51.717,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_12_213_536",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.292,
+   "y": 53.595,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_13_132_538",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.208,
+   "y": 53.756,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_14_216_556",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #14",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.597,
+   "y": 55.57,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_15_222_558",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #15",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.153,
+   "y": 55.785,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e202_sq_circle_16_133_558",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-861T taxiway light N #16",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.264,
+   "y": 55.795,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_dbl_circle_1_440_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-850C runway edge light RE #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 44.049,
+   "y": 56.064,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_58",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_dbl_circle_2_515_565",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-850C runway edge light RE #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 51.493,
+   "y": 56.461,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_58",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_plus_circle_1_465_434",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-850A centerline light RE #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.458,
+   "y": 43.411,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_plus_circle_2_465_480",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-850A centerline light RE #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.528,
+   "y": 47.961,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_plus_circle_3_466_525",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-850A centerline light RE #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.583,
+   "y": 52.49,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_plus_circle_4_466_570",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-850A centerline light RE #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.639,
+   "y": 57.04,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_plus_circle_5_467_616",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-850A centerline light RE #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.694,
+   "y": 61.59,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sign_1_239_410",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 23.917,
+   "y": 40.964,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sign_1_366_517",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 36.646,
+   "y": 51.653,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sign_1_252_517",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-858 sign 1 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 25.243,
+   "y": 51.674,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_bar_1_96_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 9.597,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_bar_2_325_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 32.528,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_bar_3_555_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 55.472,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_bar_4_669_561",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-862 runway edge light C/C #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 66.944,
+   "y": 56.085,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_1_582_152",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light T #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 58.222,
+   "y": 15.164,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_2_654_152",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light T #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 65.417,
+   "y": 15.164,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_3_654_238",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light T #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 65.417,
+   "y": 23.75,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_4_582_238",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light T #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 58.222,
+   "y": 23.771,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_1_142_412",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.194,
+   "y": 41.2,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_2_211_413",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light A #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.097,
+   "y": 41.307,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_1_143_438",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.264,
+   "y": 43.775,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_3_211_442",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light A #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.125,
+   "y": 44.183,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_2_140_457",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.972,
+   "y": 45.739,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_4_215_461",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light A #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.458,
+   "y": 46.061,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_3_137_477",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.667,
+   "y": 47.714,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_4_218_480",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.806,
+   "y": 47.95,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_5_134_497",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.375,
+   "y": 49.689,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_6_221_498",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.139,
+   "y": 49.839,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_7_131_517",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.083,
+   "y": 51.663,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_8_225_517",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.486,
+   "y": 51.728,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_9_128_536",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.792,
+   "y": 53.617,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_10_228_536",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.819,
+   "y": 53.617,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_11_232_555",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 23.153,
+   "y": 55.484,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_12_125_556",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.5,
+   "y": 55.613,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_13_120_558",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.028,
+   "y": 55.785,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e203_sq_circle_5_239_558",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-861T taxiway light A #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 23.875,
+   "y": 55.785,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_dbl_circle_1_441_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-850C runway edge light #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.062,
+   "y": 12.256,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e204_dbl_circle_1_517_149",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-850C runway edge light RE #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 51.715,
+   "y": 14.885,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_58",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_dbl_circle_2_417_152",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-850C runway edge light RE #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 41.729,
+   "y": 15.207,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_58",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_dbl_circle_3_470_251",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-850C runway edge light RE #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.965,
+   "y": 25.113,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_58",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_plus_circle_1_468_69",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-850A centerline light RE #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.75,
+   "y": 6.858,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_plus_circle_2_468_114",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-850A centerline light RE #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.806,
+   "y": 11.408,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_plus_circle_3_469_160",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-850A centerline light RE #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.875,
+   "y": 15.958,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_57",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sign_1_255_163",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-858 sign 1 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 25.507,
+   "y": 16.345,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sign_1_601_166",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 60.146,
+   "y": 16.645,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sign_2_113_168",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-858 sign 1 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 11.326,
+   "y": 16.795,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sign_3_719_168",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-858 sign 1 module #3",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 71.91,
+   "y": 16.795,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sign_1_115_274",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 11.535,
+   "y": 27.356,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sign_2_259_295",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-858 sign 2 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 25.944,
+   "y": 29.545,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_bar_1_96_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-862 runway edge light C/Y #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 9.597,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_bar_1_325_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 32.528,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_bar_2_555_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 55.472,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_bar_3_669_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 66.944,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_1_119_125",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 11.903,
+   "y": 12.492,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_1_238_125",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 23.75,
+   "y": 12.513,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_2_233_127",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 23.292,
+   "y": 12.685,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_2_126_128",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light A #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.625,
+   "y": 12.792,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_3_230_146",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 23,
+   "y": 14.617,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_4_130_148",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 12.986,
+   "y": 14.767,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_5_227_165",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.708,
+   "y": 16.527,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_6_133_167",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.333,
+   "y": 16.742,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_7_224_185",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.417,
+   "y": 18.459,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_8_137_187",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 13.681,
+   "y": 18.695,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_9_221_204",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.139,
+   "y": 20.391,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_10_140_207",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.042,
+   "y": 20.67,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_11_218_223",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.847,
+   "y": 22.312,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_12_144_226",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.389,
+   "y": 22.623,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_13_148_246",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.75,
+   "y": 24.587,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_14_225_257",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #14",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 22.458,
+   "y": 25.714,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_15_150_282",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #15",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.986,
+   "y": 28.15,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_16_231_291",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light N #16",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 23.056,
+   "y": 29.083,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_1_232_315",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light T #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 23.194,
+   "y": 31.509,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e204_sq_circle_2_152_317",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-861T taxiway light T #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 15.208,
+   "y": 31.734,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sign_1_700_409",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 70.042,
+   "y": 40.878,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sign_1_570_516",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 57.021,
+   "y": 51.567,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_bar_1_96_560",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 9.611,
+   "y": 55.999,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_bar_2_211_560",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.083,
+   "y": 55.999,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_bar_3_326_560",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 32.556,
+   "y": 55.999,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_bar_4_440_560",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-862 runway edge light C/C #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.028,
+   "y": 55.999,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_bar_5_555_560",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-862 runway edge light C/C #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 55.5,
+   "y": 55.999,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_1_68_151",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 6.75,
+   "y": 15.1,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_2_169_151",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 16.889,
+   "y": 15.121,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_3_270_151",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.028,
+   "y": 15.143,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_4_372_152",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 37.153,
+   "y": 15.164,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_5_443_152",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.347,
+   "y": 15.186,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_6_68_236",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 6.75,
+   "y": 23.642,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_7_169_237",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 16.889,
+   "y": 23.664,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_8_270_237",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 27.028,
+   "y": 23.707,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_9_372_238",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 37.153,
+   "y": 23.75,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_10_443_242",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.347,
+   "y": 24.222,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_11_605_363",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 60.5,
+   "y": 36.306,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_12_672_363",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light T #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.236,
+   "y": 36.306,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_1_610_396",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 61.014,
+   "y": 39.59,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_2_672_396",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.208,
+   "y": 39.59,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_3_610_435",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 61.014,
+   "y": 43.475,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_4_672_435",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.208,
+   "y": 43.475,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_5_607_455",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 60.694,
+   "y": 45.482,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_6_672_455",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.208,
+   "y": 45.514,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_7_604_475",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 60.375,
+   "y": 47.478,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_8_672_476",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.208,
+   "y": 47.553,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_9_601_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 60.056,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_10_672_496",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.208,
+   "y": 49.592,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_11_597_515",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 59.736,
+   "y": 51.492,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_12_672_516",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.208,
+   "y": 51.631,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_13_594_535",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 59.431,
+   "y": 53.488,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_14_672_537",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light N #14",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.222,
+   "y": 53.67,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_1_591_555",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 59.111,
+   "y": 55.505,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_2_672_557",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light A #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67.222,
+   "y": 55.709,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e205_sq_circle_3_586_557",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-861T taxiway light A #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 58.569,
+   "y": 55.72,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_dbl_circle_1_325_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-850C runway edge light C/Y A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 32.549,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_61",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sign_1_279_163",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-858 sign 1 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 27.938,
+   "y": 16.345,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sign_2_384_163",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-858 sign 1 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 38.424,
+   "y": 16.345,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sign_3_619_168",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-858 sign 1 module #3",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 61.938,
+   "y": 16.795,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sign_1_281_274",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 28.111,
+   "y": 27.42,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_bar_1_96_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 9.611,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_bar_2_211_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.083,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_bar_3_440_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.028,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_bar_4_555_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-862 runway edge light C/C #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 55.5,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_bar_5_670_123",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-862 runway edge light C/C #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 66.972,
+   "y": 12.256,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_1_303_129",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light RE (mill & overlay) #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 30.278,
+   "y": 12.857,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_2_361_129",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light RE (mill & overlay) #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 36.111,
+   "y": 12.857,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_1_583_381",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 58.347,
+   "y": 38.109,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_2_648_382",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 64.819,
+   "y": 38.152,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_3_742_382",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 74.222,
+   "y": 38.238,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_4_502_433",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 50.208,
+   "y": 43.325,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_5_554_433",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 55.417,
+   "y": 43.325,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_6_583_433",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 58.347,
+   "y": 43.325,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_7_648_433",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 64.819,
+   "y": 43.325,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_8_742_433",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 74.222,
+   "y": 43.325,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e206_sq_circle_9_450_433",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-861T taxiway light T #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.986,
+   "y": 43.346,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sign_1_558_189",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 55.771,
+   "y": 18.856,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sign_1_424_296",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 42.438,
+   "y": 29.609,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sign_2_437_539",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-858 sign 2 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 43.743,
+   "y": 53.885,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sign_1_537_540",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-858 sign 1 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 53.729,
+   "y": 54.035,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_62",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sign_2_441_646",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-858 sign 3 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 44.118,
+   "y": 64.595,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_1_96_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 9.639,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_2_211_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.111,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_3_326_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 32.583,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_4_555_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 55.528,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_5_670_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_6_96_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 9.639,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_7_211_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.111,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_8_326_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/C #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 32.583,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_1_441_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/Y #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.056,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_2_555_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/Y #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 55.528,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_bar_3_670_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-862 runway edge light C/Y #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 67,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_1_459_142",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 45.903,
+   "y": 14.198,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_2_527_142",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.653,
+   "y": 14.22,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_3_464_174",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 46.375,
+   "y": 17.375,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_4_526_174",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 17.375,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_5_464_215",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 46.431,
+   "y": 21.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_6_526_215",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 21.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_7_461_235",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 46.097,
+   "y": 23.524,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_8_526_236",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 23.557,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_9_458_255",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 45.792,
+   "y": 25.52,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_10_526_256",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 25.596,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_11_455_275",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 45.472,
+   "y": 27.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_12_526_276",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 27.635,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_13_452_295",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 45.153,
+   "y": 29.534,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_14_526_297",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #14",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 29.674,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_15_448_315",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #15",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 44.833,
+   "y": 31.53,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_16_526_317",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light N #16",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 31.713,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_1_526_337",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 52.625,
+   "y": 33.73,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_1_462_501",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light RE (mill & overlay) #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 46.194,
+   "y": 50.097,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_2_520_501",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light RE (mill & overlay) #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 52.014,
+   "y": 50.097,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_1_148_755",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light T #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.833,
+   "y": 75.542,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_2_213_756",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light T #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.292,
+   "y": 75.585,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_3_148_806",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light T #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 14.833,
+   "y": 80.629,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e207_sq_circle_4_213_811",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-861T taxiway light T #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 21.292,
+   "y": 81.08,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sign_1_449_189",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 44.924,
+   "y": 18.856,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sign_1_316_296",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 31.618,
+   "y": 29.609,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sign_2_348_539",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-858 sign 2 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 34.771,
+   "y": 53.885,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sign_2_360_647",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-858 sign 3 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 36.014,
+   "y": 64.66,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_1_88_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 8.764,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_2_202_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 20.236,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_3_317_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 31.708,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_4_432_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/C #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 43.181,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_5_547_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/C #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 54.653,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_1_88_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/Y #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 8.764,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_6_202_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/C #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 20.236,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_2_317_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/Y #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 31.708,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_bar_3_547_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-862 runway edge light C/Y #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 54.653,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_1_351_143",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light T #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 35.069,
+   "y": 14.349,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_2_418_143",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light T #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.806,
+   "y": 14.349,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_68",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_1_356_176",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 35.569,
+   "y": 17.633,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_2_418_176",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 17.633,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_3_356_215",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 35.569,
+   "y": 21.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_4_418_215",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 21.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_5_353_235",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 35.25,
+   "y": 23.524,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_6_418_236",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 23.557,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_7_349_255",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.931,
+   "y": 25.52,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_8_418_256",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 25.596,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_9_346_275",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.611,
+   "y": 27.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_10_418_276",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 27.635,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_11_343_295",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.292,
+   "y": 29.534,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_12_418_297",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 29.674,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_13_340_315",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.986,
+   "y": 31.53,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_14_418_317",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light N #14",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 31.713,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_1_418_337",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.778,
+   "y": 33.73,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_2_331_338",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light A #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.125,
+   "y": 33.763,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_1_431_501",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light RE (mill & overlay) #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 43.125,
+   "y": 50.118,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e208_sq_circle_2_372_501",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-861T taxiway light RE (mill & overlay) #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 37.167,
+   "y": 50.14,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e209_sign_1_440_189",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-858 sign 3 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 43.958,
+   "y": 18.92,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sign_1_310_296",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-858 sign 2 module #1",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 30.965,
+   "y": 29.609,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sign_2_347_539",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-858 sign 2 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 34.688,
+   "y": 53.885,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_63",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sign_2_346_646",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-858 sign 3 module #2",
+   "category": "sign",
+   "kind": "point",
+   "work": "install",
+   "x": 34.576,
+   "y": 64.595,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_64",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_bar_1_67_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862 runway edge light C/C #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 6.722,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_bar_2_182_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862 runway edge light C/C #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 18.194,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_bar_3_297_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862 runway edge light C/C #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 29.667,
+   "y": 34.042,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_69",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_bar_1_67_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862 runway edge light C/Y #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 6.722,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_bar_2_182_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862 runway edge light C/Y #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 18.194,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_bar_3_297_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862 runway edge light C/Y #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 29.667,
+   "y": 49.496,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_70",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_1_344_143",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.417,
+   "y": 14.349,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_2_411_143",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 14.349,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_3_349_176",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.917,
+   "y": 17.633,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_4_411_176",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 17.633,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_5_349_215",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.917,
+   "y": 21.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_6_411_215",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 21.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_7_411_234",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 23.449,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_8_346_235",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.597,
+   "y": 23.524,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_9_411_254",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #9",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 25.381,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_10_343_255",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #10",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 34.278,
+   "y": 25.52,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_11_411_273",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #11",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 27.313,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_12_340_275",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #12",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.958,
+   "y": 27.517,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_13_411_292",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #13",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 29.244,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_14_337_295",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #14",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.653,
+   "y": 29.534,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_15_411_312",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #15",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 31.176,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_16_333_315",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light N #16",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.333,
+   "y": 31.53,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_67",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_1_411_331",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light A #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.125,
+   "y": 33.108,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_2_330_335",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light A #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 33.014,
+   "y": 33.548,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_66",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_sq_circle_1_365_501",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-861T taxiway light RE (mill & overlay) #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "re",
+   "x": 36.528,
+   "y": 50.118,
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched this symbol. Office: link a pay item in Setup."
+  },
+  {
+   "id": "pt_pns_e209_threshold_1_411_340",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 34.031,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_threshold_2_411_349",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 34.932,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_threshold_3_411_359",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #3",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 35.855,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_threshold_4_411_368",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #4",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 36.757,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_threshold_5_411_468",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #5",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 46.759,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_threshold_6_411_477",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #6",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 47.66,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_threshold_7_411_486",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #7",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 48.583,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e209_threshold_8_411_495",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-862E threshold light G/R #8",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "x": 41.118,
+   "y": 49.485,
+   "installPay": [
+    {
+     "payItemId": "pi_pns_71",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  }
+ ],
  "crew": [],
  "equipment": [
   {

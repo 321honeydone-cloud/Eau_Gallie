@@ -22,7 +22,13 @@ async function seedMissing(): Promise<void> {
   if (await db.jobs.get(d.job.id)) {
     // tablets that got the job before the vector layer existed pick up the PDF links
     setApplyingRemote(true);
-    try { for (const sh of d.sheets) { const cur = await db.sheets.get(sh.id); if (cur && !cur.pdfSrc && sh.pdfSrc) await db.sheets.update(sh.id, { pdfSrc: sh.pdfSrc, pdfPage: sh.pdfPage }); } }
+    try {
+      for (const sh of d.sheets) { const cur = await db.sheets.get(sh.id); if (cur && !cur.pdfSrc && sh.pdfSrc) await db.sheets.update(sh.id, { pdfSrc: sh.pdfSrc, pdfPage: sh.pdfPage }); }
+      // tablets that got the job before the symbol finder ran pick up the auto-placed pins
+      if (d.parts.length && (await db.parts.where('jobId').equals(d.job.id).count()) === 0) {
+        await db.parts.bulkAdd(d.parts.map(r => ({ ...r, updatedAt: 1, _dirty: 1 })));
+      }
+    }
     finally { setApplyingRemote(false); }
     return;
   }
