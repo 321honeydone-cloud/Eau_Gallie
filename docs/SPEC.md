@@ -22,7 +22,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Where the report goes | Autodesk Build Forms, by copy and paste from the app. No API push, decided against it. |
 | New job setup | Admin uploads the plan PDF, draws zone boxes on the overview sheet, links each zone to its detail sheet, drops pins by hand from the takeoff. |
 | Site conditions | Bad or no signal on the field. More than one foreman at a time. |
-| Drawings | None yet. Build against a placeholder airfield and swap the real set in later. |
+| Drawings | The Pensacola RW 8-26 set is in docs/ and loaded into the app as the default job. Sheets E201 to E211 are the zones, C-6 is the airfield map, the 50 electrical bid items are in with quantities. Unit prices and pins still to come. The placeholder field stays as a second job for tests. |
 | Hosting | Installable web app, free tier backend for sync and photos. |
 | Login | None. Tablet is trusted. Foreman picks his name at the start of the day. |
 | Report shape | One report per job per day. Zones are sections. Both foremen land on the same report. |

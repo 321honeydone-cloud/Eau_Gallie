@@ -33,7 +33,8 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 - `src/components/PanZoom.tsx` pinch, drag, double tap viewer
 - `src/ege/` the Eau Gallie UI kit stylesheet. The kit's script is served from `public/ege-ui.js`
 - `scripts/gen-placeholder.mjs` draws the placeholder sheets and writes the matching parts
-- `public/placeholder/` the generated sheets
+- `public/placeholder/` the generated placeholder sheets
+- `public/pensacola/` the real Pensacola sheets, rendered from docs/ with `scripts/render-pdf.mjs`. `scripts/gen-pensacola.mjs` builds the job from them and the bid schedule
 - `public/logo.png` the Eau Gallie Electric logo, also used for the home screen icons
 
 ## Build steps (from the spec)

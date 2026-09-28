@@ -1,0 +1,499 @@
+[
+ {
+  "itemNo": "1",
+  "specRef": "C-100-14.1",
+  "description": "Contractor Quality Control Program (CQCP)",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "2",
+  "specRef": "C-102-5.1",
+  "description": "Erosion and Turbidity Control",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "3",
+  "specRef": "C-105-1",
+  "description": "Mobilization (MOBILIZATION IS LIMITED TO NO MORE THAN 10% OF BID PRICE)",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "4",
+  "specRef": "C-106-1",
+  "description": "Maintenance of Traffic",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "5",
+  "specRef": "P-101-5.1a",
+  "description": "Cold Milling (0.5 Inches)",
+  "qty": 22267,
+  "unit": "SY"
+ },
+ {
+  "itemNo": "6",
+  "specRef": "P-101-5.1b",
+  "description": "Cold Milling (0.5-2.5 Inches)",
+  "qty": 113590,
+  "unit": "SY"
+ },
+ {
+  "itemNo": "7",
+  "specRef": "P-101-5.1c",
+  "description": "Cold Milling (3 Inches)",
+  "qty": 36867,
+  "unit": "SY"
+ },
+ {
+  "itemNo": "8",
+  "specRef": "P-151-4.1",
+  "description": "Clearing and Grubbing",
+  "qty": 1,
+  "unit": "AC"
+ },
+ {
+  "itemNo": "9",
+  "specRef": "P-152-4.1",
+  "description": "Unclassified Excavation",
+  "qty": 1350,
+  "unit": "CY"
+ },
+ {
+  "itemNo": "10",
+  "specRef": "P-152-4.2",
+  "description": "Embankment in Place",
+  "qty": 1350,
+  "unit": "CY"
+ },
+ {
+  "itemNo": "11",
+  "specRef": "P-154-5.1",
+  "description": "Subbase Course",
+  "qty": 20247,
+  "unit": "SY"
+ },
+ {
+  "itemNo": "12",
+  "specRef": "P-209-5.1",
+  "description": "Crushed Aggregate Base Course",
+  "qty": 20247,
+  "unit": "SY"
+ },
+ {
+  "itemNo": "13",
+  "specRef": "P-401-8.1",
+  "description": "Asphalt Surface Course",
+  "qty": 25498,
+  "unit": "TN"
+ },
+ {
+  "itemNo": "14",
+  "specRef": "P-403-8.1",
+  "description": "Asphalt Base / Leveling Course",
+  "qty": 12287,
+  "unit": "TN"
+ },
+ {
+  "itemNo": "15",
+  "specRef": "P-602-5.1",
+  "description": "EMULSIFIED ASPHALT PRIME COAT",
+  "qty": 2817,
+  "unit": "GAL"
+ },
+ {
+  "itemNo": "16",
+  "specRef": "P-603-5.1",
+  "description": "EMULSIFIED ASPHALT TACK COAT",
+  "qty": 9332,
+  "unit": "GAL"
+ },
+ {
+  "itemNo": "17",
+  "specRef": "P-620-5.1",
+  "description": "RUNWAY AND TAXIWAY MARKING",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "18",
+  "specRef": "T-901-5.1",
+  "description": "SEEDING",
+  "qty": 25000,
+  "unit": "SY"
+ },
+ {
+  "itemNo": "19",
+  "specRef": "T-904-5.1",
+  "description": "SODDING",
+  "qty": 25000,
+  "unit": "SY"
+ },
+ {
+  "itemNo": "20",
+  "specRef": "D-751-5.1",
+  "description": "10'x10' MANHOLE W/ J-BOTTOM",
+  "qty": 1,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "21",
+  "specRef": "D-701-5.1",
+  "description": "84\", CLASS V, REINFORCED CONCRETE PIPE",
+  "qty": 433,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "22",
+  "specRef": "SP-104",
+  "description": "TEMPORARY POWER & TEMPORARY AIRFIELD LIGHTING/SIGNAGE/NAVIGATIONAL FACILITIES",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "23",
+  "specRef": "SP-105",
+  "description": "Electrical Demolition",
+  "qty": 16,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "24",
+  "specRef": "SP-111-1",
+  "description": "SHORT CIRCUIT/ COORDINATION/ DEVICE EVALUATION/ ARC FLASH ANALYSIS",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "25",
+  "specRef": "SP-111-3",
+  "description": "FAA FLIGHT CHECK OF RUNWAY 8-26 LIGHTING",
+  "qty": 1,
+  "unit": "AL"
+ },
+ {
+  "itemNo": "26",
+  "specRef": "L-108",
+  "description": "1/C L-824-TYPE C UNSHIELDED #8 AWG 5 KV STRANDED COPPER CABLE, INSTALLED IN DUCT OR CONDUIT",
+  "qty": 120000,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "27",
+  "specRef": "L-108",
+  "description": "1/C #2 AWG SOLID COPPER COUNTERPOISE WIRE, INSTALLED OVER DUCT OR CONDUIT",
+  "qty": 55700,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "28",
+  "specRef": "L-108",
+  "description": "0.75\" DIAMETER BY 10.00' LONG COPPER CLAD STEEL SECTIONAL GROUND ROD",
+  "qty": 900,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "29",
+  "specRef": "L-109",
+  "description": "FIELD LIGHTNING ARRESTOR ASSEMBLY",
+  "qty": 45,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "30",
+  "specRef": "L-109",
+  "description": "AIRFIELD LIGHTING CONTROL SYSTEM MODIFICATIONS: VENDOR",
+  "qty": 1,
+  "unit": "AL"
+ },
+ {
+  "itemNo": "31",
+  "specRef": "L-109",
+  "description": "AIRFIELD LIGHTING CONTROL SYSTEM MODIFICATIONS: CONTRACTOR",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "32",
+  "specRef": "L-109",
+  "description": "AIRFIELD ELECTRICAL VAULT MODIFICATIONS",
+  "qty": 1,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "33",
+  "specRef": "L-109",
+  "description": "10KW L-829 CONSTANT CURRENT REGULATOR-5 STEP- 480V",
+  "qty": 1,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "34",
+  "specRef": "L-109",
+  "description": "15KW L-829 CONSTANT CURRENT REGULATOR-5 STEP- 480V",
+  "qty": 1,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "35",
+  "specRef": "L-110",
+  "description": "1 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+  "qty": 22000,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "36",
+  "specRef": "L-110",
+  "description": "2 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+  "qty": 800,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "37",
+  "specRef": "L-110",
+  "description": "4 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+  "qty": 500,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "38",
+  "specRef": "L-110",
+  "description": "6 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+  "qty": 500,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "39",
+  "specRef": "L-110",
+  "description": "12 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+  "qty": 800,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "40",
+  "specRef": "L-110",
+  "description": "14 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+  "qty": 500,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "41",
+  "specRef": "L-110",
+  "description": "1 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+  "qty": 22000,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "42",
+  "specRef": "L-110",
+  "description": "2 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+  "qty": 2000,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "43",
+  "specRef": "L-110",
+  "description": "3 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+  "qty": 1000,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "44",
+  "specRef": "L-110",
+  "description": "4 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+  "qty": 4000,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "45",
+  "specRef": "L-110",
+  "description": "6 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+  "qty": 800,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "46",
+  "specRef": "L-110",
+  "description": "8 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+  "qty": 800,
+  "unit": "LF"
+ },
+ {
+  "itemNo": "47",
+  "specRef": "L-110",
+  "description": "BASE CAN DRAIN WELL",
+  "qty": 4,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "48",
+  "specRef": "L-115",
+  "description": "L-867D JUNCTION CAN (NTAC)",
+  "qty": 18,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "49",
+  "specRef": "L-115",
+  "description": "JUNCTION CAN PLAZA \u2013 TWO \"D\" CANS",
+  "qty": 16,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "50",
+  "specRef": "L-115",
+  "description": "JUNCTION CAN PLAZA \u2013 THREE \"D\" CANS",
+  "qty": 4,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "51",
+  "specRef": "L-115",
+  "description": "JUNCTION CAN PLAZA \u2013 FOUR \"D\" CANS",
+  "qty": 10,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "52",
+  "specRef": "L-115",
+  "description": "JUNCTION CAN PLAZA \u2013 SIX \"D\" CANS",
+  "qty": 3,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "53",
+  "specRef": "L-115",
+  "description": "JUNCTION CAN PLAZA \u2013 EIGHT \"D\" CANS",
+  "qty": 2,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "54",
+  "specRef": "L-116",
+  "description": "JUNCTION CAN PLAZA \u2013 TWELVE \"D\" CANS",
+  "qty": 1,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "55",
+  "specRef": "L-116",
+  "description": "JUNCTION CAN PLAZA \u2013 FOURTEEN \"D\" CANS",
+  "qty": 1,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "56",
+  "specRef": "L-125",
+  "description": "L-804(L) ELEVATED RUNWAY GUARD LIGHT YELLOW (R)",
+  "qty": 2,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "57",
+  "specRef": "L-125",
+  "description": "L-850A RUNWAY CENTERLINE LIGHT - RW 17-35 - (RE)",
+  "qty": 11,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "58",
+  "specRef": "L-125",
+  "description": "L-850C RUNWAY EDGE LIGHT- RW 17-35 RELOCATED (RE)",
+  "qty": 2,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "59",
+  "specRef": "L-125",
+  "description": "L-850C(L) RUNWAY EDGE LIGHT-CLEAR/CLEAR (A)",
+  "qty": 2,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "60",
+  "specRef": "L-125",
+  "description": "L-850C(L) RUNWAY EDGE LIGHT-CLEAR/CLEAR (NE)",
+  "qty": 2,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "61",
+  "specRef": "L-125",
+  "description": "L-850C(L) RUNWAY EDGE LIGHT-CLEAR/YELLOW (A)",
+  "qty": 3,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "62",
+  "specRef": "L-125",
+  "description": "L-858(L) SIGN \u2013 SINGLE/DOUBLE FACE, LED, SIZE 3, - 1 MODULE",
+  "qty": 4,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "63",
+  "specRef": "L-125",
+  "description": "L-858(L) SIGN \u2013 SINGLE/DOUBLE FACE, LED, SIZE 3, - 2 MODULE",
+  "qty": 13,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "64",
+  "specRef": "L-125",
+  "description": "L-858(L) SIGN \u2013 SINGLE/DOUBLE FACE, LED, SIZE 3, - 3 MODULE",
+  "qty": 11,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "65",
+  "specRef": "L-125",
+  "description": "L-858B(L) RUNWAY DISTANCE REMAINING SIGN, LED, SIZE 4",
+  "qty": 5,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "66",
+  "specRef": "L-125",
+  "description": "L-861T(L) OMNIDIRECTIONAL, BLUE, LED TAXIWAY EDGE LIGHT (A)",
+  "qty": 31,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "67",
+  "specRef": "L-125",
+  "description": "L-861T(L) OMNIDIRECTIONAL, BLUE, LED TAXIWAY EDGE LIGHT (N)",
+  "qty": 116,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "68",
+  "specRef": "L-125",
+  "description": "L-861T(L) OMNIDIRECTIONAL, BLUE, LED TAXIWAY EDGE LIGHT (T)",
+  "qty": 32,
+  "unit": "LS"
+ },
+ {
+  "itemNo": "69",
+  "specRef": "L-125",
+  "description": "L-862(L) RUNWAY EDGE LIGHT-CLEAR/CLEAR (A)",
+  "qty": 22,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "70",
+  "specRef": "L-125",
+  "description": "L-862(L) RUNWAY EDGE LIGHT-CLEAR/YELLOW (A)",
+  "qty": 41,
+  "unit": "EA"
+ },
+ {
+  "itemNo": "71",
+  "specRef": "L-125",
+  "description": "L-862E(L) RUNWAY THRESHOLD LIGHT - GREEN/RED (A)",
+  "qty": 16,
+  "unit": "EA"
+ }
+]

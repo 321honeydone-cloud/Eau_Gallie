@@ -1,0 +1,1055 @@
+{
+ "job": {
+  "id": "job_pensacola_rw826",
+  "name": "Pensacola RW 8-26 Rehabilitation",
+  "customer": "City of Pensacola, Bid 25-029",
+  "airport": "Pensacola International",
+  "contractNo": "25-029",
+  "billingList": "owner"
+ },
+ "phases": [
+  {
+   "id": "ph_pns_1",
+   "jobId": "job_pensacola_rw826",
+   "name": "Phase 1",
+   "order": 1
+  }
+ ],
+ "sheets": [
+  {
+   "id": "sh_pns_c6-overall",
+   "jobId": "job_pensacola_rw826",
+   "name": "C-6",
+   "title": "Overall Plan (Drainage sheet used as the airfield map)",
+   "src": "/pensacola/c6-overall.jpg",
+   "width": 3200,
+   "height": 2071,
+   "order": 1,
+   "isOverview": true
+  },
+  {
+   "id": "sh_pns_e201",
+   "jobId": "job_pensacola_rw826",
+   "name": "E201",
+   "title": "Airfield Lighting Layout Plan, Sheet 1 of 11",
+   "src": "/pensacola/e201.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 2,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e202",
+   "jobId": "job_pensacola_rw826",
+   "name": "E202",
+   "title": "Airfield Lighting Layout Plan, Sheet 2 of 11",
+   "src": "/pensacola/e202.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 3,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e203",
+   "jobId": "job_pensacola_rw826",
+   "name": "E203",
+   "title": "Airfield Lighting Layout Plan, Sheet 3 of 11",
+   "src": "/pensacola/e203.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 4,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e204",
+   "jobId": "job_pensacola_rw826",
+   "name": "E204",
+   "title": "Airfield Lighting Layout Plan, Sheet 4 of 11",
+   "src": "/pensacola/e204.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 5,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e205",
+   "jobId": "job_pensacola_rw826",
+   "name": "E205",
+   "title": "Airfield Lighting Layout Plan, Sheet 5 of 11",
+   "src": "/pensacola/e205.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 6,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e206",
+   "jobId": "job_pensacola_rw826",
+   "name": "E206",
+   "title": "Airfield Lighting Layout Plan, Sheet 6 of 11",
+   "src": "/pensacola/e206.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 7,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e207",
+   "jobId": "job_pensacola_rw826",
+   "name": "E207",
+   "title": "Airfield Lighting Layout Plan, Sheet 7 of 11",
+   "src": "/pensacola/e207.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 8,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e208",
+   "jobId": "job_pensacola_rw826",
+   "name": "E208",
+   "title": "Airfield Lighting Layout Plan, Sheet 8 of 11",
+   "src": "/pensacola/e208.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 9,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e209",
+   "jobId": "job_pensacola_rw826",
+   "name": "E209",
+   "title": "Airfield Lighting Layout Plan, Sheet 9 of 11",
+   "src": "/pensacola/e209.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 10,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e210",
+   "jobId": "job_pensacola_rw826",
+   "name": "E210",
+   "title": "Airfield Lighting Layout Plan, Sheet 10 of 11",
+   "src": "/pensacola/e210.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 11,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e211",
+   "jobId": "job_pensacola_rw826",
+   "name": "E211",
+   "title": "Airfield Lighting Layout Plan, Sheet 11 of 11",
+   "src": "/pensacola/e211.jpg",
+   "width": 3600,
+   "height": 2329,
+   "order": 12,
+   "isOverview": false
+  }
+ ],
+ "zones": [
+  {
+   "id": "z_pns_e201",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E201 RW 8 end, TW B1",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e201",
+   "shape": [
+    {
+     "x": 9,
+     "y": 27
+    },
+    {
+     "x": 20,
+     "y": 27
+    },
+    {
+     "x": 20,
+     "y": 46
+    },
+    {
+     "x": 9,
+     "y": 46
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e202",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E202 TW B2",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e202",
+   "shape": [
+    {
+     "x": 20,
+     "y": 27
+    },
+    {
+     "x": 30,
+     "y": 27
+    },
+    {
+     "x": 30,
+     "y": 46
+    },
+    {
+     "x": 20,
+     "y": 46
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e203",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E203 TW B at RW 17-35",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e203",
+   "shape": [
+    {
+     "x": 30,
+     "y": 22
+    },
+    {
+     "x": 42,
+     "y": 22
+    },
+    {
+     "x": 42,
+     "y": 37
+    },
+    {
+     "x": 30,
+     "y": 37
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e204",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E204 TW A and TW D at RW 17-35",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e204",
+   "shape": [
+    {
+     "x": 30,
+     "y": 37
+    },
+    {
+     "x": 42,
+     "y": 37
+    },
+    {
+     "x": 42,
+     "y": 50
+    },
+    {
+     "x": 30,
+     "y": 50
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e205",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E205 TW B3",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e205",
+   "shape": [
+    {
+     "x": 42,
+     "y": 27
+    },
+    {
+     "x": 50,
+     "y": 27
+    },
+    {
+     "x": 50,
+     "y": 46
+    },
+    {
+     "x": 42,
+     "y": 46
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e206",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E206 TW C and TW D",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e206",
+   "shape": [
+    {
+     "x": 50,
+     "y": 27
+    },
+    {
+     "x": 58,
+     "y": 27
+    },
+    {
+     "x": 58,
+     "y": 46
+    },
+    {
+     "x": 50,
+     "y": 46
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e207",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E207 TW C, TW D east",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e207",
+   "shape": [
+    {
+     "x": 58,
+     "y": 27
+    },
+    {
+     "x": 65,
+     "y": 27
+    },
+    {
+     "x": 65,
+     "y": 46
+    },
+    {
+     "x": 58,
+     "y": 46
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e208",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E208 TW D3, TW B5",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e208",
+   "shape": [
+    {
+     "x": 65,
+     "y": 27
+    },
+    {
+     "x": 72,
+     "y": 27
+    },
+    {
+     "x": 72,
+     "y": 46
+    },
+    {
+     "x": 65,
+     "y": 46
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e209",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E209 TW D4, TW B6",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e209",
+   "shape": [
+    {
+     "x": 72,
+     "y": 27
+    },
+    {
+     "x": 80,
+     "y": 27
+    },
+    {
+     "x": 80,
+     "y": 46
+    },
+    {
+     "x": 72,
+     "y": 46
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e210",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E210 TW A, TW F2",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e210",
+   "shape": [
+    {
+     "x": 19,
+     "y": 17
+    },
+    {
+     "x": 30,
+     "y": 17
+    },
+    {
+     "x": 30,
+     "y": 27
+    },
+    {
+     "x": 19,
+     "y": 27
+    }
+   ]
+  },
+  {
+   "id": "z_pns_e211",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "E211 Cargo apron, TW A2",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e211",
+   "shape": [
+    {
+     "x": 17,
+     "y": 6
+    },
+    {
+     "x": 30,
+     "y": 6
+    },
+    {
+     "x": 30,
+     "y": 17
+    },
+    {
+     "x": 17,
+     "y": 17
+    }
+   ]
+  }
+ ],
+ "payItems": [
+  {
+   "id": "pi_pns_22",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "22",
+   "specRef": "SP-104",
+   "description": "TEMPORARY POWER & TEMPORARY AIRFIELD LIGHTING/SIGNAGE/NAVIGATIONAL FACILITIES",
+   "unit": "LS",
+   "billingType": "lumpsum",
+   "unitPrice": 0,
+   "bidQty": 1,
+   "percentComplete": 0
+  },
+  {
+   "id": "pi_pns_23",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "23",
+   "specRef": "SP-105",
+   "description": "Electrical Demolition",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 16
+  },
+  {
+   "id": "pi_pns_24",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "24",
+   "specRef": "SP-111-1",
+   "description": "SHORT CIRCUIT/ COORDINATION/ DEVICE EVALUATION/ ARC FLASH ANALYSIS",
+   "unit": "LS",
+   "billingType": "lumpsum",
+   "unitPrice": 0,
+   "bidQty": 1,
+   "percentComplete": 0
+  },
+  {
+   "id": "pi_pns_25",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "25",
+   "specRef": "SP-111-3",
+   "description": "FAA FLIGHT CHECK OF RUNWAY 8-26 LIGHTING",
+   "unit": "AL",
+   "billingType": "allowance",
+   "unitPrice": 0,
+   "bidQty": 1
+  },
+  {
+   "id": "pi_pns_26",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "26",
+   "specRef": "L-108",
+   "description": "1/C L-824-TYPE C UNSHIELDED #8 AWG 5 KV STRANDED COPPER CABLE, INSTALLED IN DUCT OR CONDUIT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 120000
+  },
+  {
+   "id": "pi_pns_27",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "27",
+   "specRef": "L-108",
+   "description": "1/C #2 AWG SOLID COPPER COUNTERPOISE WIRE, INSTALLED OVER DUCT OR CONDUIT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 55700
+  },
+  {
+   "id": "pi_pns_28",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "28",
+   "specRef": "L-108",
+   "description": "0.75\" DIAMETER BY 10.00' LONG COPPER CLAD STEEL SECTIONAL GROUND ROD",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 900
+  },
+  {
+   "id": "pi_pns_29",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "29",
+   "specRef": "L-109",
+   "description": "FIELD LIGHTNING ARRESTOR ASSEMBLY",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 45
+  },
+  {
+   "id": "pi_pns_30",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "30",
+   "specRef": "L-109",
+   "description": "AIRFIELD LIGHTING CONTROL SYSTEM MODIFICATIONS: VENDOR",
+   "unit": "AL",
+   "billingType": "allowance",
+   "unitPrice": 0,
+   "bidQty": 1
+  },
+  {
+   "id": "pi_pns_31",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "31",
+   "specRef": "L-109",
+   "description": "AIRFIELD LIGHTING CONTROL SYSTEM MODIFICATIONS: CONTRACTOR",
+   "unit": "LS",
+   "billingType": "lumpsum",
+   "unitPrice": 0,
+   "bidQty": 1,
+   "percentComplete": 0
+  },
+  {
+   "id": "pi_pns_32",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "32",
+   "specRef": "L-109",
+   "description": "AIRFIELD ELECTRICAL VAULT MODIFICATIONS",
+   "unit": "LS",
+   "billingType": "lumpsum",
+   "unitPrice": 0,
+   "bidQty": 1,
+   "percentComplete": 0
+  },
+  {
+   "id": "pi_pns_33",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "33",
+   "specRef": "L-109",
+   "description": "10KW L-829 CONSTANT CURRENT REGULATOR-5 STEP- 480V",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 1
+  },
+  {
+   "id": "pi_pns_34",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "34",
+   "specRef": "L-109",
+   "description": "15KW L-829 CONSTANT CURRENT REGULATOR-5 STEP- 480V",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 1
+  },
+  {
+   "id": "pi_pns_35",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "35",
+   "specRef": "L-110",
+   "description": "1 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 22000
+  },
+  {
+   "id": "pi_pns_36",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "36",
+   "specRef": "L-110",
+   "description": "2 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 800
+  },
+  {
+   "id": "pi_pns_37",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "37",
+   "specRef": "L-110",
+   "description": "4 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 500
+  },
+  {
+   "id": "pi_pns_38",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "38",
+   "specRef": "L-110",
+   "description": "6 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 500
+  },
+  {
+   "id": "pi_pns_39",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "39",
+   "specRef": "L-110",
+   "description": "12 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 800
+  },
+  {
+   "id": "pi_pns_40",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "40",
+   "specRef": "L-110",
+   "description": "14 WAY 2\" SCHEDULE 40 PVC DIRECT EARTH BURIED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 500
+  },
+  {
+   "id": "pi_pns_41",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "41",
+   "specRef": "L-110",
+   "description": "1 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 22000
+  },
+  {
+   "id": "pi_pns_42",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "42",
+   "specRef": "L-110",
+   "description": "2 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 2000
+  },
+  {
+   "id": "pi_pns_43",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "43",
+   "specRef": "L-110",
+   "description": "3 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 1000
+  },
+  {
+   "id": "pi_pns_44",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "44",
+   "specRef": "L-110",
+   "description": "4 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 4000
+  },
+  {
+   "id": "pi_pns_45",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "45",
+   "specRef": "L-110",
+   "description": "6 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 800
+  },
+  {
+   "id": "pi_pns_46",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "46",
+   "specRef": "L-110",
+   "description": "8 WAY 2\" SCHEDULE 40 PVC CONCRETE ENCASED DUCT",
+   "unit": "LF",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 800
+  },
+  {
+   "id": "pi_pns_47",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "47",
+   "specRef": "L-110",
+   "description": "BASE CAN DRAIN WELL",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 4
+  },
+  {
+   "id": "pi_pns_48",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "48",
+   "specRef": "L-115",
+   "description": "L-867D JUNCTION CAN (NTAC)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 18
+  },
+  {
+   "id": "pi_pns_49",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "49",
+   "specRef": "L-115",
+   "description": "JUNCTION CAN PLAZA – TWO \"D\" CANS",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 16
+  },
+  {
+   "id": "pi_pns_50",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "50",
+   "specRef": "L-115",
+   "description": "JUNCTION CAN PLAZA – THREE \"D\" CANS",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 4
+  },
+  {
+   "id": "pi_pns_51",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "51",
+   "specRef": "L-115",
+   "description": "JUNCTION CAN PLAZA – FOUR \"D\" CANS",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 10
+  },
+  {
+   "id": "pi_pns_52",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "52",
+   "specRef": "L-115",
+   "description": "JUNCTION CAN PLAZA – SIX \"D\" CANS",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 3
+  },
+  {
+   "id": "pi_pns_53",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "53",
+   "specRef": "L-115",
+   "description": "JUNCTION CAN PLAZA – EIGHT \"D\" CANS",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 2
+  },
+  {
+   "id": "pi_pns_54",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "54",
+   "specRef": "L-116",
+   "description": "JUNCTION CAN PLAZA – TWELVE \"D\" CANS",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 1
+  },
+  {
+   "id": "pi_pns_55",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "55",
+   "specRef": "L-116",
+   "description": "JUNCTION CAN PLAZA – FOURTEEN \"D\" CANS",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 1
+  },
+  {
+   "id": "pi_pns_56",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "56",
+   "specRef": "L-125",
+   "description": "L-804(L) ELEVATED RUNWAY GUARD LIGHT YELLOW (R)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 2
+  },
+  {
+   "id": "pi_pns_57",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "57",
+   "specRef": "L-125",
+   "description": "L-850A RUNWAY CENTERLINE LIGHT - RW 17-35 - (RE)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 11
+  },
+  {
+   "id": "pi_pns_58",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "58",
+   "specRef": "L-125",
+   "description": "L-850C RUNWAY EDGE LIGHT- RW 17-35 RELOCATED (RE)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 2
+  },
+  {
+   "id": "pi_pns_59",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "59",
+   "specRef": "L-125",
+   "description": "L-850C(L) RUNWAY EDGE LIGHT-CLEAR/CLEAR (A)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 2
+  },
+  {
+   "id": "pi_pns_60",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "60",
+   "specRef": "L-125",
+   "description": "L-850C(L) RUNWAY EDGE LIGHT-CLEAR/CLEAR (NE)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 2
+  },
+  {
+   "id": "pi_pns_61",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "61",
+   "specRef": "L-125",
+   "description": "L-850C(L) RUNWAY EDGE LIGHT-CLEAR/YELLOW (A)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 3
+  },
+  {
+   "id": "pi_pns_62",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "62",
+   "specRef": "L-125",
+   "description": "L-858(L) SIGN – SINGLE/DOUBLE FACE, LED, SIZE 3, - 1 MODULE",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 4
+  },
+  {
+   "id": "pi_pns_63",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "63",
+   "specRef": "L-125",
+   "description": "L-858(L) SIGN – SINGLE/DOUBLE FACE, LED, SIZE 3, - 2 MODULE",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 13
+  },
+  {
+   "id": "pi_pns_64",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "64",
+   "specRef": "L-125",
+   "description": "L-858(L) SIGN – SINGLE/DOUBLE FACE, LED, SIZE 3, - 3 MODULE",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 11
+  },
+  {
+   "id": "pi_pns_65",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "65",
+   "specRef": "L-125",
+   "description": "L-858B(L) RUNWAY DISTANCE REMAINING SIGN, LED, SIZE 4",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 5
+  },
+  {
+   "id": "pi_pns_66",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "66",
+   "specRef": "L-125",
+   "description": "L-861T(L) OMNIDIRECTIONAL, BLUE, LED TAXIWAY EDGE LIGHT (A)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 31
+  },
+  {
+   "id": "pi_pns_67",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "67",
+   "specRef": "L-125",
+   "description": "L-861T(L) OMNIDIRECTIONAL, BLUE, LED TAXIWAY EDGE LIGHT (N)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 116
+  },
+  {
+   "id": "pi_pns_68",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "68",
+   "specRef": "L-125",
+   "description": "L-861T(L) OMNIDIRECTIONAL, BLUE, LED TAXIWAY EDGE LIGHT (T)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 32
+  },
+  {
+   "id": "pi_pns_69",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "69",
+   "specRef": "L-125",
+   "description": "L-862(L) RUNWAY EDGE LIGHT-CLEAR/CLEAR (A)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 22
+  },
+  {
+   "id": "pi_pns_70",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "70",
+   "specRef": "L-125",
+   "description": "L-862(L) RUNWAY EDGE LIGHT-CLEAR/YELLOW (A)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 41
+  },
+  {
+   "id": "pi_pns_71",
+   "jobId": "job_pensacola_rw826",
+   "itemNo": "71",
+   "specRef": "L-125",
+   "description": "L-862E(L) RUNWAY THRESHOLD LIGHT - GREEN/RED (A)",
+   "unit": "EA",
+   "billingType": "unit",
+   "unitPrice": 0,
+   "bidQty": 16
+  }
+ ],
+ "parts": [],
+ "crew": [],
+ "equipment": [
+  {
+   "id": "eq_pns_1",
+   "jobId": "job_pensacola_rw826",
+   "name": "Trencher"
+  },
+  {
+   "id": "eq_pns_2",
+   "jobId": "job_pensacola_rw826",
+   "name": "Mini excavator"
+  },
+  {
+   "id": "eq_pns_3",
+   "jobId": "job_pensacola_rw826",
+   "name": "Skid steer"
+  },
+  {
+   "id": "eq_pns_4",
+   "jobId": "job_pensacola_rw826",
+   "name": "Directional bore rig"
+  },
+  {
+   "id": "eq_pns_5",
+   "jobId": "job_pensacola_rw826",
+   "name": "Core drill"
+  },
+  {
+   "id": "eq_pns_6",
+   "jobId": "job_pensacola_rw826",
+   "name": "Saw cut rig"
+  },
+  {
+   "id": "eq_pns_7",
+   "jobId": "job_pensacola_rw826",
+   "name": "Concrete mixer"
+  },
+  {
+   "id": "eq_pns_8",
+   "jobId": "job_pensacola_rw826",
+   "name": "Bucket truck"
+  },
+  {
+   "id": "eq_pns_9",
+   "jobId": "job_pensacola_rw826",
+   "name": "Service truck"
+  },
+  {
+   "id": "eq_pns_10",
+   "jobId": "job_pensacola_rw826",
+   "name": "Van"
+  },
+  {
+   "id": "eq_pns_11",
+   "jobId": "job_pensacola_rw826",
+   "name": "Light tower"
+  }
+ ]
+}

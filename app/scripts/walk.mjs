@@ -7,6 +7,7 @@ const page = await ctx.newPage();
 const errors = [];
 page.on('pageerror', e => errors.push(String(e)));
 page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+await page.addInitScript(() => { try { localStorage.setItem('ege.activeJob', 'job_placeholder'); } catch {} });
 await page.goto((process.env.BASE_URL || 'http://localhost:4173') + '/');
 await page.waitForSelector('.choice', { timeout: 15000 });
 await page.screenshot({ path: `${OUT}/1-start.png` });

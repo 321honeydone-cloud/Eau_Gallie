@@ -15,6 +15,7 @@ export default function AdminZones({ jobId }: Props) {
   const overview = sheets.find(s => s.isOverview);
   const src = useSheetSrc(overview);
   const [drawing, setDrawing] = useState(false);
+  const [redrawing, setRedrawing] = useState(false);
   const [sel, setSel] = useState<string | null>(null);
   const [newPhase, setNewPhase] = useState('');
   const selZone = zones.find(z => z.id === sel);
@@ -26,6 +27,10 @@ export default function AdminZones({ jobId }: Props) {
   const onDraw = async (r: { x1: number; y1: number; x2: number; y2: number }) => {
     if (!overview) return;
     if (r.x2 - r.x1 < 1 || r.y2 - r.y1 < 1) return;
+    if (redrawing && sel) {
+      await db.zones.update(sel, { shape: [{ x: r.x1, y: r.y1 }, { x: r.x2, y: r.y1 }, { x: r.x2, y: r.y2 }, { x: r.x1, y: r.y2 }] });
+      setRedrawing(false); toast('Zone box moved.'); return;
+    }
     if (!phases.length) { toast('Add a phase first, even if it is just Phase 1.'); return; }
     const z: Zone = {
       id: uid('z'), jobId, phaseId: phases[0].id, name: `Zone ${zones.length + 1}`,
@@ -57,11 +62,11 @@ export default function AdminZones({ jobId }: Props) {
 
       <div className="toolbar">
         <button type="button" className={'ege-btn' + (drawing ? ' accent' : ' primary')} style={{ minHeight: 56 }} onClick={() => setDrawing(d => !d)}>{drawing ? 'Cancel drawing' : '+ Draw a zone'}</button>
-        <span className="mode-tip">{drawing ? 'Drag a box on the overview around the area. Pinch still zooms.' : 'Tap a zone to edit it. Drag on the sheet to pan.'}</span>
+        <span className="mode-tip">{redrawing ? `Drag a new box for ${selZone?.name ?? 'this zone'}.` : drawing ? 'Drag a box on the overview around the area. Pinch still zooms.' : 'Tap a zone to edit it. Drag on the sheet to pan.'}</span>
       </div>
 
       <div className="zone-layout">
-        <PanZoom width={overview.width} height={overview.height} src={src} resetKey={overview.id} onDrawRect={drawing ? onDraw : undefined} hint={overview.name}>
+        <PanZoom width={overview.width} height={overview.height} src={src} resetKey={overview.id} onDrawRect={drawing || redrawing ? onDraw : undefined} hint={overview.name}>
           <svg viewBox={`0 0 ${overview.width} ${overview.height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
             {zones.map(z => {
               const pts = z.shape.map(p => `${(p.x / 100) * overview.width},${(p.y / 100) * overview.height}`).join(' ');
@@ -84,7 +89,7 @@ export default function AdminZones({ jobId }: Props) {
               <select value={selZone.detailSheetId} onChange={e => update({ detailSheetId: e.target.value })}>
                 {sheets.map(s => <option key={s.id} value={s.id}>{s.name}{s.title ? ` · ${s.title}` : ''}</option>)}
               </select></div>
-            <div className="ege-row"><button type="button" className="ege-btn" onClick={remove}>Delete zone</button><button type="button" className="ege-btn primary" onClick={() => setSel(null)}>Done</button></div>
+            <div className="ege-row"><button type="button" className="ege-btn" onClick={remove}>Delete zone</button><button type="button" className={'ege-btn' + (redrawing ? ' accent' : '')} onClick={() => setRedrawing(r => !r)}>{redrawing ? 'Cancel redraw' : 'Redraw box'}</button><button type="button" className="ege-btn primary" onClick={() => { setSel(null); setRedrawing(false); }}>Done</button></div>
           </>) : (
             <div className="admin-list">
               {zones.map(z => <button key={z.id} type="button" className="choice" onClick={() => setSel(z.id)}><b>{z.name}</b><span>{phases.find(p => p.id === z.phaseId)?.name ?? 'no phase'} · {sheets.find(s => s.id === z.detailSheetId)?.name ?? 'no sheet'}</span></button>)}
