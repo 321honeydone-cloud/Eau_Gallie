@@ -66,12 +66,14 @@ Any part can also carry a problem flag on top of its step. Flag reasons: conflic
 - Once a Complete event has been pulled into a submitted rollup it's marked billed and can't land in another one. Rolling a part back from Complete after it's billed creates a credit line, it doesn't erase anything.
 - Pay items come from the bid schedule. Sample is in docs/reference/bid-schedule-pensacola-rw8-26-sample.pdf. Columns are Item No, Spec Ref (FAA item like L-125, P-401, SP-105), Description, Approx Quantity, Unit, Unit Price, Total. Every part points at exactly one pay item. The app shows installed vs bid quantity per item so an overrun is visible before the customer sees it.
 - Units seen on the sample: LS, SY, AC, CY, TN, GAL, EA, LF, AL. The electrical items are mostly EA, LF, and LS. The app stores the unit as text and keys billing off a billing type instead.
-- Three billing types. Unit price (EA, LF, SY, and so on): count times unit price, driven by parts. Lump sum (LS): percent complete, entered on the report as a button row (0, 10, 25, 50, 75, 90, 100) or computed from linked parts when the admin links some. Allowance (AL): billed on actual cost with backup, the app just holds the number and flags when it's touched.
-- The schedule is the owner's schedule to the GC. Eau Gallie may bill the GC off a subcontract schedule of values that is a subset with its own numbering. The import lets the admin pick only the items Eau Gallie owns and enter the sub's own item numbers alongside the owner's.
+- Three billing types. Unit price (EA, LF, SY, and so on): count times unit price, driven by parts. Lump sum (LS): percent complete, foreman taps a button row on the report (0, 10, 25, 50, 75, 90, 100) whenever it moves, billing uses the latest. Allowance (AL): billed on actual cost with backup, the app just holds the number and flags when it's touched.
+- Which list we bill against depends on the job. Some GCs hand us a subcontract schedule of values with our own numbering, some use the owner's items straight. Admin picks per job. Pay items always carry both an owner item number and an optional sub item number so either way works.
 
-## Crew
+## Crew and equipment
 
 Foremen in the picker: Darrell Simpson, Carlos Leisse. More get added from the admin screen.
+
+Default equipment list for a new airfield job, editable per job: trencher, mini excavator, skid steer, directional bore rig, core drill, saw cut rig, concrete mixer, bucket truck, service truck, van, light tower. Trucks and vans get a unit number.
 
 ## Foreman flow on the tablet
 
@@ -190,6 +192,6 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 ## Open items
 
 - Bid schedule sample is the owner's original for Pensacola and only 4 pages. The electrical L items (L-108 cable, L-110 duct, L-115 manholes, L-125 lights and signs) are probably on pages we don't have. Format is known, that's enough to build the import.
-- Equipment list. What's normally on an airfield job for this crew (trencher, directional bore, core drill, bucket truck, and so on).
+
 
 ASSUMED: one contract per job, no change order tracking in v1. ASSUMED: the office pulls rollups, foremen never see prices.
