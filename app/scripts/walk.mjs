@@ -58,32 +58,41 @@ await page.waitForSelector('.zone-poly');
 await page.waitForTimeout(400);
 await page.screenshot({ path: `${OUT}/9-map-after.png` });
 await page.getByRole('button', { name: 'Daily report' }).click();
-await page.waitForSelector('#sec-1-2');
+await page.waitForSelector('.stephead');
 await page.waitForTimeout(400);
-await page.screenshot({ path: `${OUT}/10-report.png`, fullPage: true });
-// 1.1 zones, 1.2 lump sum and yard work and a photo, 1.5 tomorrow, 1.6 crew, weather
-await page.locator('#sec-1-1').getByRole('button', { name: /E-108/ }).click();
-await page.locator('#sec-1-2').getByRole('button', { name: '50%' }).click();
-await page.locator('#sec-1-2').getByRole('button', { name: 'Prefab' }).click();
-await page.locator('#sec-1-2').getByPlaceholder('Qty').fill('3');
-await page.locator('#sec-1-2').getByPlaceholder('Note (optional)').fill('JCP assemblies, 3 can');
-await page.locator('#sec-1-2').getByRole('button', { name: 'Add', exact: true }).click();
-await page.locator('#sec-1-2 input[type=file]').setInputFiles(process.env.TEST_PHOTO);
+await page.screenshot({ path: `${OUT}/10-report.png` });
+const next = async () => { await page.getByRole('button', { name: /^Next/ }).click(); await page.waitForTimeout(250); };
+await page.getByRole('button', { name: /E-108/ }).click();            // 1.1
+await next();
+await page.getByRole('button', { name: '50%' }).click();              // 1.2
+await page.getByRole('button', { name: 'Prefab' }).click();
+await page.getByPlaceholder('Qty').fill('3');
+await page.getByPlaceholder('Note (optional)').fill('JCP assemblies, 3 can');
+await page.getByRole('button', { name: 'Add', exact: true }).click();
+await page.locator('input[type=file]').setInputFiles(process.env.TEST_PHOTO);
 await page.waitForTimeout(800);
-await page.locator('#sec-1-5').getByRole('button', { name: /E-109/ }).click();
-await page.locator('#sec-1-6').getByPlaceholder('Add a name').first().fill('Hector Rivas');
-await page.locator('#sec-1-6').getByPlaceholder('Add a name').first().press('Enter');
+await page.screenshot({ path: `${OUT}/11-report-work.png` });
+await page.screenshot({ path: `${OUT}/11b-report-carry.png` });
+await next();                                                          // 1.3
+await next();                                                          // 1.4
+await next();                                                          // 1.5
+await page.getByRole('button', { name: /E-109/ }).click();            // 1.5
+await next();
+await page.getByPlaceholder('Add a new name').fill('Hector Rivas');    // crew
+await page.getByPlaceholder('Add a new name').press('Enter');
 await page.waitForTimeout(300);
-await page.locator('#sec-1-6').getByRole('button', { name: 'Sunny' }).click();
-await page.locator('#sec-1-6').getByRole('button', { name: '90F' }).click();
-await page.locator('#sec-1-6').getByRole('button', { name: 'Toolbox talk held' }).click();
-await page.locator('#sec-1-6').getByRole('button', { name: 'Trencher' }).click();
-await page.locator('#sec-1-6').getByPlaceholder(/One paragraph/).fill('Good day. Set six cans on the north side and got four lights on.');
-await page.locator('#sec-1-6').getByPlaceholder(/One paragraph/).blur();
-await page.waitForTimeout(300);
-await page.locator('#sec-1-6').scrollIntoViewIfNeeded();
+await page.getByRole('button', { name: '6:30 AM' }).first().click();
 await page.screenshot({ path: `${OUT}/12-report-crew.png` });
-// sign
+await next();                                                          // site
+await page.getByRole('button', { name: 'Sunny' }).click();
+await page.getByRole('button', { name: '90F' }).click();
+await page.getByRole('button', { name: 'Toolbox talk held' }).click();
+await page.getByRole('button', { name: 'Trencher' }).click();
+await page.getByPlaceholder('Mic key works.').fill('Good day. Set six cans on the north side and got four lights on.');
+await page.getByPlaceholder('Mic key works.').blur();
+await page.waitForTimeout(300);
+await page.screenshot({ path: `${OUT}/12b-report-site.png` });
+await next();                                                          // sign
 const sig = page.locator('canvas.sig');
 await sig.scrollIntoViewIfNeeded();
 const sb = await sig.boundingBox();

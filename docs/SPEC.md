@@ -30,7 +30,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Signer | Whoever submits also signs. No separate superintendent review step. |
 | Phases | A phase is a group of zones. Each zone carries a phase. Map colors by phase, report can group by phase. The Autodesk schedule already breaks work down as Phase, then plan sheet (E108, E109), then activity. So a zone is a plan sheet. |
 | Device | iPad. Installable web app on Safari, added to the home screen. |
-| Look | The Eau Gallie UI kit Manny supplied. Light theme, so the daylight toggle is gone. Real logo is in the header and on the home screen icon. |
+| Look | The Eau Gallie UI kit's colors and fonts only. Not its page layout. Screens follow the map and zone pattern: one thing per screen, big buttons, Back and Next. Real logo is in the header and on the home screen icon. |
 
 ## The status ladder, spelled out
 
@@ -180,7 +180,7 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 ## Build order
 
 1. Placeholder airfield, zones, pins, status taps, list view, local only. The thing you can hold and poke. DONE, see app/ and docs/screenshots/.
-2. Daily report screen, photos, review and submit. DONE. The six Autodesk sections build themselves from the taps, crew and weather are chips, finger signature locks the report, Copy for Autodesk is already on it (that was build step 6, it came for free with the text builder).
+2. Daily report screen, photos, review and submit. DONE. Eight screens, one step at a time with Back and Next, big buttons. The six Autodesk sections build themselves from the taps, finger signature locks the report, Copy for Autodesk is already on it (that was build step 6, it came for free with the text builder).
 3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items.
 4. Offline sync through Supabase, two tablets.
 5. Billing rollup and billed lock.
