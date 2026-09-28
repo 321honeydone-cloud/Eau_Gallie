@@ -26,6 +26,10 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Hosting | Installable web app, free tier backend for sync and photos. |
 | Login | None. Tablet is trusted. Foreman picks his name at the start of the day. |
 | Report shape | One report per job per day. Zones are sections. Both foremen land on the same report. |
+| Narrative | Buttons, not typing. Every section is built from taps and radio picks. One optional text box per section for anything extra, and iPad dictation works in it off the keyboard mic key. |
+| Signer | Whoever submits also signs. No separate superintendent review step. |
+| Phases | A phase is a group of zones. Each zone carries a phase. Map colors by phase, report can group by phase. |
+| Device | iPad. Installable web app on Safari, added to the home screen. |
 
 ## The status ladder, spelled out
 
@@ -63,16 +67,32 @@ Foremen in the picker: Darrell Simpson, Carlos Leisse. More get added from the a
 5. Bulk mode. Long press a pin, drag over others, set them all to one step. For the day when the crew sets twenty cans in a row.
 6. Report tab. Crew in three buckets with shift times, equipment (tap from a job list), weather, safety, visitors. Planned scope is prefilled from yesterday. Yard and Other for work with no pin. Executive comment. Everything else builds itself from the day's events and flags. Photos show up under the part or zone they were taken in.
 7. End of day. Review screen shows the report laid out in the six Autodesk sections. Submit. Second foreman's submit merges into the same report.
-8. Superintendent opens the submitted report, edits anything, signs. Copy for Autodesk or, later, push.
+8. Sign with a finger on the review screen. Copy for Autodesk or, later, push.
 
 Touch targets 56px minimum. Big fonts. Daylight theme is the default on the tablet, high contrast light so it reads at noon. Dark gold house theme is one tap away and is the default for the office and admin screens.
+
+## Buttons over typing
+
+The field tech is standing in the sun with gloves on. Every input that can be a button is a button. Text boxes exist but nothing requires them.
+
+- Status: five step buttons.
+- Flag: reason buttons, responsible party buttons, schedule impact buttons. Note box optional.
+- Weather: sun, cloud, rain, wind, heat buttons plus a temp picker.
+- Crew: tap names into a bucket. Shift start and end are time pickers with the usual times as one tap presets (6:00 AM, 6:30 AM, 3:00 PM, 6:30 PM). Lunch is 30 or 60.
+- Equipment: tap from the job's list. Add new from the admin screen.
+- Delays and carryover: built from flags. The foreman never types a delay from scratch.
+- Yard and Other: pick a category (prefab, vehicle inspection, coordination, material staging, other) and a quantity. Note box optional.
+- Planned scope and action plan: checkboxes over yesterday's carryover list plus zone picks for tomorrow. Note box optional.
+- Executive comment: optional. One text box.
+
+Every text box is a plain input so the iPad keyboard mic key works for dictation. No custom keyboard, no special field types that break dictation.
 
 ## Admin flow, new job setup
 
 1. New job. Name, customer, airport, contract number.
 2. Upload the bid schedule. CSV or type it in. This makes the pay item list.
 3. Upload the plan set PDF. App renders each page to an image on the device and stores it. Admin names the sheets that matter (E-101 overview, E-201 taxiway A, and so on).
-4. Pick the overview sheet. Draw zones on it, rectangle or polygon. Name each one. Link it to a detail sheet.
+4. Pick the overview sheet. Draw zones on it, rectangle or polygon. Name each one, give it a phase, link it to a detail sheet.
 5. Open each zone. Drop pins. Each pin gets a label (fixture ID off the plan), a pay item, and a type. Linear parts get a total quantity instead of a pin, or a pin at the start of the run if you want it on the map.
 6. Publish. Tablets sync the job down next time they see signal.
 
@@ -96,8 +116,8 @@ The real form is "Daily Report v2" in Autodesk Build. Sample export is in docs/r
 | 1.3 Outstanding / Carryover Work | Pending work, reason, impact level | Parts that moved today but didn't reach Complete, plus every open flag. |
 | 1.4 Delays and Issues | Delay type, responsible party, schedule impact | Straight from flags. Each flag carries a responsible party and a schedule impact (see below). |
 | 1.5 Action Plan and Projection | Recovery needed, action type, expected timeline | Carryover list plus whatever the foreman adds. Becomes tomorrow's 1.1. |
-| 1.6 Crew and Production Summary | Internal, subcontractor, temporary personnel. Shift times, lunch. General Status checklist. Executive Comment. | Crew picker with three buckets and shift times. General Status builds itself from the day's events and flags. Executive Comment is the one paragraph the foreman writes. |
-| Signature | Superintendent reviews the foreman's report, revises if needed, signs. | Review step in the app. Foreman submits, superintendent opens, edits, signs, then it goes to Autodesk. |
+| 1.6 Crew and Production Summary | Internal, subcontractor, temporary personnel. Shift times, lunch. General Status checklist. Executive Comment. | Crew picker with three buckets and shift time buttons. General Status builds itself from the day's events and flags. Executive Comment is optional text, dictation friendly. |
+| Signature | Form says superintendent reviews and signs. | Whoever submits signs. One step. Signature drawn on the screen with a finger. |
 
 Flag fields, lifted from 1.4 so they map straight across:
 
@@ -122,17 +142,18 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 - Job: id, name, customer, airport, contract no.
 - PayItem: job, item no, description, unit (EA or LF), unit price, bid qty.
 - Sheet: job, name, page number, image, width, height.
-- Zone: job, name, overview sheet, shape (points in percent coords), detail sheet.
+- Phase: job, name, order.
+- Zone: job, phase, name, overview sheet, shape (points in percent coords), detail sheet.
 - Part: job, zone, pay item, label, kind (point or linear), pin x and y in percent coords (optional for linear), total qty, current step.
 - Flag: part (or zone, or none for yard work), reason, responsible party, schedule impact, opened by, opened at, closed at, note.
 - StatusEvent: part, report date, foreman, from step, to step, qty done (linear), note, created at, billed in (rollup id or null).
 - Photo: job, report date, part or zone, foreman, file, caption, created at.
-- DailyReport: job, date, foremen, crew (three buckets with shift and lunch), equipment, weather, safety, visitors, planned scope, action plan, yard and other work, executive comment, submitted by, reviewed by, signed at, autodesk form id.
+- DailyReport: job, date, foremen, crew (three buckets with shift and lunch), equipment, weather, safety, visitors, planned scope, action plan, yard and other work, executive comment, submitted by, signature image, signed at, autodesk form id.
 - BillingRollup: job, date from, date to, created at, lines (pay item, qty, unit price, total).
 
 ## Tech
 
-- React, TypeScript, Vite. Installable PWA with a service worker.
+- React, TypeScript, Vite. Installable PWA with a service worker. Added to the iPad home screen so Safari doesn't purge the offline data.
 - Dexie (IndexedDB) on the device. Supabase (Postgres, Storage) for sync and photos. Free tier until it matters.
 - pdf.js renders plan pages to images in the browser. No server side PDF work.
 - Pan and zoom on sheets with pointer events, pins positioned in percent so they survive any screen size.
@@ -152,9 +173,6 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 
 ## Open items
 
-- Superintendent. Who signs? Name goes in the picker with a superintendent role so the sign step knows who's allowed.
-- Phases. The sample talks about Phase 4 and Phase 5. If phases are how the job is split, zones should carry a phase so the report can group by it.
-- Narrative. The sample report is written out in full sentences. App can produce plain structured text or draft prose from the taps. Decide which.
 - Bid schedule format. A sample of a real one, even an old job, so the import matches what the office already has.
 - Equipment list. What's normally on an airfield job for this crew (trencher, directional bore, core drill, bucket truck, and so on).
 
