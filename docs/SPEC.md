@@ -64,7 +64,10 @@ Any part can also carry a problem flag on top of its step. Flag reasons: conflic
 - Every status change is an event. Who, when, from what, to what, footage if linear, photos, note. Events are never edited, only added. That log is the billing backup.
 - Billing rollup: pick a date range, app sums every Complete event in that window times the pay item unit price, grouped by pay item and by zone.
 - Once a Complete event has been pulled into a submitted rollup it's marked billed and can't land in another one. Rolling a part back from Complete after it's billed creates a credit line, it doesn't erase anything.
-- Pay items come from the bid schedule. Item number, description, unit (EA or LF), unit price, bid quantity. Every part points at exactly one pay item. The app shows installed vs bid quantity per item so an overrun is visible before the customer sees it.
+- Pay items come from the bid schedule. Sample is in docs/reference/bid-schedule-pensacola-rw8-26-sample.pdf. Columns are Item No, Spec Ref (FAA item like L-125, P-401, SP-105), Description, Approx Quantity, Unit, Unit Price, Total. Every part points at exactly one pay item. The app shows installed vs bid quantity per item so an overrun is visible before the customer sees it.
+- Units seen on the sample: LS, SY, AC, CY, TN, GAL, EA, LF, AL. The electrical items are mostly EA, LF, and LS. The app stores the unit as text and keys billing off a billing type instead.
+- Three billing types. Unit price (EA, LF, SY, and so on): count times unit price, driven by parts. Lump sum (LS): percent complete, entered on the report as a button row (0, 10, 25, 50, 75, 90, 100) or computed from linked parts when the admin links some. Allowance (AL): billed on actual cost with backup, the app just holds the number and flags when it's touched.
+- The schedule is the owner's schedule to the GC. Eau Gallie may bill the GC off a subcontract schedule of values that is a subset with its own numbering. The import lets the admin pick only the items Eau Gallie owns and enter the sub's own item numbers alongside the owner's.
 
 ## Crew
 
@@ -152,7 +155,7 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 ## Data model
 
 - Job: id, name, customer, airport, contract no.
-- PayItem: job, item no, description, unit (EA or LF), unit price, bid qty.
+- PayItem: job, item no, sub item no (optional), spec ref, description, unit, billing type (unit, lump sum, allowance), unit price, bid qty, percent complete (lump sum only).
 - Sheet: job, name, page number, image, width, height.
 - Phase: job, name, order.
 - Zone: job, phase, name, overview sheet, shape (points in percent coords), detail sheet.
@@ -186,7 +189,7 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 
 ## Open items
 
-- Bid schedule. Still need it. This is the unit price list, not the Gantt. Usually an Excel or PDF titled Bid Schedule, Schedule of Values, Unit Price Schedule, or Bid Tab, with columns like Item No, Description, Unit, Quantity, Unit Price, Total. The first pay application to the customer has the same list on it. Any job's copy works.
+- Bid schedule sample is the owner's original for Pensacola and only 4 pages. The electrical L items (L-108 cable, L-110 duct, L-115 manholes, L-125 lights and signs) are probably on pages we don't have. Format is known, that's enough to build the import.
 - Equipment list. What's normally on an airfield job for this crew (trencher, directional bore, core drill, bucket truck, and so on).
 
-ASSUMED: unit is EA or LF only, no SF or CY items. ASSUMED: one contract per job, no change order tracking in v1. ASSUMED: the office pulls rollups, foremen never see prices.
+ASSUMED: one contract per job, no change order tracking in v1. ASSUMED: the office pulls rollups, foremen never see prices.
