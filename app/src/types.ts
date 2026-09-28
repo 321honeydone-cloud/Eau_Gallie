@@ -42,8 +42,11 @@ export interface Sheet {
   jobId: string;
   name: string;      // E-108
   title: string;     // Taxiway A West Lighting Plan
-  src?: string;      // url for bundled placeholder sheets
-  blob?: Blob;       // rendered page for uploaded plan sets
+  src?: string;      // url of the raster preview for bundled sheets
+  blob?: Blob;       // raster preview for uploaded plan sets
+  pdfSrc?: string;   // url of the sheet's own PDF page, bundled jobs
+  pdfFileId?: string; // uploaded plan set this sheet came from, see StoredFile
+  pdfPage?: number;  // 1 based page in that file
   width: number;
   height: number;
   order: number;
@@ -248,6 +251,16 @@ export interface BillingRollup {
   lines: RollupLine[];
   total: number;
   lumpBilled: Record<string, number>;   // payItemId to percent billed through this rollup
+}
+
+// An uploaded plan set, kept whole so sheets can redraw from the vector at any zoom.
+export interface StoredFile {
+  id: string;
+  updatedAt?: number;
+  _dirty?: number;
+  jobId: string;
+  name: string;
+  blob: Blob;
 }
 
 export interface Tombstone {

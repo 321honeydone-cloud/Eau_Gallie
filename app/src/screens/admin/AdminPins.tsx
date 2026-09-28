@@ -109,7 +109,7 @@ export default function AdminPins({ jobId }: Props) {
       </div>
       <div className="mode-tip">{moving ? 'Tap the sheet where this pin should go.' : placing ? `Tap the sheet to drop "${tpl.label}". Each tap bumps the number. Set the type and pay items on the right first.` : 'Tap a pin to edit it. Drag to pan, pinch to zoom.'}</div>
       <div className="zone-layout">
-        <PanZoom width={sheet.width} height={sheet.height} src={src} resetKey={zone.id} onTapStage={placing || moving ? place : undefined} hint={sheet.name}>
+        <PanZoom sheet={sheet} width={sheet.width} height={sheet.height} src={src} resetKey={zone.id} onTapStage={placing || moving ? place : undefined} hint={sheet.name}>
           {parts.filter(p => p.x !== undefined).map(p => (
             <button key={p.id} type="button" className={'pin s0' + (sel === p.id ? ' selected' : '') + (p.work !== 'install' ? ' demo' : '') + (['handhole', 'manhole', 'regulator', 'sign'].includes(p.category) ? ' sq' : '')} style={{ left: `${p.x}%`, top: `${p.y}%` }} aria-label={p.label} onClick={() => { if (!placing) { setSel(p.id); setMoving(false); } }}><i>{p.label.replace(/^\D+/, '').slice(-2) || '•'}</i></button>
           ))}

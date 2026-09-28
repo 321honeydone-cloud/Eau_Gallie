@@ -46,7 +46,7 @@ export default function MapScreen({ job, date, onZone, onReport }: Props) {
       </div>
       {!zones.length && <div className="ege-banner">No zones on this job yet. Open Setup from the top bar to load the plans and draw zones.</div>}
       {overview && overviewSrc && (
-        <PanZoom ref={pz} dark={dark} width={overview.width} height={overview.height} src={overviewSrc} hint="Pinch to zoom, drag to pan, double tap to zoom in">
+        <PanZoom ref={pz} dark={dark} sheet={overview} width={overview.width} height={overview.height} src={overviewSrc} hint="Pinch to zoom, drag to pan, double tap to zoom in">
           <svg viewBox={`0 0 ${overview.width} ${overview.height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
             {zones.map(z => {
               const pts = z.shape.map(p => `${(p.x / 100) * overview.width},${(p.y / 100) * overview.height}`).join(' ');

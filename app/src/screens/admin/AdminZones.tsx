@@ -66,7 +66,7 @@ export default function AdminZones({ jobId }: Props) {
       </div>
 
       <div className="zone-layout">
-        <PanZoom width={overview.width} height={overview.height} src={src} resetKey={overview.id} onDrawRect={drawing || redrawing ? onDraw : undefined} hint={overview.name}>
+        <PanZoom sheet={overview} width={overview.width} height={overview.height} src={src} resetKey={overview.id} onDrawRect={drawing || redrawing ? onDraw : undefined} hint={overview.name}>
           <svg viewBox={`0 0 ${overview.width} ${overview.height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
             {zones.map(z => {
               const pts = z.shape.map(p => `${(p.x / 100) * overview.width},${(p.y / 100) * overview.height}`).join(' ');

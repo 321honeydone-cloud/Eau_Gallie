@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['ege-ui.js', 'placeholder/*.svg', 'pensacola/*.jpg', 'icons/*.png', 'logo.png', 'favicon.svg'],
+      includeAssets: ['ege-ui.js', 'placeholder/*.svg', 'pensacola/*.jpg', 'pensacola/*.pdf', 'icons/*.png', 'logo.png', 'favicon.svg'],
       manifest: {
         name: 'Eau Gallie Electric Field',
         short_name: 'EGE Field',
@@ -26,7 +26,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,jpg}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2,jpg,pdf}'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },
     }),

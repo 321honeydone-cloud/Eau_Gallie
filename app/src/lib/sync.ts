@@ -13,7 +13,7 @@ export interface SyncStatus { state: 'off' | 'idle' | 'syncing' | 'error'; lastA
 
 type Row = { id: string; tbl: string; job_id: string; updated_at: number; server_at?: number; deleted?: boolean; data: Record<string, unknown> | null };
 
-const BLOB_TABLES: Partial<Record<SyncedTable, string>> = { photos: 'blob', sheets: 'blob' };
+const BLOB_TABLES: Partial<Record<SyncedTable, string>> = { photos: 'blob', sheets: 'blob', files: 'blob' };
 const listeners = new Set<(s: SyncStatus) => void>();
 let status: SyncStatus = { state: 'off', pending: 0 };
 let running = false;

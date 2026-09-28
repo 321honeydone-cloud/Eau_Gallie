@@ -106,7 +106,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
 
       <div className={'zone-layout' + (mode === 'list' ? ' list-only' : mode === 'pins' ? ' pins-only' : '')}>
         {mode !== 'list' && sheet && (
-          <PanZoom dark={dark} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
+          <PanZoom dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
             {pins}
           </PanZoom>
         )}

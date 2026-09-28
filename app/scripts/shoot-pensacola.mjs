@@ -14,6 +14,14 @@ await page.screenshot({ path: `${OUT}/41-pensacola-e201.png` });
 const b = await page.locator('.viewer').boundingBox();
 await page.mouse.move(b.x + b.width * 0.35, b.y + b.height * 0.45); for (let i = 0; i < 8; i++) { await page.mouse.wheel(0, -200); await page.waitForTimeout(60); }
 await page.waitForTimeout(800);
+await page.screenshot({ path: `${OUT}/42a-raster-only-moment.png` });
+await page.waitForFunction(() => { const c = document.querySelector('canvas.vector'); return c && c.style.display !== 'none' && c.width > 10; }, null, { timeout: 20000 });
+await page.waitForTimeout(400);
+const vec = await page.evaluate(() => { const c = document.querySelector('canvas.vector'); return { w: c.width, h: c.height, left: c.style.left, top: c.style.top }; });
+for (let i = 0; i < 6; i++) { await page.mouse.wheel(0, -200); await page.waitForTimeout(60); }
+await page.waitForTimeout(1200);
+await page.screenshot({ path: `${OUT}/42b-deep-zoom.png` });
+console.log('vector canvas', JSON.stringify(vec));
 await page.screenshot({ path: `${OUT}/42-pensacola-e201-zoom.png` });
 await page.getByRole('button', { name: 'Daylight' }).click(); await page.waitForTimeout(600);
 await page.screenshot({ path: `${OUT}/43-pensacola-e201-day.png` });

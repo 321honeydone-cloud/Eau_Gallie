@@ -15,7 +15,7 @@ const sheetDefs = [
 ];
 const sheets = sheetDefs.map(([file, name, title, isOverview], i) => {
   const { width, height } = sizeOf(`public/pensacola/${file}.jpg`);
-  return { id: `sh_pns_${file}`, jobId: J, name, title, src: `/pensacola/${file}.jpg`, width, height, order: i + 1, isOverview: !!isOverview };
+  return { id: `sh_pns_${file}`, jobId: J, name, title, src: `/pensacola/${file}.jpg`, pdfSrc: `/pensacola/${file}.pdf`, pdfPage: 1, width, height, order: i + 1, isOverview: !!isOverview };
 });
 // Where each sheet sits on C-6, as fractions of the sheet. Runway centerline is about y 0.36.
 const rects = {

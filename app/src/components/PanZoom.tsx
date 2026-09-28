@@ -1,4 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState, type ReactNode, type PointerEvent as RPointerEvent } from 'react';
+import type { Sheet } from '../types';
+import { getSheetPage, renderRegion, sheetHasVector } from '../lib/pdf';
+import type { RenderTask } from 'pdfjs-dist';
 
 // Pinch, drag, double tap, plus buttons. Taps on children still work: a drag
 // longer than 8px cancels the click that would follow it.
@@ -12,6 +15,7 @@ interface Props {
   onTapStage?: (pt: { x: number; y: number }) => void;          // clean tap on the sheet, percent coords
   onDrawRect?: (r: { x1: number; y1: number; x2: number; y2: number }) => void;  // drag draws a box, percent coords
   dark?: boolean;          // CAD night look: the sheet inverts, pins glow
+  sheet?: Sheet;           // when the sheet has a PDF page, the visible area redraws from the vector
 }
 
 export interface PanZoomHandle {
@@ -21,7 +25,7 @@ export interface PanZoomHandle {
 
 interface View { s: number; tx: number; ty: number }
 
-const PanZoom = forwardRef<PanZoomHandle, Props>(function PanZoom({ width, height, src, children, hint, resetKey, onTapStage, onDrawRect, dark }, ref) {
+const PanZoom = forwardRef<PanZoomHandle, Props>(function PanZoom({ width, height, src, children, hint, resetKey, onTapStage, onDrawRect, dark, sheet }, ref) {
   const [eased, setEased] = useState(false);   // transitions on for button, double tap and fly zooms, off while a finger is down
   const [drawBox, setDrawBoxState] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
   // Window listeners are attached on pointer down and would see stale state, so the live values live in refs.
@@ -159,6 +163,7 @@ const PanZoom = forwardRef<PanZoomHandle, Props>(function PanZoom({ width, heigh
       onPointerDown={onDown} onClickCapture={onClickCapture} onWheel={onWheel}>
       <div className="stage" style={{ width: stageW, transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.s})`, ['--inv' as string]: String(1 / view.s) }}>
         <img src={src} width={width} height={height} alt="" draggable={false} />
+        {sheetHasVector(sheet) && <VectorLayer sheet={sheet!} view={view} stageW={stageW} aspect={height / width} box={box} />}
         {children}
         {drawBox && <div className="drawbox" style={{ left: `${drawBox.x1}%`, top: `${drawBox.y1}%`, width: `${drawBox.x2 - drawBox.x1}%`, height: `${drawBox.y2 - drawBox.y1}%` }} />}
       </div>
@@ -172,3 +177,36 @@ const PanZoom = forwardRef<PanZoomHandle, Props>(function PanZoom({ width, heigh
   );
 });
 export default PanZoom;
+
+// Redraws whatever part of the sheet is on screen from the PDF once the view settles.
+// The raster preview underneath covers the moment between a gesture and the redraw.
+function VectorLayer({ sheet, view, stageW, aspect, box }: { sheet: Sheet; view: View; stageW: number; aspect: number; box: React.RefObject<HTMLDivElement | null> }) {
+  const canvas = useRef<HTMLCanvasElement>(null);
+  const [place, setPlace] = useState<{ x: number; y: number; w: number; h: number } | null>(null);
+  const task = useRef<RenderTask | null>(null);
+  useEffect(() => {
+    const el = box.current; if (!el) return;
+    const t = window.setTimeout(async () => {
+      const bw = el.clientWidth, bh = el.clientHeight;
+      const sw = stageW * view.s, sh = stageW * aspect * view.s;
+      const region = {
+        x: Math.max(0, -view.tx / sw), y: Math.max(0, -view.ty / sh),
+        w: Math.min(1, bw / sw), h: Math.min(1, bh / sh),
+      };
+      region.w = Math.min(region.w, 1 - region.x); region.h = Math.min(region.h, 1 - region.y);
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      try {
+        const page = await getSheetPage(sheet);
+        task.current?.cancel();
+        const c = canvas.current; if (!c) return;
+        const rt = renderRegion(page, c, region, sw * dpr);
+        task.current = rt;
+        await rt.promise;
+        setPlace(region);
+      } catch (e) { if ((e as Error)?.name !== 'RenderingCancelledException') console.warn('vector layer', e); }
+    }, 160);
+    return () => window.clearTimeout(t);
+  }, [sheet.id, view.s, view.tx, view.ty, stageW, aspect, box]);
+  useEffect(() => () => task.current?.cancel(), []);
+  return <canvas ref={canvas} className="vector" style={place ? { left: `${place.x * 100}%`, top: `${place.y * 100}%`, width: `${place.w * 100}%`, height: `${place.h * 100}%` } : { display: 'none' }} />;
+}

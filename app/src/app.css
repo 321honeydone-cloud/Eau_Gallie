@@ -239,3 +239,5 @@ body.ege { padding-block: 0 0; overscroll-behavior: none; }
   .route > .screen, .ege-sheet-box, .undo, .pin.pop i, .pin.pop::after { animation: none !important; }
   .viewer.eased .stage, .zone-fill { transition: none !important; }
 }
+.viewer .stage canvas.vector { position: absolute; pointer-events: none; }
+.viewer.dark .stage canvas.vector { filter: invert(1) hue-rotate(180deg) brightness(.92) contrast(1.05); }

@@ -173,7 +173,7 @@ Decided 2026-09-28: no API push to Autodesk. The copy path is the finished answe
 
 - React, TypeScript, Vite. Installable PWA with a service worker. Added to the iPad home screen so Safari doesn't purge the offline data.
 - Dexie (IndexedDB) on the device. Supabase (Postgres, Storage) for sync and photos. Free tier until it matters.
-- pdf.js renders plan pages to images in the browser. No server side PDF work.
+- pdf.js renders plan pages to images in the browser. No server side PDF work. The uploaded plan set is kept whole on the device, and the viewer redraws the visible area from the vector page whenever the zoom settles, so sheets stay crisp at any zoom. The raster preview covers the moment between the gesture and the redraw.
 - Pan and zoom on sheets with pointer events, pins positioned in percent so they survive any screen size.
 - The Eau Gallie UI kit, vendored into the app. Fonts are self hosted so the app looks right with no signal.
 

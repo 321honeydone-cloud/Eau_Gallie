@@ -19,7 +19,13 @@ export async function seedIfEmpty(): Promise<void> {
 // A tablet that already has the placeholder gets the real job added on the next load.
 async function seedMissing(): Promise<void> {
   const d = pensacola as unknown as SeedFile;
-  if (await db.jobs.get(d.job.id)) return;
+  if (await db.jobs.get(d.job.id)) {
+    // tablets that got the job before the vector layer existed pick up the PDF links
+    setApplyingRemote(true);
+    try { for (const sh of d.sheets) { const cur = await db.sheets.get(sh.id); if (cur && !cur.pdfSrc && sh.pdfSrc) await db.sheets.update(sh.id, { pdfSrc: sh.pdfSrc, pdfPage: sh.pdfPage }); } }
+    finally { setApplyingRemote(false); }
+    return;
+  }
   await seedOne(d);
   await db.settings.put({ key: 'jobId', value: d.job.id });
 }

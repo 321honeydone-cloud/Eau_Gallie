@@ -26,7 +26,8 @@ export default function AdminSheets({ jobId }: Props) {
       try {
         if (/\.pdf$/i.test(f.name) || f.type === 'application/pdf') {
           setProgress(`Rendering ${f.name}…`);
-          const out = await pdfToSheets(f, jobId, order, (d, t) => setProgress(`Rendering ${f.name}, page ${d} of ${t}`));
+          const { sheets: out, stored } = await pdfToSheets(f, jobId, order, (d, t) => setProgress(`Rendering ${f.name}, page ${d} of ${t}`));
+          await db.files.add(stored);
           await db.sheets.bulkAdd(out); order += out.length;
         } else {
           const s = await imageToSheet(f, jobId, order + 1); await db.sheets.add(s); order += 1;

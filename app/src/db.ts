@@ -1,7 +1,7 @@
 import Dexie, { type EntityTable } from 'dexie';
 import type {
   Job, Phase, Sheet, Zone, PayItem, Part, StatusEvent, Flag,
-  CrewMember, Equipment, Photo, DailyReport, Setting, BillingRollup, Tombstone,
+  CrewMember, Equipment, Photo, DailyReport, Setting, BillingRollup, Tombstone, StoredFile,
 } from './types';
 
 export class FieldDB extends Dexie {
@@ -20,6 +20,7 @@ export class FieldDB extends Dexie {
   settings!: EntityTable<Setting, 'key'>;
   rollups!: EntityTable<BillingRollup, 'id'>;
   tombstones!: EntityTable<Tombstone, 'id'>;
+  files!: EntityTable<StoredFile, 'id'>;
 
   constructor() {
     super('eau-gallie-field');
@@ -79,6 +80,9 @@ export class FieldDB extends Dexie {
     }).upgrade(async tx => {
       for (const t of SYNCED) await tx.table(t).toCollection().modify((r: { _dirty?: number }) => { if (r._dirty === undefined) r._dirty = 1; });
     });
+    this.version(5).stores({
+      files: 'id, jobId, updatedAt, _dirty',
+    });
     // Every local write gets a timestamp and a dirty flag so sync knows what to push.
     // Rows arriving from the server keep their own stamp and come in clean.
     for (const t of SYNCED) {
@@ -89,7 +93,7 @@ export class FieldDB extends Dexie {
   }
 }
 
-export const SYNCED = ['jobs', 'phases', 'sheets', 'zones', 'payItems', 'parts', 'events', 'flags', 'crew', 'equipment', 'photos', 'reports', 'rollups', 'tombstones'] as const;
+export const SYNCED = ['jobs', 'phases', 'sheets', 'zones', 'payItems', 'parts', 'events', 'flags', 'crew', 'equipment', 'photos', 'reports', 'rollups', 'files', 'tombstones'] as const;
 export type SyncedTable = typeof SYNCED[number];
 export let applyingRemote = false;
 export function setApplyingRemote(v: boolean) { applyingRemote = v; }
