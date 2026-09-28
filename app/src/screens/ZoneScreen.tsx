@@ -2,7 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import PanZoom from '../components/PanZoom';
 import { useSheetSrc } from '../hooks/useSheetSrc';
 import PartCard, { ladderLabel } from './PartCard';
-import { useOpenFlags, useSheets, useZoneParts } from '../hooks/useJob';
+import { useOpenFlags, useSheets, useZoneParts, useSheetDark } from '../hooks/useJob';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db, setSetting } from '../db';
 import { activeLadder, currentStep, setStep, stepName, zoneProgress } from '../lib/status';
 import { toast } from '../ege/ege';
 import { STEPS, type Step, type Zone } from '../types';
@@ -17,6 +19,10 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   const sheets = useSheets(zone.jobId);
   const sheet = sheets.find(s => s.id === zone.detailSheetId);
   const sheetSrc = useSheetSrc(sheet);
+  const dark = useSheetDark();
+  // the part that changed most recently gets a pop, so the tap has a visible answer on the sheet
+  const lastEvent = useLiveQuery(() => db.events.orderBy('createdAt').reverse().first(), []);
+  const popId = lastEvent && Date.now() - lastEvent.createdAt < 1500 ? lastEvent.partId : null;
   const parts = useZoneParts(zone.id);
   const flags = useOpenFlags(zone.jobId);
   const [mode, setMode] = useState<Mode>(() => (window.innerWidth < 900 ? 'pins' : 'both'));
@@ -59,7 +65,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
 
   const pins = sheet && parts.filter(p => p.x !== undefined).map(p => {
     const s = currentStep(p);
-    const cls = ['pin', `s${s}`, flagByPart.has(p.id) ? 'flagged' : '', activeLadder(p) === 'demo' ? 'demo' : '', sel.has(p.id) ? 'selected' : '', ['handhole', 'manhole', 'regulator', 'sign'].includes(p.category) ? 'sq' : ''].join(' ');
+    const cls = ['pin', `s${s}`, flagByPart.has(p.id) ? 'flagged' : '', activeLadder(p) === 'demo' ? 'demo' : '', sel.has(p.id) ? 'selected' : '', ['handhole', 'manhole', 'regulator', 'sign'].includes(p.category) ? 'sq' : '', popId === p.id ? 'pop' : ''].join(' ');
     return (
       <button key={p.id} type="button" className={cls} style={{ left: `${p.x}%`, top: `${p.y}%` }} aria-label={p.label} onClick={() => onTap(p.id)}>
         <i>{s}</i>
@@ -80,6 +86,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
           <button type="button" className={mode === 'list' ? 'on' : ''} onClick={() => setMode('list')}>List</button>
         </div>
         <button type="button" className={'ege-btn' + (bulk ? ' accent' : '')} onClick={() => { setBulk(b => !b); setSel(new Set()); }}>{bulk ? 'Cancel select' : 'Select many'}</button>
+        <button type="button" className="ege-btn" onClick={() => setSetting('sheetLook', dark ? 'day' : 'night')}>{dark ? 'Daylight' : 'Night'}</button>
       </div>
 
       {bulk && (
@@ -99,7 +106,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
 
       <div className={'zone-layout' + (mode === 'list' ? ' list-only' : mode === 'pins' ? ' pins-only' : '')}>
         {mode !== 'list' && sheet && (
-          <PanZoom width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
+          <PanZoom dark={dark} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
             {pins}
           </PanZoom>
         )}

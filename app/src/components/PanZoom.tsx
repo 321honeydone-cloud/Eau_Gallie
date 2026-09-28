@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode, type PointerEvent as RPointerEvent } from 'react';
+import { forwardRef, useEffect, useImperativeHandle, useRef, useState, type ReactNode, type PointerEvent as RPointerEvent } from 'react';
 
 // Pinch, drag, double tap, plus buttons. Taps on children still work: a drag
 // longer than 8px cancels the click that would follow it.
@@ -11,11 +11,18 @@ interface Props {
   resetKey?: string;
   onTapStage?: (pt: { x: number; y: number }) => void;          // clean tap on the sheet, percent coords
   onDrawRect?: (r: { x1: number; y1: number; x2: number; y2: number }) => void;  // drag draws a box, percent coords
+  dark?: boolean;          // CAD night look: the sheet inverts, pins glow
+}
+
+export interface PanZoomHandle {
+  flyTo: (r: { x1: number; y1: number; x2: number; y2: number }, ms?: number) => Promise<void>;   // percent rect
+  fit: () => void;
 }
 
 interface View { s: number; tx: number; ty: number }
 
-export default function PanZoom({ width, height, src, children, hint, resetKey, onTapStage, onDrawRect }: Props) {
+const PanZoom = forwardRef<PanZoomHandle, Props>(function PanZoom({ width, height, src, children, hint, resetKey, onTapStage, onDrawRect, dark }, ref) {
+  const [eased, setEased] = useState(false);   // transitions on for button, double tap and fly zooms, off while a finger is down
   const [drawBox, setDrawBoxState] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
   // Window listeners are attached on pointer down and would see stale state, so the live values live in refs.
   const drawRef = useRef<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
@@ -53,6 +60,7 @@ export default function PanZoom({ width, height, src, children, hint, resetKey, 
   };
 
   const zoomAt = (factor: number, cx: number, cy: number) => {
+    setEased(true);
     setView(v => {
       const s = Math.min(Math.max(v.s * factor, 0.5), 8);
       const k = s / v.s;
@@ -67,6 +75,7 @@ export default function PanZoom({ width, height, src, children, hint, resetKey, 
   const toPct = (p: { x: number; y: number }, v: View = viewRef.current) => ({ x: ((p.x - v.tx) / (stageW * v.s)) * 100, y: ((p.y - v.ty) / (stageW * (height / width) * v.s)) * 100 });
 
   const onDown = (e: RPointerEvent) => {
+    setEased(false);
     const p = local(e);
     pointers.current.set(e.pointerId, p);
     // No pointer capture: it would re-target the click that follows, and
@@ -131,8 +140,22 @@ export default function PanZoom({ width, height, src, children, hint, resetKey, 
   };
   const onWheel = (e: React.WheelEvent) => { const p = local(e); zoomAt(e.deltaY < 0 ? 1.15 : 0.87, p.x, p.y); };
 
+  // Glide the view so a percent rect fills the box. Used when a zone is tapped on the airfield.
+  const flyTo = (r: { x1: number; y1: number; x2: number; y2: number }, ms = 420) => new Promise<void>(res => {
+    const el = box.current; if (!el) return res();
+    const bw = el.clientWidth, bh = el.clientHeight;
+    const sh = stageW * (height / width);
+    const rw = ((r.x2 - r.x1) / 100) * stageW, rh = ((r.y2 - r.y1) / 100) * sh;
+    const s = Math.min(8, Math.min(bw / rw, bh / rh) * 0.9);
+    const cx = ((r.x1 + r.x2) / 200) * stageW * s, cy = ((r.y1 + r.y2) / 200) * sh * s;
+    setEased(true);
+    setView({ s, tx: bw / 2 - cx, ty: bh / 2 - cy });
+    window.setTimeout(res, ms);
+  });
+  useImperativeHandle(ref, () => ({ flyTo, fit }), [stageW, width, height]); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
-    <div ref={box} className={'viewer' + (dragging ? ' dragging' : '')}
+    <div ref={box} className={'viewer' + (dragging ? ' dragging' : '') + (dark ? ' dark' : '') + (eased ? ' eased' : '')}
       onPointerDown={onDown} onClickCapture={onClickCapture} onWheel={onWheel}>
       <div className="stage" style={{ width: stageW, transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.s})`, ['--inv' as string]: String(1 / view.s) }}>
         <img src={src} width={width} height={height} alt="" draggable={false} />
@@ -147,4 +170,5 @@ export default function PanZoom({ width, height, src, children, hint, resetKey, 
       {hint && <div className="hint">{hint}</div>}
     </div>
   );
-}
+});
+export default PanZoom;

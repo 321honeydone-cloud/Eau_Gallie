@@ -1,6 +1,8 @@
-import PanZoom from '../components/PanZoom';
+import { useRef, useState } from 'react';
+import PanZoom, { type PanZoomHandle } from '../components/PanZoom';
+import { setSetting } from '../db';
 import { useSheetSrc } from '../hooks/useSheetSrc';
-import { usePhases, useZones, useSheets, useParts, useOpenFlags, useTodayEventCount } from '../hooks/useJob';
+import { usePhases, useZones, useSheets, useParts, useOpenFlags, useTodayEventCount, useSheetDark } from '../hooks/useJob';
 import { zoneProgress } from '../lib/status';
 import type { Job } from '../types';
 
@@ -15,6 +17,16 @@ export default function MapScreen({ job, date, onZone, onReport }: Props) {
   const taps = useTodayEventCount(job.id, date);
   const overview = sheets.find(s => s.isOverview) ?? sheets.find(s => zones[0] && s.id === zones[0].overviewSheetId) ?? sheets[0];
   const overviewSrc = useSheetSrc(overview);
+  const dark = useSheetDark();
+  const pz = useRef<PanZoomHandle>(null);
+  const [leaving, setLeaving] = useState<string | null>(null);
+  const go = async (z: typeof zones[number]) => {
+    if (leaving) return;
+    setLeaving(z.id);
+    const xs = z.shape.map(p => p.x), ys = z.shape.map(p => p.y);
+    await pz.current?.flyTo({ x1: Math.min(...xs), y1: Math.min(...ys), x2: Math.max(...xs), y2: Math.max(...ys) });
+    onZone(z.id);
+  };
 
   const complete = parts.filter(p => (p.work === 'demo' ? p.demoStep === 4 : p.installStep === 4)).length;
 
@@ -29,11 +41,12 @@ export default function MapScreen({ job, date, onZone, onReport }: Props) {
       </div>
       <div className="legend">
         <span><b>Tap a zone</b> to open its sheet.</span>
+        <button type="button" className="ege-btn small" onClick={() => setSetting('sheetLook', dark ? 'day' : 'night')}>{dark ? 'Daylight' : 'Night'}</button>
         {phases.map((p, i) => <span key={p.id}><span className="sw" style={{ background: i === 0 ? 'rgba(105,166,213,.6)' : 'rgba(236,28,45,.35)', borderRadius: 3 }} />{p.name}</span>)}
       </div>
       {!zones.length && <div className="ege-banner">No zones on this job yet. Open Setup from the top bar to load the plans and draw zones.</div>}
       {overview && overviewSrc && (
-        <PanZoom width={overview.width} height={overview.height} src={overviewSrc} hint="Pinch to zoom, drag to pan, double tap to zoom in">
+        <PanZoom ref={pz} dark={dark} width={overview.width} height={overview.height} src={overviewSrc} hint="Pinch to zoom, drag to pan, double tap to zoom in">
           <svg viewBox={`0 0 ${overview.width} ${overview.height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
             {zones.map(z => {
               const pts = z.shape.map(p => `${(p.x / 100) * overview.width},${(p.y / 100) * overview.height}`).join(' ');
@@ -46,8 +59,8 @@ export default function MapScreen({ job, date, onZone, onReport }: Props) {
               const phaseIdx = phases.findIndex(p => p.id === z.phaseId);
               const barW = Math.min(260, x1 - x0 - 24);
               return (
-                <g key={z.id} onClick={() => onZone(z.id)} style={{ cursor: 'pointer' }}>
-                  <polygon className={'zone-poly' + (phaseIdx === 1 ? ' p2' : '')} points={pts} />
+                <g key={z.id} className={'zone-g' + (leaving === z.id ? ' leaving' : '')} onClick={() => go(z)} style={{ cursor: 'pointer' }}>
+                  <polygon className={'zone-poly' + (phaseIdx === 1 ? ' p2' : '') + (pct === 100 ? ' done' : '')} points={pts} />
                   <text className="zone-label" x={x0 + 12} y={y0 + 40}>{z.name}</text>
                   <rect className="zone-bar" x={x0 + 12} y={y0 + 52} width={barW} height={16} rx={2} />
                   <rect className="zone-fill" x={x0 + 12} y={y0 + 52} width={(barW * pct) / 100} height={16} rx={2} />

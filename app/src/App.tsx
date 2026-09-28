@@ -58,6 +58,7 @@ export default function App() {
     <>
       <Header job={job} foreman={foreman} date={date} onChangeForeman={() => setRoute({ name: 'start' })} onHome={() => setRoute({ name: 'map' })} onSetup={() => setRoute({ name: 'admin' })} onBilling={() => setRoute({ name: 'billing' })} onSync={() => setSyncOpen(true)} />
       {syncOpen && <SyncSheet onClose={() => setSyncOpen(false)} />}
+      <div key={show.name + ('zoneId' in show ? show.zoneId : '')} className="route">
       {show.name === 'start' && <Start foreman={foreman} onDone={() => setRoute({ name: 'map' })} />}
       {show.name === 'map' && !job && <div className="screen"><div className="ege-panel"><h2 className="ege-h2">No job on this tablet</h2><p className="ege-intro">Open Setup to create one or import a job file.</p><button type="button" className="ege-btn primary" onClick={() => setRoute({ name: 'admin' })}>Setup</button></div></div>}
       {show.name === 'map' && job && <MapScreen job={job} date={date} onZone={id => setRoute({ name: 'zone', zoneId: id })} onReport={() => setRoute({ name: 'report' })} />}
@@ -65,6 +66,7 @@ export default function App() {
       {show.name === 'billing' && job && <BillingScreen job={job} foreman={foreman} onBack={() => setRoute({ name: 'map' })} />}
       {show.name === 'admin' && <AdminScreen onBack={() => setRoute({ name: 'map' })} />}
       {show.name === 'report' && job && <ReportScreen job={job} date={date} foreman={foreman} onBack={() => setRoute({ name: 'map' })} />}
+      </div>
       {undoShown && lastEvent && show.name !== 'report' && (
         <div className="undo"><span>Saved.</span><button type="button" onClick={undo}>Undo</button></div>
       )}

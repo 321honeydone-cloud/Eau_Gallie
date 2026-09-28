@@ -38,3 +38,8 @@ export function useCrew() {
 export function useTodayEventCount(jobId: string | undefined, date: string) {
   return useLiveQuery(() => (jobId ? db.events.where('[jobId+reportDate]').equals([jobId, date]).count() : 0), [jobId, date]) ?? 0;
 }
+
+// Night look on the sheets is the default. One tap flips to daylight when the sun wins.
+export function useSheetDark(): boolean {
+  return useLiveQuery(() => db.settings.get('sheetLook').then(s => s?.value !== 'day'), []) ?? true;
+}

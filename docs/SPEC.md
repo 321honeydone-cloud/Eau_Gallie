@@ -30,7 +30,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Signer | Whoever submits also signs. No separate superintendent review step. |
 | Phases | A phase is a group of zones. Each zone carries a phase. Map colors by phase, report can group by phase. The Autodesk schedule already breaks work down as Phase, then plan sheet (E108, E109), then activity. So a zone is a plan sheet. |
 | Device | iPad. Installable web app on Safari, added to the home screen. |
-| Look | The Eau Gallie UI kit's colors and fonts only. Not its page layout. Screens follow the map and zone pattern: one thing per screen, big buttons, Back and Next. Real logo is in the header and on the home screen icon. |
+| Look | The Eau Gallie UI kit's colors and fonts for the chrome. The map and the sheets are the star: night look by default, the drawing inverts to a CAD screen, zones glow by phase, pins glow by status. One tap to Daylight when the sun wins. Motion everywhere it answers a tap: screens slide in, the map glides into a zone, pins pop, bars fill. |
 
 ## The status ladder, spelled out
 
