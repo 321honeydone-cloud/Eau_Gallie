@@ -50,6 +50,10 @@ Any part can also carry a problem flag on top of its step. Flag reasons: conflic
 - Once a Complete event has been pulled into a submitted rollup it's marked billed and can't land in another one. Rolling a part back from Complete after it's billed creates a credit line, it doesn't erase anything.
 - Pay items come from the bid schedule. Item number, description, unit (EA or LF), unit price, bid quantity. Every part points at exactly one pay item. The app shows installed vs bid quantity per item so an overrun is visible before the customer sees it.
 
+## Crew
+
+Foremen in the picker: Darrell Simpson, Carlos Leisse. More get added from the admin screen.
+
 ## Foreman flow on the tablet
 
 1. Open the app. Tap your name. Today's report opens or gets created.
@@ -121,7 +125,6 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 ## Open items
 
 - Daylight mode. Dark gold theme is the house look but a tablet outside at noon needs a light, high contrast option. I'll build the toggle and default to daylight between 0800 and 1800 unless told otherwise.
-- Foreman name list. Need the crew names to seed the picker. Placeholder names until then.
 - Autodesk form fields. Need a screenshot or export of the actual daily report form so the copy path lines up with it field for field.
 - Bid schedule format. A sample of a real one, even an old job, so the import matches what the office already has.
 - Equipment list. What's normally on an airfield job for this crew (trencher, directional bore, core drill, bucket truck, and so on).
