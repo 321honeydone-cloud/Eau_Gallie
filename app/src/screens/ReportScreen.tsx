@@ -90,6 +90,15 @@ export default function ReportScreen({ job, date, foreman, onBack }: Props) {
   };
   const reopen = async () => { await save({ submittedBy: undefined, signature: undefined, signedAt: undefined }); setSig(null); toast('Report reopened.'); };
   const copyAll = () => window.EGE?.copy(fullText(ctx, job.name, nice), 'Report');
+  // Hands the day's photos to the iPad share sheet so they can go straight into the Autodesk form.
+  // Where share isn't available they download one by one.
+  const sharePhotos = async () => {
+    if (!photos.length) { toast('No photos today.'); return; }
+    const files = photos.map((p, i) => new File([p.blob], `${date}-${String(i + 1).padStart(2, '0')}.jpg`, { type: 'image/jpeg' }));
+    const shared = window.EGE ? await window.EGE.share({ title: `Photos ${nice}`, files }) : false;
+    if (shared === true || shared === 'cancel') return;
+    for (const f of files) { const a = document.createElement('a'); a.href = URL.createObjectURL(f); a.download = f.name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 5000); }
+  };
   const secText = (num: string) => sections.find(s => s.num === num)?.text ?? '';
 
   const zoneTiles = (value: string[], onPick: (id: string) => void) => (
@@ -116,6 +125,7 @@ export default function ReportScreen({ job, date, foreman, onBack }: Props) {
         {locked ? <span className="ege-flag ok">Signed by {r.submittedBy}</span> : <span className="ege-flag info">Saves as you go</span>}
         <span className="spacer" />
         <button type="button" className="ege-btn" onClick={copyAll}>Copy for Autodesk</button>
+        <button type="button" className="ege-btn" onClick={sharePhotos}>Photos ({photos.length})</button>
       </div>
 
       <div className="stepbar">

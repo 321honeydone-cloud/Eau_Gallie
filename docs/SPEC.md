@@ -85,7 +85,7 @@ Default equipment list for a new airfield job, editable per job: trencher, mini 
 5. Bulk mode. Long press a pin, drag over others, set them all to one step. For the day when the crew sets twenty cans in a row.
 6. Report tab. Crew in three buckets with shift times, equipment (tap from a job list), weather, safety, visitors. Planned scope is prefilled from yesterday. Yard and Other for work with no pin. Executive comment. Everything else builds itself from the day's events and flags. Photos show up under the part or zone they were taken in.
 7. End of day. Review screen shows the report laid out in the six Autodesk sections. Submit. Second foreman's submit merges into the same report.
-8. Sign with a finger on the review screen. Copy for Autodesk or, later, push.
+8. Sign with a finger on the review screen. Copy for Autodesk, share the photos to the form.
 
 Touch targets 56px minimum. Big fonts. Light theme from the EGE kit reads at noon.
 
