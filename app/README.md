@@ -43,5 +43,4 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items. Done.
 4. Offline sync through Supabase, two tablets. Done. See `../supabase/README.md` to stand it up.
 5. Billing rollup and billed lock. Done.
-6. Copy for Autodesk. Done early, it's on the report screen.
-7. Autodesk API push.
+6. Copy for Autodesk. Done, it's on the report screen. No API push, decided against it.

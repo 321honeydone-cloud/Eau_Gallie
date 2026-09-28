@@ -19,7 +19,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Status ladder | Not started, Rough in, Set, Wired, Complete. Complete is the billable trigger. |
 | Zone view | Both. Pins on the plan sheet for point items, list for linear runs. Foreman flips between them. |
 | Report fields | Crew, hours, equipment. Photos per part or per zone. Weather, delays, safety, visitors. |
-| Where the report goes | Autodesk Build Forms. Manny can get admin, so a real API push is on the table. |
+| Where the report goes | Autodesk Build Forms, by copy and paste from the app. No API push, decided against it. |
 | New job setup | Admin uploads the plan PDF, draws zone boxes on the overview sheet, links each zone to its detail sheet, drops pins by hand from the takeoff. |
 | Site conditions | Bad or no signal on the field. More than one foreman at a time. |
 | Drawings | None yet. Build against a placeholder airfield and swap the real set in later. |
@@ -153,7 +153,7 @@ The sample also confirms the install sequence the crew actually runs: Core Drill
 
 Phase 1 ships a copy path. Review screen has a Copy for Autodesk button that puts each section on the clipboard one at a time in the order above, so the superintendent pastes 1.1 through 1.6 into the form without retyping. Photos download as a bundle for the 1.2 attachments.
 
-Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms API. App creates a Daily Report v2 form in the ACC project, fills the six sections, submits. Photo attachment through that API needs to be verified before we promise it. If forms can't take photos through the API, photos go to the ACC Photos or Files API and the form gets links. Needs an APS app registered under the company Autodesk account and one time authorization by an ACC admin.
+Decided 2026-09-28: no API push to Autodesk. The copy path is the finished answer. The report copies section by section in form order, photos download as a bundle, and the superintendent pastes into the form.
 
 ## Data model
 
@@ -185,7 +185,6 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 4. Offline sync through Supabase, two tablets. DONE. One generic table on the server plus a files bucket. Every row carries a dirty flag until pushed, pulls run off the server clock, newest change wins, part steps are recomputed from the event log after a pull, and two foremen's reports merge their crew. Photos, sheets and signatures travel as files. Tested with two browser tablets against a fake server that speaks the same REST contract. Setup steps are in supabase/README.md.
 5. Billing rollup and billed lock. DONE. Billing button in the top bar. Pick a window, see every pay item with this period qty, unit price, amount, and to date against bid. Lock it as a pay app and every tap in it is stamped so it never bills twice. Rollbacks after a lock show as credit lines. CSV download per pay app.
 6. Copy for Autodesk.
-7. Autodesk API push.
 8. Takeoff spreadsheet import (later).
 8b. Autodesk Build Schedule sync (later). The schedule has a percent complete per activity and activities are already split by phase and sheet. The app can compute percent complete per sheet per activity type from part steps and push it up, so the Gantt updates itself off the taps.
 9. Symbol detection on the drawing (maybe, later).
