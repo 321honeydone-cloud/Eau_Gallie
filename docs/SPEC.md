@@ -64,7 +64,7 @@ Foremen in the picker: Darrell Simpson, Carlos Leisse. More get added from the a
 6. Report tab. Crew (tap names), hours, equipment (tap from a job list), weather, delays, safety, visitors, notes. The zone sections build themselves from the day's events. Photos show up under the part or zone they were taken in.
 7. End of day. Review screen shows everything tapped today. Submit. Report locks for that foreman. Second foreman's submit merges into the same report.
 
-Touch targets 56px minimum. Big fonts. High contrast daylight mode toggle because the dark house theme won't cut it in Florida sun at noon (see Open items).
+Touch targets 56px minimum. Big fonts. Daylight theme is the default on the tablet, high contrast light so it reads at noon. Dark gold house theme is one tap away and is the default for the office and admin screens.
 
 ## Admin flow, new job setup
 
@@ -124,7 +124,6 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 
 ## Open items
 
-- Daylight mode. Dark gold theme is the house look but a tablet outside at noon needs a light, high contrast option. I'll build the toggle and default to daylight between 0800 and 1800 unless told otherwise.
 - Autodesk form fields. Need a screenshot or export of the actual daily report form so the copy path lines up with it field for field.
 - Bid schedule format. A sample of a real one, even an old job, so the import matches what the office already has.
 - Equipment list. What's normally on an airfield job for this crew (trencher, directional bore, core drill, bucket truck, and so on).
