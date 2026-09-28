@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { db, uid } from '../db';
+import { PhotoButton, PhotoStrip, usePhotos } from '../components/Photos';
 import { toast } from '../ege/ege';
 import { activeLadder, currentStep, hasLadder, setStep, stepMeaning, stepName, workLabel } from '../lib/status';
 import { FLAG_IMPACTS, FLAG_PARTIES, FLAG_REASONS, STEPS, type Flag, type Ladder, type Part, type Step } from '../types';
@@ -26,6 +27,7 @@ export default function PartCard({ part, flag, foreman, date, onClose, onNext }:
 
   const step = currentStep(part, ladder);
   const isLinear = part.kind === 'linear';
+  const photos = usePhotos(part.jobId, date, part.id);
 
   const tap = async (to: Step) => {
     await setStep({ part, ladder, toStep: to, foreman, reportDate: date, qtyDone: isLinear ? qty : undefined, note: note || undefined });
@@ -105,7 +107,9 @@ export default function PartCard({ part, flag, foreman, date, onClose, onNext }:
             <textarea value={note} onChange={e => setNote(e.target.value)} onBlur={saveNote} rows={2} placeholder="Anything the office should know about this one" />
           </div>
 
+          <PhotoStrip photos={photos} canDelete />
           <div className="ege-bar" style={{ position: 'static', padding: 0, border: 'none', justifyContent: 'flex-start' }}>
+            <PhotoButton jobId={part.jobId} date={date} foreman={foreman} partId={part.id} zoneId={part.zoneId} stamp={`${part.label} | 1.2 Work Executed`} label={photos.length ? `Photo (${photos.length})` : 'Photo'} />
             {!flag && <button type="button" className="ege-btn" onClick={() => setFlagging(true)}>Flag a problem</button>}
             <span className="ege-bar-note" />
             {onNext && <button type="button" className="ege-btn" onClick={onNext}>Next part</button>}

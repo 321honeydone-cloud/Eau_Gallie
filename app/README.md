@@ -9,7 +9,7 @@ npm install
 npm run dev        # local dev server
 npm run build      # production build into dist/
 npm run preview    # serve the build
-npm run walk       # headless iPad walkthrough, screenshots to /tmp/shots (needs preview running on 4173)
+npm run walk       # headless iPad walkthrough, screenshots to /tmp/shots (needs preview on 4173, set TEST_PHOTO to a jpg path)
 npm run gen        # regenerate the placeholder airfield sheets and part list
 ```
 
@@ -19,7 +19,10 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 - `src/db.ts` on device database (Dexie over IndexedDB)
 - `src/lib/status.ts` the five step ladder, step meanings per part type, the one write path for status
 - `src/seed.ts` loads the placeholder airfield on first run
-- `src/screens/` Start, MapScreen (airfield), ZoneScreen (sheet, pins, list, bulk), PartCard, ReportStub
+- `src/screens/` Start, MapScreen (airfield), ZoneScreen (sheet, pins, list, bulk), PartCard, ReportScreen (the six Autodesk sections)
+- `src/lib/report.ts` and `src/lib/reportText.ts` turn the day's taps, flags, crew and photos into the six sections
+- `src/components/Signature.tsx` finger signature, `src/components/Photos.tsx` camera button and thumbnails
+- `src/ege/fonts.css` and `public/fonts/` self hosted Oswald, Roboto, IBM Plex Mono
 - `src/components/PanZoom.tsx` pinch, drag, double tap viewer
 - `src/ege/` the Eau Gallie UI kit stylesheet. The kit's script is served from `public/ege-ui.js`
 - `scripts/gen-placeholder.mjs` draws the placeholder sheets and writes the matching parts
@@ -29,9 +32,9 @@ npm run gen        # regenerate the placeholder airfield sheets and part list
 ## Build steps (from the spec)
 
 1. Placeholder airfield, zones, pins, five step taps, flags, list, bulk. Done.
-2. Daily report in the six Autodesk sections, photos, review and submit.
+2. Daily report in the six Autodesk sections, photos, review and submit. Done.
 3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items.
 4. Offline sync through a backend, two tablets.
 5. Billing rollup and billed lock.
-6. Copy for Autodesk.
+6. Copy for Autodesk. Done early, it's on the report screen.
 7. Autodesk API push.

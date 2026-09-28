@@ -175,12 +175,12 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 - Dexie (IndexedDB) on the device. Supabase (Postgres, Storage) for sync and photos. Free tier until it matters.
 - pdf.js renders plan pages to images in the browser. No server side PDF work.
 - Pan and zoom on sheets with pointer events, pins positioned in percent so they survive any screen size.
-- The Eau Gallie UI kit, vendored into the app.
+- The Eau Gallie UI kit, vendored into the app. Fonts are self hosted so the app looks right with no signal.
 
 ## Build order
 
 1. Placeholder airfield, zones, pins, status taps, list view, local only. The thing you can hold and poke. DONE, see app/ and docs/screenshots/.
-2. Daily report screen, photos, review and submit, printable view.
+2. Daily report screen, photos, review and submit. DONE. The six Autodesk sections build themselves from the taps, crew and weather are chips, finger signature locks the report, Copy for Autodesk is already on it (that was build step 6, it came for free with the text builder).
 3. Admin setup: PDF upload, sheet naming, zone drawing, pin placement, pay items.
 4. Offline sync through Supabase, two tablets.
 5. Billing rollup and billed lock.

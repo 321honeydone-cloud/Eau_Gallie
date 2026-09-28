@@ -177,7 +177,13 @@ export interface DailyReport {
   safety: string[];
   visitors: string[];
   plannedScope: string;
+  plannedZoneIds: string[];
   actionPlan: string;
+  nextZoneIds: string[];
+  carryDone: string[];      // carryover item keys the foreman checked off in 1.5
+  workNote: string;         // optional text under 1.2
+  carryNote: string;        // optional text under 1.3
+  delayNote: string;        // optional text under 1.4
   yardWork: { category: string; qty?: number; note?: string }[];
   executiveComment: string;
   submittedBy?: string;

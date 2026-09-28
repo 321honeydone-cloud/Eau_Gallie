@@ -122,3 +122,24 @@ body.ege { padding-block: 0 0; overscroll-behavior: none; }
 .undo button { background: #fff; color: var(--ege-navy2); border: none; border-radius: 3px; min-height: 40px; padding: 0 14px; font-family: var(--ege-display); text-transform: uppercase; letter-spacing: .8px; font-weight: 600; }
 
 .stub { padding: 40px 20px; text-align: center; color: var(--ege-ink2); }
+
+/* Daily report */
+.report-main { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); margin-top: 0; max-width: none; }
+@media (max-width: 900px) { .report-main { grid-template-columns: 1fr; } .cuepanel { position: static; } }
+.report-pane { max-height: none; overflow: visible; padding-right: 0; }
+.ege-cue { min-height: 56px; }
+.ege-card-head .ege-btn.small { margin-left: auto; }
+.auto { border: 1px solid var(--ege-line); background: var(--ege-panel2); border-radius: 3px; padding: 8px 12px; font-family: var(--ege-mono); font-size: 14px; white-space: pre-wrap; }
+.autoline { padding: 3px 0; }
+.autoline.muted { color: var(--ege-ink3); font-style: italic; }
+.lump { display: flex; flex-direction: column; gap: 6px; padding: 8px 0; border-bottom: 1px solid var(--ege-line); }
+.bucket { display: flex; flex-direction: column; gap: 8px; padding-bottom: 10px; }
+.shiftrow { display: grid; grid-template-columns: 60px 1fr; gap: 6px 10px; align-items: center; font-size: 13px; color: var(--ege-ink2); }
+.shiftrow .chip { min-height: 40px; padding: 4px 10px; font-size: 14px; }
+.preview { font-family: var(--ege-mono); font-size: 13px; line-height: 1.5; white-space: pre-wrap; background: var(--ege-panel2); border: 1px solid var(--ege-line); padding: 12px; max-height: 420px; overflow: auto; border-radius: 3px; }
+.sigwrap { position: relative; }
+.sig { width: 100%; height: 180px; border: 2px dashed var(--ege-navy); background: #fff; border-radius: 3px; touch-action: none; display: block; }
+.sighint { position: absolute; left: 14px; top: 12px; color: var(--ege-ink3); pointer-events: none; font-size: 14px; }
+.sigclear { position: absolute; right: 8px; top: 8px; }
+.prow .chk:empty::before { content: ''; }
+.ege-field input[type=text], .ege-field input[type=number] { min-height: 48px; }

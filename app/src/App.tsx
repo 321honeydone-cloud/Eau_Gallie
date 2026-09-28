@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Start from './screens/Start';
 import MapScreen from './screens/MapScreen';
 import ZoneScreen from './screens/ZoneScreen';
-import ReportStub from './screens/ReportStub';
+import ReportScreen from './screens/ReportScreen';
 import { toast } from './ege/ege';
 
 type Route = { name: 'start' } | { name: 'map' } | { name: 'zone'; zoneId: string } | { name: 'report' };
@@ -29,7 +29,7 @@ export default function App() {
   useEffect(() => {
     if (!lastEvent || Date.now() - lastEvent.createdAt > 5000) return;
     setUndoShown(lastEvent.id);
-    const t = setTimeout(() => setUndoShown(null), 8000);
+    const t = setTimeout(() => setUndoShown(null), 6000);
     return () => clearTimeout(t);
   }, [lastEvent?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   const undo = async () => {
@@ -55,8 +55,8 @@ export default function App() {
       {show.name === 'start' && <Start foreman={foreman} onDone={() => setRoute({ name: 'map' })} />}
       {show.name === 'map' && job && <MapScreen job={job} date={date} onZone={id => setRoute({ name: 'zone', zoneId: id })} onReport={() => setRoute({ name: 'report' })} />}
       {show.name === 'zone' && zone && <ZoneScreen zone={zone} foreman={foreman} date={date} onBack={() => setRoute({ name: 'map' })} />}
-      {show.name === 'report' && job && <ReportStub job={job} date={date} onBack={() => setRoute({ name: 'map' })} />}
-      {undoShown && lastEvent && (
+      {show.name === 'report' && job && <ReportScreen job={job} date={date} foreman={foreman} onBack={() => setRoute({ name: 'map' })} />}
+      {undoShown && lastEvent && show.name !== 'report' && (
         <div className="undo"><span>Saved.</span><button type="button" onClick={undo}>Undo</button></div>
       )}
     </>

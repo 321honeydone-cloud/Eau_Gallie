@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['ege-ui.js', 'placeholder/*.svg', 'icons/*.png', 'icons/*.svg', 'logo.png'],
+      includeAssets: ['ege-ui.js', 'placeholder/*.svg', 'icons/*.png', 'logo.png', 'fonts/*.woff2'],
       manifest: {
         name: 'Eau Gallie Electric Field',
         short_name: 'EGE Field',
@@ -25,13 +25,6 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        runtimeCaching: [
-          {
-            urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com' || url.origin === 'https://fonts.gstatic.com',
-            handler: 'CacheFirst',
-            options: { cacheName: 'fonts', expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 } },
-          },
-        ],
       },
     }),
   ],
