@@ -14,7 +14,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Question | Answer |
 |---|---|
 | How the customer gets billed | Unit price per part installed. Count times contract unit price. |
-| Parts the foreman taps | Fixtures and signs, base cans and transformers, conduit and duct bank and cable runs, vaults and handholes and regulators and equipment. |
+| Parts the foreman taps | Fixtures and signs, base cans and transformers, conduit and duct bank and cable runs, vaults and handholes and regulators and equipment. Plus demo of all of the above, which the schedule shows is its own phase of work. |
 | Where the part list comes from | Plan sheets and the bid takeoff spreadsheet, cross referenced so they stay honest with each other. |
 | Status ladder | Not started, Rough in, Set, Wired, Complete. Complete is the billable trigger. |
 | Zone view | Both. Pins on the plan sheet for point items, list for linear runs. Foreman flips between them. |
@@ -28,7 +28,7 @@ Eau Gallie Electric. Internal working spec. Built from the interview on 2026-09-
 | Report shape | One report per job per day. Zones are sections. Both foremen land on the same report. |
 | Narrative | Buttons, not typing. Every section is built from taps and radio picks. One optional text box per section for anything extra, and iPad dictation works in it off the keyboard mic key. |
 | Signer | Whoever submits also signs. No separate superintendent review step. |
-| Phases | A phase is a group of zones. Each zone carries a phase. Map colors by phase, report can group by phase. |
+| Phases | A phase is a group of zones. Each zone carries a phase. Map colors by phase, report can group by phase. The Autodesk schedule already breaks work down as Phase, then plan sheet (E108, E109), then activity. So a zone is a plan sheet. |
 | Device | iPad. Installable web app on Safari, added to the home screen. |
 
 ## The status ladder, spelled out
@@ -42,6 +42,18 @@ Same five steps for every part type. What each step means changes by type so the
 | Set | Base in, backfilled | Can set, plumb, backfilled | Conduit or duct in, footage entered | Structure set |
 | Wired | Cable landed, transformer connected | Transformer in, secondary landed | Cable pulled, footage entered | Cable landed, gear mounted |
 | Complete | Fixture on, aimed, tested | Lid on, tested | Terminated, tested, footage entered | Energized, tested |
+
+Demo parts use the same five buttons with demo meanings. The schedule sample lists the demo activities by name: remove light fixtures and signs, disconnect cable at base cans, remove cable, cut conduit, saw cut and remove conduit and base cans in asphalt, remove manholes and conduit in earth.
+
+| Step | Demo part |
+|---|---|
+| Not started | Still in service |
+| Rough in | Disconnected, locked out |
+| Set | Saw cut or excavated |
+| Wired | Pulled out of the ground or off the base |
+| Complete | Hauled off, hole backfilled or plugged |
+
+RE parts. The plans mark some fixtures RE, meaning remove, preserve, and reinstall. An RE part is one part with two ladders, demo then install. It shows once on the map. The card shows which ladder is active. Billing treats the demo and the reinstall as two pay items on the same part.
 
 Linear parts carry a total quantity (LF) and the foreman enters footage done at each step. Billing reads the Complete footage, not the ladder alone.
 
@@ -144,7 +156,7 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 - Sheet: job, name, page number, image, width, height.
 - Phase: job, name, order.
 - Zone: job, phase, name, overview sheet, shape (points in percent coords), detail sheet.
-- Part: job, zone, pay item, label, kind (point or linear), pin x and y in percent coords (optional for linear), total qty, current step.
+- Part: job, zone, label, kind (point or linear), work (install, demo, or RE), pin x and y in percent coords (optional for linear), total qty, install pay item, demo pay item, install step, demo step.
 - Flag: part (or zone, or none for yard work), reason, responsible party, schedule impact, opened by, opened at, closed at, note.
 - StatusEvent: part, report date, foreman, from step, to step, qty done (linear), note, created at, billed in (rollup id or null).
 - Photo: job, report date, part or zone, foreman, file, caption, created at.
@@ -169,11 +181,12 @@ Phase 2 pushes it for real through Autodesk Platform Services and the ACC Forms 
 6. Copy for Autodesk.
 7. Autodesk API push.
 8. Takeoff spreadsheet import (later).
+8b. Autodesk Build Schedule sync (later). The schedule has a percent complete per activity and activities are already split by phase and sheet. The app can compute percent complete per sheet per activity type from part steps and push it up, so the Gantt updates itself off the taps.
 9. Symbol detection on the drawing (maybe, later).
 
 ## Open items
 
-- Bid schedule format. A sample of a real one, even an old job, so the import matches what the office already has.
+- Bid schedule. Still need it. This is the unit price list, not the Gantt. Usually an Excel or PDF titled Bid Schedule, Schedule of Values, Unit Price Schedule, or Bid Tab, with columns like Item No, Description, Unit, Quantity, Unit Price, Total. The first pay application to the customer has the same list on it. Any job's copy works.
 - Equipment list. What's normally on an airfield job for this crew (trencher, directional bore, core drill, bucket truck, and so on).
 
 ASSUMED: unit is EA or LF only, no SF or CY items. ASSUMED: one contract per job, no change order tracking in v1. ASSUMED: the office pulls rollups, foremen never see prices.
