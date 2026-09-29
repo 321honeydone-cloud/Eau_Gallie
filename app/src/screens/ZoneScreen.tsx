@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import PanZoom, { type PanZoomHandle } from '../components/PanZoom';
-import Leader from '../components/Leader';
 import PartCard, { ladderLabel } from './PartCard';
 import { useOpenFlags, useSheets, useZoneParts, useSheetDark } from '../hooks/useJob';
 import { useSheetSrc } from '../hooks/useSheetSrc';
@@ -242,7 +241,6 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
           </div>
         </div>
       )}
-      {locate && <Leader key={`${locate.id}:${locate.n}`} partId={locate.id} />}
     </div>
   );
 }

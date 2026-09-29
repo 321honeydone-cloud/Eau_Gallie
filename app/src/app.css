@@ -300,12 +300,6 @@ body.ege { padding-block: 0 0; overscroll-behavior: none; }
 .viewer.dark .pin.locate::before, .viewer.dark .pin.locate::after { border-color: #FF6B78; }
 .prow.hot { animation: row-hot 1.8s ease 1; box-shadow: inset 4px 0 0 var(--ege-red); }
 @keyframes row-hot { 0% { background: rgba(236,28,45,.28); } 60% { background: rgba(236,28,45,.14); } 100% { background: transparent; } }
-svg.leader { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9; overflow: visible; }
-svg.leader path { fill: none; stroke: var(--ege-red); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: leader-draw .5s ease-out forwards; filter: drop-shadow(0 1px 2px rgba(255,255,255,.9)); }
-svg.leader .dot { fill: var(--ege-red); stroke: #fff; stroke-width: 2; }
-svg.leader .ring { fill: none; stroke: var(--ege-red); stroke-width: 2; opacity: 0; animation: leader-ring 1.2s ease-out .3s 2; }
-@keyframes leader-draw { to { stroke-dashoffset: 0; } }
-@keyframes leader-ring { 0% { r: 12; opacity: .9; } 100% { r: 44; opacity: 0; } }
 /* on a tablet the part card docks to the side so the sheet, and the pin, stay in view */
 @media (min-width: 900px) {
   .zone-screen .ege-sheet.docked { align-items: flex-start; justify-content: flex-end; background: rgba(19,26,70,.12); padding: 0 12px; }
