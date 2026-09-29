@@ -171,6 +171,162 @@
    "height": 2329,
    "order": 12,
    "isOverview": false
+  },
+  {
+   "id": "sh_pns_e301",
+   "jobId": "job_pensacola_rw826",
+   "name": "E301",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 1 of 11",
+   "src": "/pensacola/e301.jpg",
+   "pdfSrc": "/pensacola/e301.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 13,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e302",
+   "jobId": "job_pensacola_rw826",
+   "name": "E302",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 2 of 11",
+   "src": "/pensacola/e302.jpg",
+   "pdfSrc": "/pensacola/e302.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 14,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e303",
+   "jobId": "job_pensacola_rw826",
+   "name": "E303",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 3 of 11",
+   "src": "/pensacola/e303.jpg",
+   "pdfSrc": "/pensacola/e303.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 15,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e304",
+   "jobId": "job_pensacola_rw826",
+   "name": "E304",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 4 of 11",
+   "src": "/pensacola/e304.jpg",
+   "pdfSrc": "/pensacola/e304.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 16,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e305",
+   "jobId": "job_pensacola_rw826",
+   "name": "E305",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 5 of 11",
+   "src": "/pensacola/e305.jpg",
+   "pdfSrc": "/pensacola/e305.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 17,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e306",
+   "jobId": "job_pensacola_rw826",
+   "name": "E306",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 6 of 11",
+   "src": "/pensacola/e306.jpg",
+   "pdfSrc": "/pensacola/e306.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 18,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e307",
+   "jobId": "job_pensacola_rw826",
+   "name": "E307",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 7 of 11",
+   "src": "/pensacola/e307.jpg",
+   "pdfSrc": "/pensacola/e307.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 19,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e308",
+   "jobId": "job_pensacola_rw826",
+   "name": "E308",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 8 of 11",
+   "src": "/pensacola/e308.jpg",
+   "pdfSrc": "/pensacola/e308.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 20,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e309",
+   "jobId": "job_pensacola_rw826",
+   "name": "E309",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 9 of 11",
+   "src": "/pensacola/e309.jpg",
+   "pdfSrc": "/pensacola/e309.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 21,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e310",
+   "jobId": "job_pensacola_rw826",
+   "name": "E310",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 10 of 11",
+   "src": "/pensacola/e310.jpg",
+   "pdfSrc": "/pensacola/e310.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 22,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e311",
+   "jobId": "job_pensacola_rw826",
+   "name": "E311",
+   "title": "Airfield Lighting Circuiting Plan, Sheet 11 of 11",
+   "src": "/pensacola/e311.jpg",
+   "pdfSrc": "/pensacola/e311.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 23,
+   "isOverview": false
+  },
+  {
+   "id": "sh_pns_e702",
+   "jobId": "job_pensacola_rw826",
+   "name": "E702",
+   "title": "Proposed Airfield Lighting Vault",
+   "src": "/pensacola/e702.jpg",
+   "pdfSrc": "/pensacola/e702.pdf",
+   "pdfPage": 1,
+   "width": 3600,
+   "height": 2329,
+   "order": 24,
+   "isOverview": false
   }
  ],
  "zones": [
@@ -181,6 +337,9 @@
    "name": "E201 RW 8 end, TW B1",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e201",
+   "sheetIds": [
+    "sh_pns_e301"
+   ],
    "shape": [
     {
      "x": 9,
@@ -207,6 +366,9 @@
    "name": "E202 TW B2",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e202",
+   "sheetIds": [
+    "sh_pns_e302"
+   ],
    "shape": [
     {
      "x": 20,
@@ -233,6 +395,9 @@
    "name": "E203 TW B at RW 17-35",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e203",
+   "sheetIds": [
+    "sh_pns_e303"
+   ],
    "shape": [
     {
      "x": 30,
@@ -259,6 +424,9 @@
    "name": "E204 TW A and TW D at RW 17-35",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e204",
+   "sheetIds": [
+    "sh_pns_e304"
+   ],
    "shape": [
     {
      "x": 30,
@@ -285,6 +453,9 @@
    "name": "E205 TW B3",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e205",
+   "sheetIds": [
+    "sh_pns_e305"
+   ],
    "shape": [
     {
      "x": 42,
@@ -311,6 +482,9 @@
    "name": "E206 TW C and TW D",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e206",
+   "sheetIds": [
+    "sh_pns_e306"
+   ],
    "shape": [
     {
      "x": 50,
@@ -337,6 +511,9 @@
    "name": "E207 TW C, TW D east",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e207",
+   "sheetIds": [
+    "sh_pns_e307"
+   ],
    "shape": [
     {
      "x": 58,
@@ -363,6 +540,9 @@
    "name": "E208 TW D3, TW B5",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e208",
+   "sheetIds": [
+    "sh_pns_e308"
+   ],
    "shape": [
     {
      "x": 65,
@@ -389,6 +569,9 @@
    "name": "E209 TW D4, TW B6",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e209",
+   "sheetIds": [
+    "sh_pns_e309"
+   ],
    "shape": [
     {
      "x": 72,
@@ -415,6 +598,9 @@
    "name": "E210 TW A, TW F2",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e210",
+   "sheetIds": [
+    "sh_pns_e310"
+   ],
    "shape": [
     {
      "x": 19,
@@ -441,6 +627,9 @@
    "name": "E211 Cargo apron, TW A2",
    "overviewSheetId": "sh_pns_c6-overall",
    "detailSheetId": "sh_pns_e211",
+   "sheetIds": [
+    "sh_pns_e311"
+   ],
    "shape": [
     {
      "x": 17,
@@ -457,6 +646,58 @@
     {
      "x": 17,
      "y": 17
+    }
+   ]
+  },
+  {
+   "id": "z_pns_vault",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "Vault (E702)",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_e702",
+   "shape": [
+    {
+     "x": 2,
+     "y": 50
+    },
+    {
+     "x": 10,
+     "y": 50
+    },
+    {
+     "x": 10,
+     "y": 58
+    },
+    {
+     "x": 2,
+     "y": 58
+    }
+   ]
+  },
+  {
+   "id": "z_pns_site",
+   "jobId": "job_pensacola_rw826",
+   "phaseId": "ph_pns_1",
+   "name": "Site wide: cable, counterpoise, wind cone",
+   "overviewSheetId": "sh_pns_c6-overall",
+   "detailSheetId": "sh_pns_c6-overall",
+   "shape": [
+    {
+     "x": 2,
+     "y": 60
+    },
+    {
+     "x": 10,
+     "y": 60
+    },
+    {
+     "x": 10,
+     "y": 68
+    },
+    {
+     "x": 2,
+     "y": 68
     }
    ]
   }
@@ -7125,6 +7366,6365 @@
    "demoPay": [],
    "installStep": 0,
    "demoStep": 0
+  },
+  {
+   "id": "pt_pns_e301_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "JCP-102 4 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_51",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 35.204,
+   "y": 40.067,
+   "sheetId": "sh_pns_e301"
+  },
+  {
+   "id": "pt_pns_e301_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "JCP-101 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 25.478,
+   "y": 40.067,
+   "sheetId": "sh_pns_e301"
+  },
+  {
+   "id": "pt_pns_e301_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.915,
+   "sheetId": "sh_pns_e301"
+  },
+  {
+   "id": "pt_pns_e301_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 50.125,
+   "y": 68.083,
+   "sheetId": "sh_pns_e301",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e302_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "JCP-103 4 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_51",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 11.204,
+   "y": 38.916,
+   "sheetId": "sh_pns_e302"
+  },
+  {
+   "id": "pt_pns_e302_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "JCP-104 4 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_51",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 22.111,
+   "y": 38.628,
+   "sheetId": "sh_pns_e302"
+  },
+  {
+   "id": "pt_pns_e302_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 81.051,
+   "sheetId": "sh_pns_e302"
+  },
+  {
+   "id": "pt_pns_e302_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 54.139,
+   "y": 68.298,
+   "sheetId": "sh_pns_e302",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e302_la_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "Lightning arrestor #2",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 29.944,
+   "y": 58.296,
+   "sheetId": "sh_pns_e302",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e302_la_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "Lightning arrestor #3",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 7,
+   "y": 58.296,
+   "sheetId": "sh_pns_e302",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e303_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-08 plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 7.493,
+   "y": 29.847,
+   "sheetId": "sh_pns_e303",
+   "note": "Plaza size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-07 plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 30.532,
+   "y": 29.302,
+   "sheetId": "sh_pns_e303",
+   "note": "Plaza size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_plaza_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-06 plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 29.851,
+   "y": 10.006,
+   "sheetId": "sh_pns_e303",
+   "note": "Plaza size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_plaza_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-11 plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 37.733,
+   "y": 43.491,
+   "sheetId": "sh_pns_e303",
+   "note": "Plaza size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_plaza_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-21 plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.9,
+   "y": 52.559,
+   "sheetId": "sh_pns_e303",
+   "note": "Plaza size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_plaza_6",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-106 3 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_50",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 23.125,
+   "y": 39.575,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_plaza_7",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-109 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 54.944,
+   "y": 49.711,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_plaza_8",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-108 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 38.405,
+   "y": 49.696,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_plaza_9",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-12 6 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_52",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 62.052,
+   "y": 44.355,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_plaza_10",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-106 3 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_50",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 11.959,
+   "y": 39.575,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_plaza_11",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-12 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.111,
+   "y": 27.006,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_plaza_12",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "JCP-12 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.17,
+   "y": 12.643,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.998,
+   "sheetId": "sh_pns_e303"
+  },
+  {
+   "id": "pt_pns_e303_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 66.944,
+   "y": 59.133,
+   "sheetId": "sh_pns_e303",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e303_la_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "Lightning arrestor #2",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 30.847,
+   "y": 5.688,
+   "sheetId": "sh_pns_e303",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e304_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "JCP-130 4 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_51",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 12.562,
+   "y": 30.999,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "JCP-129 4 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_51",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 25.645,
+   "y": 30.999,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_plaza_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "JCP-126 4 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_51",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 62.057,
+   "y": 17.385,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_plaza_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "JCP-127 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 54.846,
+   "y": 14.4,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_plaza_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "JCP-128 4 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_51",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.861,
+   "y": 14.052,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 36.651,
+   "y": 30.121,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_can_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-867D junction can #2",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 32.577,
+   "y": 22.952,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_can_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-867D junction can #3",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 49.543,
+   "y": 36.347,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_can_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-867D junction can #4",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 28.009,
+   "y": 22.636,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_can_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "L-867D junction can #5",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.93,
+   "sheetId": "sh_pns_e304"
+  },
+  {
+   "id": "pt_pns_e304_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 31.681,
+   "y": 8.822,
+   "sheetId": "sh_pns_e304",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e304_la_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "Lightning arrestor #2",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 66.931,
+   "y": 8.929,
+   "sheetId": "sh_pns_e304",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e305_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "JCP-110 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 58.557,
+   "y": 38.309,
+   "sheetId": "sh_pns_e305"
+  },
+  {
+   "id": "pt_pns_e305_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "JCP-111 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 69.625,
+   "y": 38.309,
+   "sheetId": "sh_pns_e305"
+  },
+  {
+   "id": "pt_pns_e305_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.869,
+   "sheetId": "sh_pns_e305"
+  },
+  {
+   "id": "pt_pns_e305_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 32.542,
+   "y": 59.004,
+   "sheetId": "sh_pns_e305",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e306_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "JCP-125 3 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_50",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 29.841,
+   "y": 29.355,
+   "sheetId": "sh_pns_e306"
+  },
+  {
+   "id": "pt_pns_e306_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "JCP-124 3 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_50",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 37.331,
+   "y": 29.408,
+   "sheetId": "sh_pns_e306"
+  },
+  {
+   "id": "pt_pns_e306_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 39.851,
+   "y": 31.997,
+   "sheetId": "sh_pns_e306"
+  },
+  {
+   "id": "pt_pns_e306_can_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-867D junction can #2",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 24.464,
+   "y": 29.838,
+   "sheetId": "sh_pns_e306"
+  },
+  {
+   "id": "pt_pns_e306_can_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-867D junction can #3",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 24.194,
+   "y": 48.391,
+   "sheetId": "sh_pns_e306"
+  },
+  {
+   "id": "pt_pns_e306_can_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-867D junction can #4",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 41.851,
+   "y": 48.49,
+   "sheetId": "sh_pns_e306"
+  },
+  {
+   "id": "pt_pns_e306_can_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "L-867D junction can #5",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.824,
+   "sheetId": "sh_pns_e306"
+  },
+  {
+   "id": "pt_pns_e306_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 21.097,
+   "y": 9.272,
+   "sheetId": "sh_pns_e306",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e307_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "JCP-112 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 43.993,
+   "y": 16.287,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "JCP-113 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.062,
+   "y": 16.347,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_plaza_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "JCP-123 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 45.091,
+   "y": 65.855,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_plaza_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "JCP-122 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 53.415,
+   "y": 65.908,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 85.628,
+   "y": 80.786,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_can_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-867D junction can #2",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.802,
+   "y": 68.755,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_can_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-867D junction can #3",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 41.954,
+   "y": 72.732,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_can_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "L-867D junction can #4",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 71.542,
+   "y": 67.687,
+   "sheetId": "sh_pns_e307"
+  },
+  {
+   "id": "pt_pns_e307_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 44.042,
+   "y": 46.061,
+   "sheetId": "sh_pns_e307",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e307_la_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "Lightning arrestor #2",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 42.5,
+   "y": 36.36,
+   "sheetId": "sh_pns_e307",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e308_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "JCP-121 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 36.601,
+   "y": 66.582,
+   "sheetId": "sh_pns_e308"
+  },
+  {
+   "id": "pt_pns_e308_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "JCP-120 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 43.694,
+   "y": 66.643,
+   "sheetId": "sh_pns_e308"
+  },
+  {
+   "id": "pt_pns_e308_plaza_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "JCP-114 3 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_50",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.101,
+   "y": 16.34,
+   "sheetId": "sh_pns_e308"
+  },
+  {
+   "id": "pt_pns_e308_plaza_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "JCP-115 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 44.17,
+   "y": 16.34,
+   "sheetId": "sh_pns_e308"
+  },
+  {
+   "id": "pt_pns_e308_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 47.395,
+   "y": 68.717,
+   "sheetId": "sh_pns_e308"
+  },
+  {
+   "id": "pt_pns_e308_can_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-867D junction can #2",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 31.39,
+   "y": 72.118,
+   "sheetId": "sh_pns_e308"
+  },
+  {
+   "id": "pt_pns_e308_can_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "L-867D junction can #3",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.877,
+   "sheetId": "sh_pns_e308"
+  },
+  {
+   "id": "pt_pns_e308_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 8.75,
+   "y": 46.061,
+   "sheetId": "sh_pns_e308",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e308_la_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "Lightning arrestor #2",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 8.75,
+   "y": 37.54,
+   "sheetId": "sh_pns_e308",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e309_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "JCP-116 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 32.449,
+   "y": 16.347,
+   "sheetId": "sh_pns_e309"
+  },
+  {
+   "id": "pt_pns_e309_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "JCP-115 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 43.518,
+   "y": 16.408,
+   "sheetId": "sh_pns_e309"
+  },
+  {
+   "id": "pt_pns_e309_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 45.798,
+   "y": 70.159,
+   "sheetId": "sh_pns_e309"
+  },
+  {
+   "id": "pt_pns_e309_can_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-867D junction can #2",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 31.685,
+   "y": 72.361,
+   "sheetId": "sh_pns_e309"
+  },
+  {
+   "id": "pt_pns_e309_can_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "L-867D junction can #3",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.809,
+   "sheetId": "sh_pns_e309"
+  },
+  {
+   "id": "pt_pns_e309_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 29.639,
+   "y": 46.061,
+   "sheetId": "sh_pns_e309",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e309_la_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "Lightning arrestor #2",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 29.667,
+   "y": 37.433,
+   "sheetId": "sh_pns_e309",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e310_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e210",
+   "label": "JCP-05 plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.851,
+   "y": 56.575,
+   "sheetId": "sh_pns_e310",
+   "note": "Plaza size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e310_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e210",
+   "label": "JCP-04 12 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_54",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.895,
+   "y": 10.612,
+   "sheetId": "sh_pns_e310"
+  },
+  {
+   "id": "pt_pns_e310_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e210",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.847,
+   "sheetId": "sh_pns_e310"
+  },
+  {
+   "id": "pt_pns_e310_la_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e210",
+   "label": "Lightning arrestor #1",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_29",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 57.25,
+   "y": 55.613,
+   "sheetId": "sh_pns_e310",
+   "note": "One diamond on the plan. The circuit list beside it may mean more than one arrestor."
+  },
+  {
+   "id": "pt_pns_e311_plaza_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "JCP-03 plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.758,
+   "y": 42.385,
+   "sheetId": "sh_pns_e311",
+   "note": "Plaza size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e311_plaza_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "Plaza 6 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_52",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 13.895,
+   "y": 31.211,
+   "sheetId": "sh_pns_e311"
+  },
+  {
+   "id": "pt_pns_e311_plaza_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "JCP-03A 2 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_49",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 48.753,
+   "y": 66.037,
+   "sheetId": "sh_pns_e311"
+  },
+  {
+   "id": "pt_pns_e311_plaza_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "Plaza 8 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_53",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 12.988,
+   "y": 30.188,
+   "sheetId": "sh_pns_e311"
+  },
+  {
+   "id": "pt_pns_e311_plaza_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "Plaza 6 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_52",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 36.954,
+   "y": 43.188,
+   "sheetId": "sh_pns_e311"
+  },
+  {
+   "id": "pt_pns_e311_plaza_6",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "Plaza 8 can plaza",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_53",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 36.282,
+   "y": 42.393,
+   "sheetId": "sh_pns_e311"
+  },
+  {
+   "id": "pt_pns_e311_can_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "L-867D junction can #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_48",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 84.869,
+   "y": 80.824,
+   "sheetId": "sh_pns_e311"
+  },
+  {
+   "id": "pt_pns_e301_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "?W duct bank run #1, 91 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 30.142,
+   "y": 40.22,
+   "sheetId": "sh_pns_e301",
+   "path": [
+    {
+     "x": 32.72,
+     "y": 40.22
+    },
+    {
+     "x": 32.35,
+     "y": 40.22
+    },
+    {
+     "x": 31.79,
+     "y": 40.22
+    },
+    {
+     "x": 31.25,
+     "y": 40.22
+    },
+    {
+     "x": 30.69,
+     "y": 40.22
+    },
+    {
+     "x": 30.14,
+     "y": 40.22
+    },
+    {
+     "x": 29.59,
+     "y": 40.22
+    },
+    {
+     "x": 29.04,
+     "y": 40.22
+    },
+    {
+     "x": 28.48,
+     "y": 40.22
+    },
+    {
+     "x": 27.94,
+     "y": 40.22
+    },
+    {
+     "x": 27.38,
+     "y": 40.22
+    },
+    {
+     "x": 27.38,
+     "y": 40.22
+    }
+   ],
+   "totalQty": 91,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e302_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "?W duct bank run #1, 109 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 16.412,
+   "y": 38.932,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 19.54,
+     "y": 38.85
+    },
+    {
+     "x": 19.17,
+     "y": 38.86
+    },
+    {
+     "x": 18.62,
+     "y": 38.87
+    },
+    {
+     "x": 18.07,
+     "y": 38.89
+    },
+    {
+     "x": 17.52,
+     "y": 38.9
+    },
+    {
+     "x": 16.96,
+     "y": 38.92
+    },
+    {
+     "x": 16.41,
+     "y": 38.93
+    },
+    {
+     "x": 15.86,
+     "y": 38.95
+    },
+    {
+     "x": 15.31,
+     "y": 38.96
+    },
+    {
+     "x": 14.76,
+     "y": 38.98
+    },
+    {
+     "x": 14.21,
+     "y": 38.99
+    },
+    {
+     "x": 13.66,
+     "y": 39.01
+    },
+    {
+     "x": 13.1,
+     "y": 39.02
+    },
+    {
+     "x": 13.1,
+     "y": 39.02
+    }
+   ],
+   "totalQty": 109,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "?W duct bank run #1, 26 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 50.515,
+   "y": 19.485,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 52.02,
+     "y": 19.48
+    },
+    {
+     "x": 50.52,
+     "y": 19.48
+    },
+    {
+     "x": 50.52,
+     "y": 19.48
+    }
+   ],
+   "totalQty": 26,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "?W duct bank run #2, 9 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.309,
+   "y": 7.102,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 55.83,
+     "y": 7.1
+    },
+    {
+     "x": 55.31,
+     "y": 7.1
+    },
+    {
+     "x": 55.31,
+     "y": 7.1
+    }
+   ],
+   "totalQty": 9,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W4\" duct bank run #3, 109 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 17.578,
+   "y": 39.727,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 20.7,
+     "y": 39.73
+    },
+    {
+     "x": 20.33,
+     "y": 39.73
+    },
+    {
+     "x": 19.78,
+     "y": 39.73
+    },
+    {
+     "x": 19.23,
+     "y": 39.73
+    },
+    {
+     "x": 18.68,
+     "y": 39.73
+    },
+    {
+     "x": 18.13,
+     "y": 39.73
+    },
+    {
+     "x": 17.58,
+     "y": 39.73
+    },
+    {
+     "x": 17.02,
+     "y": 39.73
+    },
+    {
+     "x": 16.48,
+     "y": 39.73
+    },
+    {
+     "x": 15.92,
+     "y": 39.73
+    },
+    {
+     "x": 15.37,
+     "y": 39.73
+    },
+    {
+     "x": 14.82,
+     "y": 39.73
+    },
+    {
+     "x": 14.27,
+     "y": 39.73
+    },
+    {
+     "x": 14.27,
+     "y": 39.73
+    }
+   ],
+   "totalQty": 109,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" duct bank run #4, 8 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 38.627,
+   "y": 49.849,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 39.08,
+     "y": 49.85
+    },
+    {
+     "x": 38.63,
+     "y": 49.85
+    },
+    {
+     "x": 38.63,
+     "y": 49.85
+    }
+   ],
+   "totalQty": 8,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" duct bank run #5, 203 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 46.799,
+   "y": 49.849,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 40.92,
+     "y": 49.85
+    },
+    {
+     "x": 41.28,
+     "y": 49.85
+    },
+    {
+     "x": 41.83,
+     "y": 49.85
+    },
+    {
+     "x": 42.39,
+     "y": 49.85
+    },
+    {
+     "x": 42.94,
+     "y": 49.85
+    },
+    {
+     "x": 43.49,
+     "y": 49.85
+    },
+    {
+     "x": 44.04,
+     "y": 49.85
+    },
+    {
+     "x": 44.59,
+     "y": 49.85
+    },
+    {
+     "x": 45.14,
+     "y": 49.85
+    },
+    {
+     "x": 45.7,
+     "y": 49.85
+    },
+    {
+     "x": 46.25,
+     "y": 49.85
+    },
+    {
+     "x": 46.8,
+     "y": 49.85
+    },
+    {
+     "x": 47.35,
+     "y": 49.85
+    },
+    {
+     "x": 47.9,
+     "y": 49.85
+    },
+    {
+     "x": 48.45,
+     "y": 49.85
+    },
+    {
+     "x": 49.01,
+     "y": 49.85
+    },
+    {
+     "x": 49.55,
+     "y": 49.85
+    },
+    {
+     "x": 50.11,
+     "y": 49.85
+    },
+    {
+     "x": 50.66,
+     "y": 49.85
+    },
+    {
+     "x": 51.21,
+     "y": 49.85
+    },
+    {
+     "x": 51.76,
+     "y": 49.85
+    },
+    {
+     "x": 52.31,
+     "y": 49.85
+    },
+    {
+     "x": 52.86,
+     "y": 49.85
+    },
+    {
+     "x": 52.86,
+     "y": 49.85
+    }
+   ],
+   "totalQty": 203,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_6",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "?W duct bank run #6, 8 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 54.598,
+   "y": 49.849,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 54.15,
+     "y": 49.85
+    },
+    {
+     "x": 54.6,
+     "y": 49.85
+    },
+    {
+     "x": 54.6,
+     "y": 49.85
+    }
+   ],
+   "totalQty": 8,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e303_run_7",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W4\" duct bank run #7, 109 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 61.995,
+   "y": 59.015,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 61.99,
+     "y": 54.18
+    },
+    {
+     "x": 61.99,
+     "y": 54.75
+    },
+    {
+     "x": 61.99,
+     "y": 55.61
+    },
+    {
+     "x": 61.99,
+     "y": 56.45
+    },
+    {
+     "x": 61.99,
+     "y": 57.31
+    },
+    {
+     "x": 61.99,
+     "y": 58.16
+    },
+    {
+     "x": 61.99,
+     "y": 59.01
+    },
+    {
+     "x": 61.99,
+     "y": 59.86
+    },
+    {
+     "x": 61.99,
+     "y": 60.72
+    },
+    {
+     "x": 61.99,
+     "y": 61.57
+    },
+    {
+     "x": 61.99,
+     "y": 62.42
+    },
+    {
+     "x": 61.99,
+     "y": 63.27
+    },
+    {
+     "x": 61.99,
+     "y": 64.12
+    },
+    {
+     "x": 61.99,
+     "y": 64.12
+    }
+   ],
+   "totalQty": 109,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_8",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W4\" duct bank run #8, 81 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.819,
+   "y": 58.97,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 33.82,
+     "y": 62.95
+    },
+    {
+     "x": 33.82,
+     "y": 62.38
+    },
+    {
+     "x": 33.82,
+     "y": 61.52
+    },
+    {
+     "x": 33.82,
+     "y": 60.67
+    },
+    {
+     "x": 33.82,
+     "y": 59.82
+    },
+    {
+     "x": 33.82,
+     "y": 58.97
+    },
+    {
+     "x": 33.82,
+     "y": 58.11
+    },
+    {
+     "x": 33.82,
+     "y": 57.27
+    },
+    {
+     "x": 33.82,
+     "y": 56.41
+    },
+    {
+     "x": 33.82,
+     "y": 55.56
+    },
+    {
+     "x": 33.82,
+     "y": 55.56
+    }
+   ],
+   "totalQty": 81,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_9",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" duct bank run #9, 184 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 47.162,
+   "y": 45.72,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 52.48,
+     "y": 45.51
+    },
+    {
+     "x": 52.17,
+     "y": 45.65
+    },
+    {
+     "x": 51.57,
+     "y": 45.67
+    },
+    {
+     "x": 51.02,
+     "y": 45.67
+    },
+    {
+     "x": 50.47,
+     "y": 45.68
+    },
+    {
+     "x": 49.92,
+     "y": 45.69
+    },
+    {
+     "x": 49.37,
+     "y": 45.7
+    },
+    {
+     "x": 48.81,
+     "y": 45.7
+    },
+    {
+     "x": 48.27,
+     "y": 45.7
+    },
+    {
+     "x": 47.71,
+     "y": 45.71
+    },
+    {
+     "x": 47.16,
+     "y": 45.72
+    },
+    {
+     "x": 46.61,
+     "y": 45.73
+    },
+    {
+     "x": 46.06,
+     "y": 45.74
+    },
+    {
+     "x": 45.5,
+     "y": 45.74
+    },
+    {
+     "x": 44.96,
+     "y": 45.75
+    },
+    {
+     "x": 44.4,
+     "y": 45.76
+    },
+    {
+     "x": 43.85,
+     "y": 45.77
+    },
+    {
+     "x": 43.3,
+     "y": 45.77
+    },
+    {
+     "x": 42.75,
+     "y": 45.77
+    },
+    {
+     "x": 42.2,
+     "y": 45.78
+    },
+    {
+     "x": 41.65,
+     "y": 45.79
+    },
+    {
+     "x": 41.65,
+     "y": 45.79
+    }
+   ],
+   "totalQty": 184,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_10",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" duct bank run #10, 14 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 40.623,
+   "y": 45.349,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 40.96,
+     "y": 45.58
+    },
+    {
+     "x": 40.62,
+     "y": 45.35
+    },
+    {
+     "x": 40.18,
+     "y": 45.06
+    },
+    {
+     "x": 40.18,
+     "y": 45.06
+    }
+   ],
+   "totalQty": 14,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_11",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W4\" duct bank run #11, 117 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 54.769,
+   "y": 59.144,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 54.76,
+     "y": 53.46
+    },
+    {
+     "x": 54.76,
+     "y": 54.03
+    },
+    {
+     "x": 54.76,
+     "y": 54.89
+    },
+    {
+     "x": 54.77,
+     "y": 55.73
+    },
+    {
+     "x": 54.77,
+     "y": 56.59
+    },
+    {
+     "x": 54.77,
+     "y": 57.44
+    },
+    {
+     "x": 54.77,
+     "y": 58.29
+    },
+    {
+     "x": 54.77,
+     "y": 59.14
+    },
+    {
+     "x": 54.77,
+     "y": 60
+    },
+    {
+     "x": 54.77,
+     "y": 60.85
+    },
+    {
+     "x": 54.77,
+     "y": 61.7
+    },
+    {
+     "x": 54.77,
+     "y": 62.55
+    },
+    {
+     "x": 54.77,
+     "y": 63.41
+    },
+    {
+     "x": 54.77,
+     "y": 64.12
+    },
+    {
+     "x": 54.77,
+     "y": 64.12
+    }
+   ],
+   "totalQty": 117,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "?W duct bank run #1, 9 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 49.564,
+   "y": 37.382,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 50.08,
+     "y": 37.38
+    },
+    {
+     "x": 49.56,
+     "y": 37.38
+    },
+    {
+     "x": 49.56,
+     "y": 37.38
+    }
+   ],
+   "totalQty": 9,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e304_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "1W2\" duct bank run #2, 137 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_35",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 18.858,
+   "y": 31.159,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 23.09,
+     "y": 31.16
+    },
+    {
+     "x": 22.72,
+     "y": 31.16
+    },
+    {
+     "x": 22.17,
+     "y": 31.16
+    },
+    {
+     "x": 21.62,
+     "y": 31.16
+    },
+    {
+     "x": 21.06,
+     "y": 31.16
+    },
+    {
+     "x": 20.52,
+     "y": 31.16
+    },
+    {
+     "x": 19.96,
+     "y": 31.16
+    },
+    {
+     "x": 19.41,
+     "y": 31.16
+    },
+    {
+     "x": 18.86,
+     "y": 31.16
+    },
+    {
+     "x": 18.31,
+     "y": 31.16
+    },
+    {
+     "x": 17.75,
+     "y": 31.16
+    },
+    {
+     "x": 17.21,
+     "y": 31.16
+    },
+    {
+     "x": 16.65,
+     "y": 31.16
+    },
+    {
+     "x": 16.1,
+     "y": 31.16
+    },
+    {
+     "x": 15.55,
+     "y": 31.16
+    },
+    {
+     "x": 15,
+     "y": 31.16
+    },
+    {
+     "x": 15,
+     "y": 31.16
+    }
+   ],
+   "totalQty": 137,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" duct bank run #3, 175 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 47.936,
+   "y": 14.447,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 42.61,
+     "y": 14.36
+    },
+    {
+     "x": 42.97,
+     "y": 14.36
+    },
+    {
+     "x": 43.52,
+     "y": 14.37
+    },
+    {
+     "x": 44.08,
+     "y": 14.38
+    },
+    {
+     "x": 44.63,
+     "y": 14.39
+    },
+    {
+     "x": 45.18,
+     "y": 14.4
+    },
+    {
+     "x": 45.73,
+     "y": 14.41
+    },
+    {
+     "x": 46.28,
+     "y": 14.42
+    },
+    {
+     "x": 46.83,
+     "y": 14.42
+    },
+    {
+     "x": 47.39,
+     "y": 14.44
+    },
+    {
+     "x": 47.94,
+     "y": 14.45
+    },
+    {
+     "x": 48.49,
+     "y": 14.46
+    },
+    {
+     "x": 49.04,
+     "y": 14.46
+    },
+    {
+     "x": 49.59,
+     "y": 14.48
+    },
+    {
+     "x": 50.14,
+     "y": 14.49
+    },
+    {
+     "x": 50.7,
+     "y": 14.49
+    },
+    {
+     "x": 51.25,
+     "y": 14.5
+    },
+    {
+     "x": 51.8,
+     "y": 14.51
+    },
+    {
+     "x": 52.35,
+     "y": 14.52
+    },
+    {
+     "x": 52.9,
+     "y": 14.53
+    },
+    {
+     "x": 52.9,
+     "y": 14.53
+    }
+   ],
+   "totalQty": 175,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" duct bank run #4, 90 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 61.995,
+   "y": 9.977,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 61.99,
+     "y": 6
+    },
+    {
+     "x": 61.99,
+     "y": 6.57
+    },
+    {
+     "x": 61.99,
+     "y": 7.42
+    },
+    {
+     "x": 61.99,
+     "y": 8.27
+    },
+    {
+     "x": 61.99,
+     "y": 9.12
+    },
+    {
+     "x": 61.99,
+     "y": 9.98
+    },
+    {
+     "x": 61.99,
+     "y": 10.83
+    },
+    {
+     "x": 61.99,
+     "y": 11.68
+    },
+    {
+     "x": 61.99,
+     "y": 12.53
+    },
+    {
+     "x": 61.99,
+     "y": 13.39
+    },
+    {
+     "x": 61.99,
+     "y": 14.19
+    },
+    {
+     "x": 61.99,
+     "y": 14.19
+    }
+   ],
+   "totalQty": 90,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" duct bank run #5, 63 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.814,
+   "y": 7.379,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 33.81,
+     "y": 10.5
+    },
+    {
+     "x": 33.81,
+     "y": 9.93
+    },
+    {
+     "x": 33.81,
+     "y": 9.08
+    },
+    {
+     "x": 33.81,
+     "y": 8.23
+    },
+    {
+     "x": 33.81,
+     "y": 7.38
+    },
+    {
+     "x": 33.82,
+     "y": 6.52
+    },
+    {
+     "x": 33.82,
+     "y": 5.67
+    },
+    {
+     "x": 33.82,
+     "y": 4.82
+    },
+    {
+     "x": 33.82,
+     "y": 4.82
+    }
+   ],
+   "totalQty": 63,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_6",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" duct bank run #6, 53 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_37",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 54.78,
+   "y": 8.409,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 54.78,
+     "y": 6.14
+    },
+    {
+     "x": 54.78,
+     "y": 6.71
+    },
+    {
+     "x": 54.78,
+     "y": 7.55
+    },
+    {
+     "x": 54.78,
+     "y": 8.41
+    },
+    {
+     "x": 54.78,
+     "y": 9.26
+    },
+    {
+     "x": 54.78,
+     "y": 10.11
+    },
+    {
+     "x": 54.78,
+     "y": 10.96
+    },
+    {
+     "x": 54.78,
+     "y": 10.96
+    }
+   ],
+   "totalQty": 53,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e305_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "?W duct bank run #1, 12 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 64.232,
+   "y": 29.584,
+   "sheetId": "sh_pns_e305",
+   "path": [
+    {
+     "x": 64.01,
+     "y": 29.52
+    },
+    {
+     "x": 64.23,
+     "y": 29.58
+    },
+    {
+     "x": 64.52,
+     "y": 30.2
+    },
+    {
+     "x": 64.52,
+     "y": 30.2
+    }
+   ],
+   "totalQty": 12,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e305_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "?W duct bank run #2, 109 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 64.123,
+   "y": 38.462,
+   "sheetId": "sh_pns_e305",
+   "path": [
+    {
+     "x": 67.25,
+     "y": 38.46
+    },
+    {
+     "x": 66.88,
+     "y": 38.46
+    },
+    {
+     "x": 66.33,
+     "y": 38.46
+    },
+    {
+     "x": 65.78,
+     "y": 38.46
+    },
+    {
+     "x": 65.22,
+     "y": 38.46
+    },
+    {
+     "x": 64.68,
+     "y": 38.46
+    },
+    {
+     "x": 64.12,
+     "y": 38.46
+    },
+    {
+     "x": 63.57,
+     "y": 38.46
+    },
+    {
+     "x": 63.02,
+     "y": 38.46
+    },
+    {
+     "x": 62.47,
+     "y": 38.46
+    },
+    {
+     "x": 61.92,
+     "y": 38.46
+    },
+    {
+     "x": 61.37,
+     "y": 38.46
+    },
+    {
+     "x": 60.81,
+     "y": 38.46
+    },
+    {
+     "x": 60.81,
+     "y": 38.46
+    }
+   ],
+   "totalQty": 109,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e306_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "?W duct bank run #1, 44 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.343,
+   "y": 29.546,
+   "sheetId": "sh_pns_e306",
+   "path": [
+    {
+     "x": 34.81,
+     "y": 29.55
+    },
+    {
+     "x": 34.45,
+     "y": 29.55
+    },
+    {
+     "x": 33.9,
+     "y": 29.55
+    },
+    {
+     "x": 33.34,
+     "y": 29.55
+    },
+    {
+     "x": 32.79,
+     "y": 29.55
+    },
+    {
+     "x": 32.24,
+     "y": 29.55
+    },
+    {
+     "x": 32.24,
+     "y": 29.55
+    }
+   ],
+   "totalQty": 44,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e306_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "?W duct bank run #2, 63 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.328,
+   "y": 16.466,
+   "sheetId": "sh_pns_e306",
+   "path": [
+    {
+     "x": 33.21,
+     "y": 13.62
+    },
+    {
+     "x": 33.33,
+     "y": 16.47
+    },
+    {
+     "x": 33.12,
+     "y": 13.62
+    },
+    {
+     "x": 33.12,
+     "y": 13.62
+    }
+   ],
+   "totalQty": 63,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e307_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "?W duct bank run #1, 109 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 49.559,
+   "y": 16.485,
+   "sheetId": "sh_pns_e307",
+   "path": [
+    {
+     "x": 52.68,
+     "y": 16.49
+    },
+    {
+     "x": 52.31,
+     "y": 16.49
+    },
+    {
+     "x": 51.77,
+     "y": 16.49
+    },
+    {
+     "x": 51.21,
+     "y": 16.49
+    },
+    {
+     "x": 50.66,
+     "y": 16.49
+    },
+    {
+     "x": 50.11,
+     "y": 16.49
+    },
+    {
+     "x": 49.56,
+     "y": 16.48
+    },
+    {
+     "x": 49.01,
+     "y": 16.48
+    },
+    {
+     "x": 48.46,
+     "y": 16.48
+    },
+    {
+     "x": 47.9,
+     "y": 16.48
+    },
+    {
+     "x": 47.35,
+     "y": 16.48
+    },
+    {
+     "x": 46.8,
+     "y": 16.48
+    },
+    {
+     "x": 46.25,
+     "y": 16.48
+    },
+    {
+     "x": 46.25,
+     "y": 16.48
+    }
+   ],
+   "totalQty": 109,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e307_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "?W duct bank run #2, 62 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 49.01,
+   "y": 66.045,
+   "sheetId": "sh_pns_e307",
+   "path": [
+    {
+     "x": 51.03,
+     "y": 66.05
+    },
+    {
+     "x": 50.67,
+     "y": 66.05
+    },
+    {
+     "x": 50.11,
+     "y": 66.05
+    },
+    {
+     "x": 49.56,
+     "y": 66.05
+    },
+    {
+     "x": 49.01,
+     "y": 66.05
+    },
+    {
+     "x": 48.46,
+     "y": 66.05
+    },
+    {
+     "x": 47.91,
+     "y": 66.05
+    },
+    {
+     "x": 47.36,
+     "y": 66.04
+    },
+    {
+     "x": 47.36,
+     "y": 66.04
+    }
+   ],
+   "totalQty": 62,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e307_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "?W duct bank run #3, 14 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 4.975,
+   "y": 41.735,
+   "sheetId": "sh_pns_e307",
+   "path": [
+    {
+     "x": 5.82,
+     "y": 41.73
+    },
+    {
+     "x": 4.97,
+     "y": 41.73
+    },
+    {
+     "x": 4.97,
+     "y": 41.73
+    }
+   ],
+   "totalQty": 14,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e308_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "?W duct bank run #1, 44 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 39.627,
+   "y": 66.803,
+   "sheetId": "sh_pns_e308",
+   "path": [
+    {
+     "x": 41.1,
+     "y": 66.8
+    },
+    {
+     "x": 40.73,
+     "y": 66.8
+    },
+    {
+     "x": 40.18,
+     "y": 66.8
+    },
+    {
+     "x": 39.63,
+     "y": 66.8
+    },
+    {
+     "x": 39.08,
+     "y": 66.8
+    },
+    {
+     "x": 38.53,
+     "y": 66.8
+    },
+    {
+     "x": 38.53,
+     "y": 66.8
+    }
+   ],
+   "totalQty": 44,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e308_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "?W duct bank run #2, 109 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 38.667,
+   "y": 16.485,
+   "sheetId": "sh_pns_e308",
+   "path": [
+    {
+     "x": 41.79,
+     "y": 16.49
+    },
+    {
+     "x": 41.42,
+     "y": 16.49
+    },
+    {
+     "x": 40.87,
+     "y": 16.49
+    },
+    {
+     "x": 40.32,
+     "y": 16.48
+    },
+    {
+     "x": 39.77,
+     "y": 16.48
+    },
+    {
+     "x": 39.22,
+     "y": 16.48
+    },
+    {
+     "x": 38.67,
+     "y": 16.48
+    },
+    {
+     "x": 38.11,
+     "y": 16.48
+    },
+    {
+     "x": 37.56,
+     "y": 16.48
+    },
+    {
+     "x": 37.01,
+     "y": 16.48
+    },
+    {
+     "x": 36.46,
+     "y": 16.48
+    },
+    {
+     "x": 35.91,
+     "y": 16.48
+    },
+    {
+     "x": 35.36,
+     "y": 16.47
+    },
+    {
+     "x": 35.36,
+     "y": 16.47
+    }
+   ],
+   "totalQty": 109,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e309_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "?W duct bank run #1, 109 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 38.015,
+   "y": 16.545,
+   "sheetId": "sh_pns_e309",
+   "path": [
+    {
+     "x": 41.14,
+     "y": 16.55
+    },
+    {
+     "x": 40.77,
+     "y": 16.55
+    },
+    {
+     "x": 40.22,
+     "y": 16.55
+    },
+    {
+     "x": 39.67,
+     "y": 16.55
+    },
+    {
+     "x": 39.12,
+     "y": 16.55
+    },
+    {
+     "x": 38.56,
+     "y": 16.55
+    },
+    {
+     "x": 38.02,
+     "y": 16.55
+    },
+    {
+     "x": 37.46,
+     "y": 16.55
+    },
+    {
+     "x": 36.91,
+     "y": 16.55
+    },
+    {
+     "x": 36.36,
+     "y": 16.55
+    },
+    {
+     "x": 35.81,
+     "y": 16.54
+    },
+    {
+     "x": 35.26,
+     "y": 16.54
+    },
+    {
+     "x": 34.71,
+     "y": 16.54
+    },
+    {
+     "x": 34.71,
+     "y": 16.54
+    }
+   ],
+   "totalQty": 109,
+   "qtyDone": 0,
+   "note": "Duct size not read off the sheet. Office: set the pay item."
+  },
+  {
+   "id": "pt_pns_e301_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e201",
+   "label": "1W conduit run #2, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 36.603,
+   "y": 57.015,
+   "sheetId": "sh_pns_e301",
+   "path": [
+    {
+     "x": 34.8,
+     "y": 56.33
+    },
+    {
+     "x": 36.6,
+     "y": 57.02
+    },
+    {
+     "x": 36.6,
+     "y": 57.02
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #2, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 21.115,
+   "y": 56.379,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 22.9,
+     "y": 57.01
+    },
+    {
+     "x": 21.12,
+     "y": 56.38
+    },
+    {
+     "x": 21.12,
+     "y": 56.38
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #3, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 21.13,
+   "y": 56.337,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 22.9,
+     "y": 57
+    },
+    {
+     "x": 21.13,
+     "y": 56.34
+    },
+    {
+     "x": 21.13,
+     "y": 56.34
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #4, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 16.255,
+   "y": 24.47,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 16.25,
+     "y": 27.3
+    },
+    {
+     "x": 16.25,
+     "y": 24.47
+    },
+    {
+     "x": 16.25,
+     "y": 24.47
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #5, 33 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 16.313,
+   "y": 24.47,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 16.31,
+     "y": 27.45
+    },
+    {
+     "x": 16.31,
+     "y": 24.47
+    },
+    {
+     "x": 16.31,
+     "y": 24.47
+    }
+   ],
+   "totalQty": 33,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_6",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #6, 35 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 14.088,
+   "y": 33.621,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 13.44,
+     "y": 36.64
+    },
+    {
+     "x": 14.09,
+     "y": 33.62
+    },
+    {
+     "x": 14.09,
+     "y": 33.62
+    }
+   ],
+   "totalQty": 35,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_7",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #7, 35 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 14.117,
+   "y": 33.629,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 13.47,
+     "y": 36.65
+    },
+    {
+     "x": 14.12,
+     "y": 33.63
+    },
+    {
+     "x": 14.12,
+     "y": 33.63
+    }
+   ],
+   "totalQty": 35,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_8",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #8, 35 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 14.174,
+   "y": 33.66,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 13.5,
+     "y": 36.65
+    },
+    {
+     "x": 14.17,
+     "y": 33.66
+    },
+    {
+     "x": 14.17,
+     "y": 33.66
+    }
+   ],
+   "totalQty": 35,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e302_run_9",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e202",
+   "label": "1W conduit run #9, 35 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 14.034,
+   "y": 33.594,
+   "sheetId": "sh_pns_e302",
+   "path": [
+    {
+     "x": 13.38,
+     "y": 36.63
+    },
+    {
+     "x": 14.03,
+     "y": 33.59
+    },
+    {
+     "x": 14.03,
+     "y": 33.59
+    }
+   ],
+   "totalQty": 35,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_12",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #12, 33 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 22.679,
+   "y": 56.296,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 24.59,
+     "y": 57.01
+    },
+    {
+     "x": 22.68,
+     "y": 56.3
+    },
+    {
+     "x": 22.68,
+     "y": 56.3
+    }
+   ],
+   "totalQty": 33,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_13",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #13, 33 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 22.694,
+   "y": 56.254,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 24.58,
+     "y": 57
+    },
+    {
+     "x": 22.69,
+     "y": 56.25
+    },
+    {
+     "x": 22.69,
+     "y": 56.25
+    }
+   ],
+   "totalQty": 33,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_14",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #14, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 22.63,
+   "y": 56.371,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 24.36,
+     "y": 57.01
+    },
+    {
+     "x": 22.63,
+     "y": 56.37
+    },
+    {
+     "x": 22.63,
+     "y": 56.37
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_15",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #15, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 22.645,
+   "y": 56.329,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 24.35,
+     "y": 57
+    },
+    {
+     "x": 22.64,
+     "y": 56.33
+    },
+    {
+     "x": 22.64,
+     "y": 56.33
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_16",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #16, 50 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 29.519,
+   "y": 5.118,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 29.65,
+     "y": 7.38
+    },
+    {
+     "x": 29.52,
+     "y": 5.12
+    },
+    {
+     "x": 29.62,
+     "y": 7.39
+    },
+    {
+     "x": 29.62,
+     "y": 7.39
+    }
+   ],
+   "totalQty": 50,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_17",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" conduit run #17, 62 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 37.236,
+   "y": 31.72,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 37.33,
+     "y": 35.71
+    },
+    {
+     "x": 37.28,
+     "y": 33.44
+    },
+    {
+     "x": 37.24,
+     "y": 31.72
+    },
+    {
+     "x": 36.5,
+     "y": 30.48
+    },
+    {
+     "x": 36.5,
+     "y": 30.48
+    }
+   ],
+   "totalQty": 62,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_18",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" conduit run #18, 53 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 34.711,
+   "y": 29.053,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 35.63,
+     "y": 29.01
+    },
+    {
+     "x": 34.71,
+     "y": 29.05
+    },
+    {
+     "x": 32.51,
+     "y": 29.16
+    },
+    {
+     "x": 32.51,
+     "y": 29.16
+    }
+   ],
+   "totalQty": 53,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_19",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #19, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 28.426,
+   "y": 29.379,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 30.19,
+     "y": 29.34
+    },
+    {
+     "x": 28.43,
+     "y": 29.38
+    },
+    {
+     "x": 28.43,
+     "y": 29.38
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_20",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "6W2\" conduit run #20, 62 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_45",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.949,
+   "y": 36.034,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 33.16,
+     "y": 34.11
+    },
+    {
+     "x": 33.95,
+     "y": 36.03
+    },
+    {
+     "x": 35.13,
+     "y": 38.91
+    },
+    {
+     "x": 35.13,
+     "y": 38.91
+    }
+   ],
+   "totalQty": 62,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_21",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" conduit run #21, 91 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 32.848,
+   "y": 40.97,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 31.54,
+     "y": 35.66
+    },
+    {
+     "x": 32.06,
+     "y": 37.79
+    },
+    {
+     "x": 32.85,
+     "y": 40.97
+    },
+    {
+     "x": 33.45,
+     "y": 43.42
+    },
+    {
+     "x": 33.45,
+     "y": 43.42
+    }
+   ],
+   "totalQty": 91,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_22",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #22, 67 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 26.221,
+   "y": 29.432,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 27.69,
+     "y": 29.39
+    },
+    {
+     "x": 26.22,
+     "y": 29.43
+    },
+    {
+     "x": 23.73,
+     "y": 29.48
+    },
+    {
+     "x": 23.73,
+     "y": 29.48
+    }
+   ],
+   "totalQty": 67,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_23",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "8W2\" conduit run #23, 48 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_46",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 11.272,
+   "y": 29.78,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 9.86,
+     "y": 29.86
+    },
+    {
+     "x": 11.27,
+     "y": 29.78
+    },
+    {
+     "x": 9.85,
+     "y": 29.81
+    },
+    {
+     "x": 9.85,
+     "y": 29.81
+    }
+   ],
+   "totalQty": 48,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_24",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #24, 58 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 61.995,
+   "y": 38.841,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 61.99,
+     "y": 41.11
+    },
+    {
+     "x": 61.99,
+     "y": 38.84
+    },
+    {
+     "x": 61.99,
+     "y": 35.83
+    },
+    {
+     "x": 61.99,
+     "y": 35.83
+    }
+   ],
+   "totalQty": 58,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_25",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #25, 50 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 61.412,
+   "y": 34.667,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 60.35,
+     "y": 33.1
+    },
+    {
+     "x": 61.41,
+     "y": 34.67
+    },
+    {
+     "x": 60.35,
+     "y": 33.09
+    },
+    {
+     "x": 60.35,
+     "y": 33.09
+    }
+   ],
+   "totalQty": 50,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_26",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "1W conduit run #26, 58 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 61.995,
+   "y": 50.371,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 61.99,
+     "y": 48.1
+    },
+    {
+     "x": 61.99,
+     "y": 50.37
+    },
+    {
+     "x": 61.99,
+     "y": 53.38
+    },
+    {
+     "x": 61.99,
+     "y": 53.38
+    }
+   ],
+   "totalQty": 58,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e303_run_27",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e203",
+   "label": "4W2\" conduit run #27, 53 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 53.446,
+   "y": 45.053,
+   "sheetId": "sh_pns_e303",
+   "path": [
+    {
+     "x": 52.52,
+     "y": 45.19
+    },
+    {
+     "x": 53.45,
+     "y": 45.05
+    },
+    {
+     "x": 55.64,
+     "y": 44.69
+    },
+    {
+     "x": 55.64,
+     "y": 44.69
+    }
+   ],
+   "totalQty": 53,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_7",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "1W conduit run #7, 34 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 13.111,
+   "y": 12.072,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 11.15,
+     "y": 11.34
+    },
+    {
+     "x": 13.11,
+     "y": 12.07
+    },
+    {
+     "x": 13.11,
+     "y": 12.07
+    }
+   ],
+   "totalQty": 34,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_8",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "1W conduit run #8, 34 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 13.096,
+   "y": 12.11,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 11.16,
+     "y": 11.34
+    },
+    {
+     "x": 13.1,
+     "y": 12.11
+    },
+    {
+     "x": 13.1,
+     "y": 12.11
+    }
+   ],
+   "totalQty": 34,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_9",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "1W conduit run #9, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 13.154,
+   "y": 11.996,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 11.38,
+     "y": 11.34
+    },
+    {
+     "x": 13.15,
+     "y": 12
+    },
+    {
+     "x": 13.15,
+     "y": 12
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_10",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "1W conduit run #10, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 13.139,
+   "y": 12.034,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 11.39,
+     "y": 11.34
+    },
+    {
+     "x": 13.14,
+     "y": 12.03
+    },
+    {
+     "x": 13.14,
+     "y": 12.03
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_11",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "1W conduit run #11, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 24.521,
+   "y": 11.299,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 22.81,
+     "y": 12.01
+    },
+    {
+     "x": 24.52,
+     "y": 11.3
+    },
+    {
+     "x": 24.52,
+     "y": 11.3
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_12",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "1W conduit run #12, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 24.539,
+   "y": 11.337,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 22.83,
+     "y": 12.05
+    },
+    {
+     "x": 24.54,
+     "y": 11.34
+    },
+    {
+     "x": 24.54,
+     "y": 11.34
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_13",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "2W4\" conduit run #13, 97 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_42",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 56.569,
+   "y": 25.011,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 57.19,
+     "y": 30.3
+    },
+    {
+     "x": 56.96,
+     "y": 28.36
+    },
+    {
+     "x": 56.57,
+     "y": 25.01
+    },
+    {
+     "x": 56.18,
+     "y": 21.66
+    },
+    {
+     "x": 56.18,
+     "y": 21.66
+    }
+   ],
+   "totalQty": 97,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_14",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" conduit run #14, 102 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 61.076,
+   "y": 29.549,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 57.42,
+     "y": 30.67
+    },
+    {
+     "x": 58.91,
+     "y": 30.21
+    },
+    {
+     "x": 61.08,
+     "y": 29.55
+    },
+    {
+     "x": 63.29,
+     "y": 28.87
+    },
+    {
+     "x": 63.29,
+     "y": 28.87
+    }
+   ],
+   "totalQty": 102,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_15",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" conduit run #15, 65 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.422,
+   "y": 30.674,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 56.96,
+     "y": 30.67
+    },
+    {
+     "x": 55.42,
+     "y": 30.67
+    },
+    {
+     "x": 53.15,
+     "y": 30.7
+    },
+    {
+     "x": 53.15,
+     "y": 30.7
+    }
+   ],
+   "totalQty": 65,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_16",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "2W4\" conduit run #16, 52 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_42",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 56.985,
+   "y": 17.546,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 56.11,
+     "y": 17.55
+    },
+    {
+     "x": 56.98,
+     "y": 17.55
+    },
+    {
+     "x": 59.19,
+     "y": 17.55
+    },
+    {
+     "x": 59.19,
+     "y": 17.55
+    }
+   ],
+   "totalQty": 52,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_17",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" conduit run #17, 138 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 36.907,
+   "y": 30.015,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 40.58,
+     "y": 29.95
+    },
+    {
+     "x": 39.11,
+     "y": 29.98
+    },
+    {
+     "x": 36.91,
+     "y": 30.02
+    },
+    {
+     "x": 34.7,
+     "y": 30.05
+    },
+    {
+     "x": 32.49,
+     "y": 30.09
+    },
+    {
+     "x": 32.49,
+     "y": 30.09
+    }
+   ],
+   "totalQty": 138,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_18",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "2W4\" conduit run #18, 32 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_42",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 61.995,
+   "y": 14.189,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 61.99,
+     "y": 17.11
+    },
+    {
+     "x": 61.99,
+     "y": 14.19
+    },
+    {
+     "x": 61.99,
+     "y": 14.19
+    }
+   ],
+   "totalQty": 32,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_19",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "2W4\" conduit run #19, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_42",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.926,
+   "y": 17.546,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 61.71,
+     "y": 17.55
+    },
+    {
+     "x": 59.93,
+     "y": 17.55
+    },
+    {
+     "x": 59.93,
+     "y": 17.55
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_20",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" conduit run #20, 133 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.804,
+   "y": 23.091,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 33.8,
+     "y": 17.41
+    },
+    {
+     "x": 33.8,
+     "y": 19.68
+    },
+    {
+     "x": 33.8,
+     "y": 23.09
+    },
+    {
+     "x": 33.8,
+     "y": 26.5
+    },
+    {
+     "x": 33.8,
+     "y": 29.54
+    },
+    {
+     "x": 33.8,
+     "y": 29.54
+    }
+   ],
+   "totalQty": 133,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e304_run_21",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e204",
+   "label": "4W4\" conduit run #21, 62 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_44",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 29.863,
+   "y": 31.356,
+   "sheetId": "sh_pns_e304",
+   "path": [
+    {
+     "x": 31.33,
+     "y": 31.36
+    },
+    {
+     "x": 29.86,
+     "y": 31.36
+    },
+    {
+     "x": 27.66,
+     "y": 31.36
+    },
+    {
+     "x": 27.66,
+     "y": 31.36
+    }
+   ],
+   "totalQty": 62,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e305_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "1W conduit run #3, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.573,
+   "y": 56.219,
+   "sheetId": "sh_pns_e305",
+   "path": [
+    {
+     "x": 57.8,
+     "y": 56.93
+    },
+    {
+     "x": 59.57,
+     "y": 56.22
+    },
+    {
+     "x": 59.57,
+     "y": 56.22
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e305_run_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "1W conduit run #4, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.59,
+   "y": 56.261,
+   "sheetId": "sh_pns_e305",
+   "path": [
+    {
+     "x": 57.82,
+     "y": 56.97
+    },
+    {
+     "x": 59.59,
+     "y": 56.26
+    },
+    {
+     "x": 59.59,
+     "y": 56.26
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e305_run_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "1W conduit run #5, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.63,
+   "y": 56.333,
+   "sheetId": "sh_pns_e305",
+   "path": [
+    {
+     "x": 57.93,
+     "y": 56.98
+    },
+    {
+     "x": 59.63,
+     "y": 56.33
+    },
+    {
+     "x": 59.63,
+     "y": 56.33
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e305_run_6",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "1W conduit run #6, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.667,
+   "y": 56.363,
+   "sheetId": "sh_pns_e305",
+   "path": [
+    {
+     "x": 57.94,
+     "y": 57.07
+    },
+    {
+     "x": 59.67,
+     "y": 56.36
+    },
+    {
+     "x": 59.67,
+     "y": 56.36
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e305_run_7",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e205",
+   "label": "1W conduit run #7, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 59.684,
+   "y": 56.405,
+   "sheetId": "sh_pns_e305",
+   "path": [
+    {
+     "x": 57.96,
+     "y": 57.11
+    },
+    {
+     "x": 59.68,
+     "y": 56.41
+    },
+    {
+     "x": 59.68,
+     "y": 56.41
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e306_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e206",
+   "label": "1W conduit run #3, 50 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 33.241,
+   "y": 13.621,
+   "sheetId": "sh_pns_e306",
+   "path": [
+    {
+     "x": 33.22,
+     "y": 11.34
+    },
+    {
+     "x": 33.24,
+     "y": 13.62
+    },
+    {
+     "x": 33.16,
+     "y": 11.34
+    },
+    {
+     "x": 33.16,
+     "y": 11.34
+    }
+   ],
+   "totalQty": 50,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e307_run_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "1W conduit run #4, 50 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 49.103,
+   "y": 50.856,
+   "sheetId": "sh_pns_e307",
+   "path": [
+    {
+     "x": 49.1,
+     "y": 48.58
+    },
+    {
+     "x": 49.1,
+     "y": 50.86
+    },
+    {
+     "x": 49.04,
+     "y": 48.58
+    },
+    {
+     "x": 49.04,
+     "y": 48.58
+    }
+   ],
+   "totalQty": 50,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e307_run_5",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "1W conduit run #5, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 43.346,
+   "y": 35.015,
+   "sheetId": "sh_pns_e307",
+   "path": [
+    {
+     "x": 45.04,
+     "y": 34.37
+    },
+    {
+     "x": 43.35,
+     "y": 35.01
+    },
+    {
+     "x": 43.35,
+     "y": 35.01
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e307_run_6",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "1W conduit run #6, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 43.358,
+   "y": 35.099,
+   "sheetId": "sh_pns_e307",
+   "path": [
+    {
+     "x": 45.08,
+     "y": 34.4
+    },
+    {
+     "x": 43.36,
+     "y": 35.1
+    },
+    {
+     "x": 43.36,
+     "y": 35.1
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e307_run_7",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e207",
+   "label": "1W conduit run #7, 30 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 43.376,
+   "y": 35.14,
+   "sheetId": "sh_pns_e307",
+   "path": [
+    {
+     "x": 45.1,
+     "y": 34.44
+    },
+    {
+     "x": 43.38,
+     "y": 35.14
+    },
+    {
+     "x": 43.38,
+     "y": 35.14
+    }
+   ],
+   "totalQty": 30,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e308_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "1W conduit run #3, 50 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 40.113,
+   "y": 50.856,
+   "sheetId": "sh_pns_e308",
+   "path": [
+    {
+     "x": 40.11,
+     "y": 48.58
+    },
+    {
+     "x": 40.11,
+     "y": 50.86
+    },
+    {
+     "x": 40.05,
+     "y": 48.58
+    },
+    {
+     "x": 40.05,
+     "y": 48.58
+    }
+   ],
+   "totalQty": 50,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e308_run_4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e208",
+   "label": "1W conduit run #4, 31 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 38.73,
+   "y": 17.443,
+   "sheetId": "sh_pns_e308",
+   "path": [
+    {
+     "x": 38.73,
+     "y": 18.76
+    },
+    {
+     "x": 38.73,
+     "y": 17.44
+    },
+    {
+     "x": 39.23,
+     "y": 18.75
+    },
+    {
+     "x": 39.23,
+     "y": 18.75
+    }
+   ],
+   "totalQty": 31,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e309_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e209",
+   "label": "1W conduit run #2, 50 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 39.46,
+   "y": 48.583,
+   "sheetId": "sh_pns_e309",
+   "path": [
+    {
+     "x": 39.46,
+     "y": 50.86
+    },
+    {
+     "x": 39.46,
+     "y": 48.58
+    },
+    {
+     "x": 39.4,
+     "y": 50.86
+    },
+    {
+     "x": 39.4,
+     "y": 50.86
+    }
+   ],
+   "totalQty": 50,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e310_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e210",
+   "label": "1W conduit run #1, 57 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 46.926,
+   "y": 62.765,
+   "sheetId": "sh_pns_e310",
+   "path": [
+    {
+     "x": 45.24,
+     "y": 62.79
+    },
+    {
+     "x": 46.93,
+     "y": 62.77
+    },
+    {
+     "x": 45.24,
+     "y": 62.79
+    },
+    {
+     "x": 45.24,
+     "y": 62.79
+    }
+   ],
+   "totalQty": 57,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e310_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e210",
+   "label": "1W conduit run #2, 401 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.534,
+   "y": 35.811,
+   "sheetId": "sh_pns_e310",
+   "path": [
+    {
+     "x": 55.31,
+     "y": 16.42
+    },
+    {
+     "x": 55.34,
+     "y": 18.77
+    },
+    {
+     "x": 55.38,
+     "y": 22.17
+    },
+    {
+     "x": 55.42,
+     "y": 25.58
+    },
+    {
+     "x": 55.46,
+     "y": 28.99
+    },
+    {
+     "x": 55.5,
+     "y": 32.4
+    },
+    {
+     "x": 55.53,
+     "y": 35.81
+    },
+    {
+     "x": 55.57,
+     "y": 39.22
+    },
+    {
+     "x": 55.61,
+     "y": 42.63
+    },
+    {
+     "x": 55.65,
+     "y": 46.04
+    },
+    {
+     "x": 55.69,
+     "y": 49.45
+    },
+    {
+     "x": 55.73,
+     "y": 52.86
+    },
+    {
+     "x": 55.73,
+     "y": 52.86
+    }
+   ],
+   "totalQty": 401,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e310_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e210",
+   "label": "1W conduit run #3, 50 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 56.584,
+   "y": 75.276,
+   "sheetId": "sh_pns_e310",
+   "path": [
+    {
+     "x": 56.46,
+     "y": 73.01
+    },
+    {
+     "x": 56.58,
+     "y": 75.28
+    },
+    {
+     "x": 56.46,
+     "y": 73.02
+    },
+    {
+     "x": 56.46,
+     "y": 73.02
+    }
+   ],
+   "totalQty": 50,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e311_run_1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "1W conduit run #1, 100 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.794,
+   "y": 69.689,
+   "sheetId": "sh_pns_e311",
+   "path": [
+    {
+     "x": 55.81,
+     "y": 75.37
+    },
+    {
+     "x": 55.8,
+     "y": 73.1
+    },
+    {
+     "x": 55.79,
+     "y": 69.69
+    },
+    {
+     "x": 55.78,
+     "y": 66.28
+    },
+    {
+     "x": 55.78,
+     "y": 66.28
+    }
+   ],
+   "totalQty": 100,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e311_run_2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "1W conduit run #2, 213 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 55.745,
+   "y": 56.053,
+   "sheetId": "sh_pns_e311",
+   "path": [
+    {
+     "x": 55.77,
+     "y": 65.14
+    },
+    {
+     "x": 55.77,
+     "y": 62.87
+    },
+    {
+     "x": 55.75,
+     "y": 59.46
+    },
+    {
+     "x": 55.74,
+     "y": 56.05
+    },
+    {
+     "x": 55.73,
+     "y": 52.64
+    },
+    {
+     "x": 55.72,
+     "y": 49.23
+    },
+    {
+     "x": 55.71,
+     "y": 45.83
+    },
+    {
+     "x": 55.71,
+     "y": 45.83
+    }
+   ],
+   "totalQty": 213,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_e311_run_3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_e211",
+   "label": "1W conduit run #3, 63 ft",
+   "category": "duct",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_41",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 52.848,
+   "y": 66.076,
+   "sheetId": "sh_pns_e311",
+   "path": [
+    {
+     "x": 54.32,
+     "y": 66.06
+    },
+    {
+     "x": 52.85,
+     "y": 66.08
+    },
+    {
+     "x": 50.64,
+     "y": 66.09
+    },
+    {
+     "x": 50.64,
+     "y": 66.09
+    }
+   ],
+   "totalQty": 63,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_site_cable",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "L-824 #8 5kV cable, 120,000 LF",
+   "category": "cable",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_26",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "totalQty": 120000,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_site_cpoise",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "#2 counterpoise, 55,700 LF",
+   "category": "cable",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_27",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "totalQty": 55700,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_site_grod",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "Ground rods, 900 LF",
+   "category": "cable",
+   "kind": "linear",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_28",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "totalQty": 900,
+   "qtyDone": 0
+  },
+  {
+   "id": "pt_pns_site_wind",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "L-806 wind cone",
+   "category": "pole",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "No bid line matched. Office: link a pay item."
+  },
+  {
+   "id": "pt_pns_site_rgl1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "L-804 runway guard light #1",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_56",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_site_rgl2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "L-804 runway guard light #2",
+   "category": "fixture",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_56",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_site_dw1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "Base can drain well #1",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_47",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_site_dw2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "Base can drain well #2",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_47",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_site_dw3",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "Base can drain well #3",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_47",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_site_dw4",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_site",
+   "label": "Base can drain well #4",
+   "category": "can",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_47",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0
+  },
+  {
+   "id": "pt_pns_vault_ccr1",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "10 kW L-829 regulator",
+   "category": "regulator",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_33",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 36.5,
+   "y": 22,
+   "sheetId": "sh_pns_e702"
+  },
+  {
+   "id": "pt_pns_vault_ccr2",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "15 kW L-829 regulator",
+   "category": "regulator",
+   "kind": "point",
+   "work": "install",
+   "installPay": [
+    {
+     "payItemId": "pi_pns_34",
+     "billAtStep": 4
+    }
+   ],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "x": 41,
+   "y": 22,
+   "sheetId": "sh_pns_e702"
+  },
+  {
+   "id": "pt_pns_vault_mods",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "Vault modifications (lump sum)",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "Bid item 32. Billed by percent complete on the Billing screen, not by this part."
+  },
+  {
+   "id": "pt_pns_vault_ctl",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "Lighting control system, contractor (lump sum)",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "Bid item 31. Billed by percent complete on the Billing screen, not by this part."
+  },
+  {
+   "id": "pt_pns_vault_vendor",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "Lighting control system, vendor (allowance)",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "Bid item 30. Billed by percent complete on the Billing screen, not by this part."
+  },
+  {
+   "id": "pt_pns_vault_arc",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "Arc flash and coordination study (lump sum)",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "Bid item 24. Billed by percent complete on the Billing screen, not by this part."
+  },
+  {
+   "id": "pt_pns_vault_flight",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "FAA flight check (allowance)",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "Bid item 25. Billed by percent complete on the Billing screen, not by this part."
+  },
+  {
+   "id": "pt_pns_vault_temp",
+   "jobId": "job_pensacola_rw826",
+   "zoneId": "z_pns_vault",
+   "label": "Temporary power and lighting (lump sum)",
+   "category": "equipment",
+   "kind": "point",
+   "work": "install",
+   "installPay": [],
+   "demoPay": [],
+   "installStep": 0,
+   "demoStep": 0,
+   "note": "Bid item 22. Billed by percent complete on the Billing screen, not by this part."
   }
  ],
  "crew": [],

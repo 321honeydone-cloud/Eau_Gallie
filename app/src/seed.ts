@@ -20,14 +20,24 @@ export async function seedIfEmpty(): Promise<void> {
 async function seedMissing(): Promise<void> {
   const d = pensacola as unknown as SeedFile;
   if (await db.jobs.get(d.job.id)) {
-    // tablets that got the job before the vector layer existed pick up the PDF links
+    // the job grows as the plan set gets read deeper: add whatever this tablet does not have yet
     setApplyingRemote(true);
     try {
-      for (const sh of d.sheets) { const cur = await db.sheets.get(sh.id); if (cur && !cur.pdfSrc && sh.pdfSrc) await db.sheets.update(sh.id, { pdfSrc: sh.pdfSrc, pdfPage: sh.pdfPage }); }
-      // tablets that got the job before the symbol finder ran pick up the auto-placed pins
-      if (d.parts.length && (await db.parts.where('jobId').equals(d.job.id).count()) === 0) {
-        await db.parts.bulkAdd(d.parts.map(r => ({ ...r, updatedAt: 1, _dirty: 1 })));
+      const stamp = <T extends object>(r: T) => ({ ...r, updatedAt: 1, _dirty: 1 });
+      for (const sh of d.sheets) {
+        const cur = await db.sheets.get(sh.id);
+        if (!cur) await db.sheets.add(stamp(sh));
+        else if (!cur.pdfSrc && sh.pdfSrc) await db.sheets.update(sh.id, { pdfSrc: sh.pdfSrc, pdfPage: sh.pdfPage });
       }
+      for (const z of d.zones) {
+        const cur = await db.zones.get(z.id);
+        if (!cur) await db.zones.add(stamp(z));
+        else if (z.sheetIds && JSON.stringify(cur.sheetIds ?? []) !== JSON.stringify(z.sheetIds)) await db.zones.update(z.id, { sheetIds: z.sheetIds });
+      }
+      for (const pi of d.payItems) if (!(await db.payItems.get(pi.id))) await db.payItems.add(stamp(pi));
+      const have = new Set((await db.parts.where('jobId').equals(d.job.id).primaryKeys()) as string[]);
+      const missing = d.parts.filter(pt => !have.has(pt.id));
+      if (missing.length) await db.parts.bulkAdd(missing.map(stamp));
     }
     finally { setApplyingRemote(false); }
     return;

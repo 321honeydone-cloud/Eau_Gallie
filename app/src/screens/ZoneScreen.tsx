@@ -17,10 +17,16 @@ const MIN_W = 240;
 
 export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   const sheets = useSheets(zone.jobId);
-  const sheet = sheets.find(s => s.id === zone.detailSheetId);
+  // a zone can carry more than one sheet of the same ground: the lighting layout and the circuiting plan
+  const sheetIds = useMemo(() => [zone.detailSheetId, ...(zone.sheetIds ?? []).filter(id => id !== zone.detailSheetId)], [zone]);
+  const [sheetId, setSheetId] = useState(zone.detailSheetId);
+  useEffect(() => { setSheetId(zone.detailSheetId); }, [zone.id, zone.detailSheetId]);
+  const sheet = sheets.find(s => s.id === sheetId) ?? sheets.find(s => s.id === zone.detailSheetId);
   const sheetSrc = useSheetSrc(sheet);
   const dark = useSheetDark();
-  const parts = useZoneParts(zone.id);
+  const allParts = useZoneParts(zone.id);
+  const onSheet = (p: { sheetId?: string }) => (p.sheetId ?? zone.detailSheetId) === sheetId;
+  const parts = useMemo(() => allParts.filter(onSheet), [allParts, sheetId]); // eslint-disable-line react-hooks/exhaustive-deps
   const flags = useOpenFlags(zone.jobId);
   const [openId, setOpenIdRaw] = useState<string | null>(null);
   const openedAt = useRef(0);
@@ -94,6 +100,13 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   // an unpinned drawer gets out of the way when the sheet is touched
   const sheetTouched = () => { if (listOpen && !pinned) { setListOpen(false); void setSetting('list.open', '0'); } };
 
+  const runs = sheet && parts.some(p => p.path && p.path.length > 1) && (
+    <svg className="runs" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      {parts.filter(p => p.path && p.path.length > 1).map(p => (
+        <polyline key={p.id} className={`run s${currentStep(p)}${sel.has(p.id) || popId === p.id ? ' selected' : ''}`} points={p.path!.map(q => `${q.x},${q.y}`).join(' ')} />
+      ))}
+    </svg>
+  );
   const pins = sheet && parts.filter(p => p.x !== undefined).map(p => {
     const s = currentStep(p);
     const cls = ['pin', `s${s}`, flagByPart.has(p.id) ? 'flagged' : '', activeLadder(p) === 'demo' ? 'demo' : '', sel.has(p.id) ? 'selected' : '', ['handhole', 'manhole', 'regulator', 'sign'].includes(p.category) ? 'sq' : '', popId === p.id ? 'pop' : ''].join(' ');
@@ -118,6 +131,13 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
         <button type="button" className="ege-btn" onClick={onBack}>&larr; Airfield</button>
         <h2 className="ege-h2" style={{ fontSize: 22, paddingBottom: 4 }}>{zone.name}</h2>
         <span className="ege-tag">{pct}% complete</span>
+        {sheetIds.length > 1 && (
+          <div className="seg sheetseg" role="tablist" aria-label="Sheet">
+            {sheetIds.map(id => { const sh = sheets.find(s => s.id === id); const n = allParts.filter(p => (p.sheetId ?? zone.detailSheetId) === id).length; return sh ? (
+              <button key={id} type="button" role="tab" aria-selected={id === sheetId} className={id === sheetId ? 'on' : ''} onClick={() => setSheetId(id)}>{sh.name}<small> {n}</small></button>
+            ) : null; })}
+          </div>
+        )}
         <span className="spacer" />
         <button type="button" className={'ege-btn' + (bulk ? ' accent' : '')} onClick={() => { setBulk(b => !b); setSel(new Set()); }}>{bulk ? 'Cancel select' : 'Select many'}</button>
         <button type="button" className="ege-btn" onClick={() => setSetting('sheetLook', dark ? 'day' : 'night')}>{dark ? 'Daylight' : 'Night'}</button>
@@ -142,7 +162,8 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
       <div className={'sheetwrap' + (listOpen ? ' open' : '') + (pinned ? ' pinned' : ' floating') + (dragW !== null ? ' sizing' : '')} style={{ ['--listw' as string]: `${width}px` }}>
         {sheet && (
           <div className="sheetarea" onPointerDownCapture={sheetTouched}>
-            <PanZoom dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id} hint={`${sheet.name} · pinch, drag, double tap`}>
+            <PanZoom dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id + sheetId} hint={`${sheet.name} · pinch, drag, double tap`}>
+              {runs}
               {pins}
             </PanZoom>
           </div>

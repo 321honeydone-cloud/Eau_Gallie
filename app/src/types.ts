@@ -65,6 +65,7 @@ export interface Zone {
   overviewSheetId: string;
   shape: Pt[];             // polygon on the overview sheet
   detailSheetId: string;
+  sheetIds?: string[];     // more sheets for the same ground, e.g. the circuiting plan under the layout plan
 }
 
 export interface PayItem {
@@ -102,6 +103,8 @@ export interface Part {
   work: WorkType;
   x?: number;              // percent on the detail sheet
   y?: number;
+  sheetId?: string;        // which of the zone's sheets the pin sits on (default: the zone's detail sheet)
+  path?: Pt[];             // linear parts: the run drawn on the sheet, percent
   totalQty?: number;       // linear parts, LF
   installPay: PayLink[];
   demoPay: PayLink[];
