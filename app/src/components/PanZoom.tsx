@@ -21,6 +21,7 @@ interface Props {
 export interface PanZoomHandle {
   flyTo: (r: { x1: number; y1: number; x2: number; y2: number }, ms?: number) => Promise<void>;   // percent rect
   fit: () => void;
+  reveal: (x: number, y: number, inset?: { right?: number; bottom?: number }) => void;   // percent point: glide so it is on screen at a readable zoom
 }
 
 interface View { s: number; tx: number; ty: number }
@@ -172,7 +173,22 @@ const PanZoom = forwardRef<PanZoomHandle, Props>(function PanZoom({ width, heigh
     setView({ s, tx: bw / 2 - cx, ty: bh / 2 - cy });
     window.setTimeout(res, ms);
   });
-  useImperativeHandle(ref, () => ({ flyTo, fit }), [stageW, width, height]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Bring a percent point into view. Leaves the view alone when the point is already comfortably on
+  // screen, otherwise glides it to the centre and zooms in just enough to tell pins apart.
+  const reveal = (x: number, y: number, inset: { right?: number; bottom?: number } = {}) => {
+    const el = box.current; if (!el) return;
+    // the part card can cover a strip of the box, so centre on what is left uncovered
+    const bw = el.clientWidth - (inset.right ?? 0), bh = el.clientHeight - (inset.bottom ?? 0), v = viewRef.current;
+    const sh = stageW * (height / width);
+    const minS = Math.max(v.s, Math.min(8, (bw / stageW) * 2.6));
+    const px = (x / 100) * stageW * v.s + v.tx, py = (y / 100) * sh * v.s + v.ty;
+    const inside = px > bw * 0.12 && px < bw * 0.88 && py > bh * 0.12 && py < bh * 0.88;
+    if (inside && v.s >= minS * 0.99) return;
+    const s = minS;
+    setEased(true);
+    setView({ s, tx: bw / 2 - (x / 100) * stageW * s, ty: bh / 2 - (y / 100) * sh * s });
+  };
+  useImperativeHandle(ref, () => ({ flyTo, fit, reveal }), [stageW, width, height]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div ref={box} className={'viewer' + (dragging ? ' dragging' : '') + (dark ? ' dark' : '') + (eased ? ' eased' : '')}

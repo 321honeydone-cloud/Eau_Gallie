@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import PanZoom from '../components/PanZoom';
+import PanZoom, { type PanZoomHandle } from '../components/PanZoom';
+import Leader from '../components/Leader';
 import PartCard, { ladderLabel } from './PartCard';
 import { useOpenFlags, useSheets, useZoneParts, useSheetDark } from '../hooks/useJob';
 import { useSheetSrc } from '../hooks/useSheetSrc';
@@ -35,6 +36,10 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   const [sel, setSel] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState<'all' | 'open' | 'flagged'>('all');
   const [focus, setFocus] = useState(false);
+  const pz = useRef<PanZoomHandle>(null);
+  // "where is it": the pin being pointed at, and a counter so a second tap replays the animation
+  const [locate, setLocate] = useState<{ id: string; n: number } | null>(null);
+  const rowRefs = useRef(new Map<string, HTMLButtonElement>());
 
   // the list drawer: open or closed, pinned as a column or floating over the sheet, and how wide
   const prefs = useLiveQuery(async () => ({
@@ -87,7 +92,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   const nextAfter = (id: string) => {
     const i = shown.findIndex(p => p.id === id);
     const n = shown.slice(i + 1).find(p => currentStep(p) < 4) ?? shown.find(p => currentStep(p) < 4 && p.id !== id);
-    if (n) setOpenId(n.id); else { setOpenId(null); toast('Nothing left open in this zone.'); }
+    if (n) { setOpenId(n.id); point(n.id); } else { setOpenId(null); toast('Nothing left open in this zone.'); }
   };
   const toggleSel = (id: string) => setSel(s => { const n = new Set(s); if (n.has(id)) n.delete(id); else n.add(id); return n; });
   const bulkSet = async (to: Step) => {
@@ -96,7 +101,32 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
     toast(`${targets.length} parts set to ${stepName(to)}`);
     setSel(new Set()); setBulk(false);
   };
-  const onTap = (id: string) => { if (bulk) toggleSel(id); else setOpenId(id); };
+  const point = (id: string) => setLocate(l => ({ id, n: (l?.n ?? 0) + 1 }));
+  const onTap = (id: string) => { if (bulk) toggleSel(id); else { setOpenId(id); point(id); } };
+  // glide the sheet to the pin and scroll its row into view whenever something gets pointed at
+  useEffect(() => {
+    if (!locate) return;
+    const p = allParts.find(q => q.id === locate.id); if (!p) return;
+    const target = p.sheetId ?? zone.detailSheetId;
+    if (target !== sheetId) { setSheetId(target); return; }   // the effect runs again once the sheet is up
+    if (p.x !== undefined && p.y !== undefined) window.setTimeout(() => {
+      // the docked card and the bottom sheet cover part of the viewer: keep the pin in the uncovered part
+      const v = document.querySelector('.viewer')?.getBoundingClientRect(), c = document.querySelector('.ege-sheet-box')?.getBoundingClientRect();
+      const right = v && c && c.left < v.right && c.top < v.bottom && c.height < v.height * 0.98 ? Math.max(0, v.right - c.left) : 0;
+      let bottom = v && c && !right && c.top < v.bottom ? Math.max(0, v.bottom - c.top) : 0;
+      if (v && bottom > v.height * 0.6) bottom = 0;   // a phone's bottom sheet covers the map anyway: centre for after it closes
+      pz.current?.reveal(p.x!, p.y!, { right, bottom });
+    }, 30);
+    rowRefs.current.get(p.id)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }, [locate, sheetId]); // eslint-disable-line react-hooks/exhaustive-deps
+  // when the card closes the rings play once more, so on a phone (where the card covers the sheet)
+  // the pin still gets pointed out, then the pointer goes away
+  useEffect(() => {
+    if (openId) return;
+    setLocate(l => (l ? { id: l.id, n: l.n + 1 } : l));
+    const t = window.setTimeout(() => setLocate(null), 2200);
+    return () => window.clearTimeout(t);
+  }, [openId]);
   // an unpinned drawer gets out of the way when the sheet is touched
   const sheetTouched = () => { if (listOpen && !pinned) { setListOpen(false); void setSetting('list.open', '0'); } };
 
@@ -109,9 +139,10 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
   );
   const pins = sheet && parts.filter(p => p.x !== undefined).map(p => {
     const s = currentStep(p);
-    const cls = ['pin', `s${s}`, flagByPart.has(p.id) ? 'flagged' : '', activeLadder(p) === 'demo' ? 'demo' : '', sel.has(p.id) ? 'selected' : '', ['handhole', 'manhole', 'regulator', 'sign'].includes(p.category) ? 'sq' : '', popId === p.id ? 'pop' : ''].join(' ');
+    const here = locate?.id === p.id;
+    const cls = ['pin', `s${s}`, flagByPart.has(p.id) ? 'flagged' : '', activeLadder(p) === 'demo' ? 'demo' : '', sel.has(p.id) ? 'selected' : '', ['handhole', 'manhole', 'regulator', 'sign'].includes(p.category) ? 'sq' : '', popId === p.id ? 'pop' : '', here ? 'locate' : ''].join(' ');
     return (
-      <button key={p.id} type="button" className={cls} style={{ left: `${p.x}%`, top: `${p.y}%` }} aria-label={p.label} onClick={() => onTap(p.id)}>
+      <button key={here ? `${p.id}:${locate!.n}` : p.id} type="button" className={cls} data-part={p.id} style={{ left: `${p.x}%`, top: `${p.y}%` }} aria-label={p.label} onClick={() => onTap(p.id)}>
         <i>{s}</i>
       </button>
     );
@@ -162,7 +193,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
       <div className={'sheetwrap' + (listOpen ? ' open' : '') + (pinned ? ' pinned' : ' floating') + (dragW !== null ? ' sizing' : '')} style={{ ['--listw' as string]: `${width}px` }}>
         {sheet && (
           <div className="sheetarea" onPointerDownCapture={sheetTouched}>
-            <PanZoom dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id + sheetId} hint={`${sheet.name} · pinch, drag, double tap`}>
+            <PanZoom ref={pz} dark={dark} sheet={sheet} width={sheet.width} height={sheet.height} src={sheetSrc} resetKey={zone.id + sheetId} hint={`${sheet.name} · pinch, drag, double tap`}>
               {runs}
               {pins}
             </PanZoom>
@@ -189,7 +220,7 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
                 {shown.filter(p => p.category === c).map(p => {
                   const s = currentStep(p);
                   return (
-                    <button key={p.id} type="button" className={'prow' + (sel.has(p.id) ? ' sel' : '')} onClick={() => onTap(p.id)}>
+                    <button key={locate?.id === p.id ? `${p.id}:${locate.n}` : p.id} ref={el => { if (el) rowRefs.current.set(p.id, el); else rowRefs.current.delete(p.id); }} type="button" className={'prow' + (sel.has(p.id) ? ' sel' : '') + (locate?.id === p.id ? ' hot' : '')} onClick={() => onTap(p.id)}>
                       {bulk && <span className="chk">{sel.has(p.id) ? '✓' : ''}</span>}
                       <span className={`dot s${s}` + (flagByPart.has(p.id) ? ' flagged' : '')}>{s}</span>
                       <span className="lab">{p.label}{p.kind === 'linear' && <small>{p.qtyDone ?? 0} of {p.totalQty} LF</small>}{flagByPart.has(p.id) && <small style={{ color: 'var(--ege-bad)' }}>{flagByPart.get(p.id)!.reason}</small>}</span>
@@ -205,12 +236,13 @@ export default function ZoneScreen({ zone, foreman, date, onBack }: Props) {
       </div>
 
       {open && (
-        <div className="ege-sheet" role="dialog" aria-modal="true" onClick={e => { if (e.target === e.currentTarget && Date.now() - openedAt.current > 450) setOpenId(null); }}>
-          <div className="ege-sheet-box">
+        <div className="ege-sheet docked" role="dialog" aria-modal="true" onClick={e => { if (e.target === e.currentTarget && Date.now() - openedAt.current > 450) setOpenId(null); }}>
+          <div className="ege-sheet-box" data-card={open.id}>
             <PartCard part={open} flag={flagByPart.get(open.id)} foreman={foreman} date={date} onClose={() => setOpenId(null)} onNext={() => nextAfter(open.id)} />
           </div>
         </div>
       )}
+      {locate && <Leader key={`${locate.id}:${locate.n}`} partId={locate.id} />}
     </div>
   );
 }
