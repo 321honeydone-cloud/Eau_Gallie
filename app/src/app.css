@@ -273,7 +273,7 @@ body.ege { padding-block: 0 0; overscroll-behavior: none; }
 
 /* Screens built around a sheet fill the window under the header and follow it when it resizes.
    The stats, toolbar and legend take what they need, the viewer takes the rest. */
-.screen.fill { height: calc(100dvh - var(--header-h, 80px)); box-sizing: border-box; padding-block: 10px 8px; gap: 10px; overflow: hidden; min-height: 0; }
+.screen.fill { height: calc(100dvh - var(--header-h, 80px)); flex: none; box-sizing: border-box; padding-block: 10px 8px; gap: 10px; overflow: hidden; min-height: 0; }
 .screen.fill .stats { flex: 0 0 auto; }
 .screen.fill .toolbar, .screen.fill .legend, .screen.fill .ege-tip, .screen.fill .floatbar { flex: 0 0 auto; }
 .screen.fill > .viewer, .screen.fill .sheetwrap { flex: 1 1 0; min-height: 0; }

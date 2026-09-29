@@ -26,7 +26,7 @@ export default function App() {
     const set = () => document.documentElement.style.setProperty('--header-h', `${el.offsetHeight}px`);
     set(); const ro = new ResizeObserver(set); ro.observe(el); window.addEventListener('resize', set);
     return () => { ro.disconnect(); window.removeEventListener('resize', set); };
-  }, []);
+  }, [ready]);   // the header only exists once the job has loaded
   useEffect(() => { let stop = () => {}; seedIfEmpty().then(() => { setReady(true); stop = startSync(); }); return () => stop(); }, []);
 
   const jobId = useJobId();
